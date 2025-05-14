@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - ElectroMecánica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-cogs me-2"></i>
+                <span class="fw-bold">ElectroMecánica</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="position-relative me-3">
+                        <button class="btn btn-link text-dark p-0">
+                            <i class="fas fa-shopping-cart fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-dark">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado del Catálogo -->
+    <section class="py-4 hero">
+        <div class="container">
+            <h1 class="mb-4">Catálogo de Productos</h1>
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white">
+                            <i class="fas fa-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Buscar productos...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>Ordenar por</option>
+                        <option value="price-asc">Precio: Menor a Mayor</option>
+                        <option value="price-desc">Precio: Mayor a Menor</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Sidebar de Filtros -->
+                <div class="col-lg-3">
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="card-title mb-0">Filtros</h5>
+                                <button class="btn btn-sm btn-link text-decoration-none p-0">Limpiar</button>
+                            </div>
+                            
+                            <!-- Categorías -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold mb-2">Categorías</h6>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-motores">
+                                    <label class="form-check-label" for="cat-motores">Motores</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-bombas">
+                                    <label class="form-check-label" for="cat-bombas">Bombas</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-compresores">
+                                    <label class="form-check-label" for="cat-compresores">Compresores</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-generadores">
+                                    <label class="form-check-label" for="cat-generadores">Generadores</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-soldadoras">
+                                    <label class="form-check-label" for="cat-soldadoras">Soldadoras</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-herramientas">
+                                    <label class="form-check-label" for="cat-herramientas">Herramientas</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="cat-electronica">
+                                    <label class="form-check-label" for="cat-electronica">Electrónica</label>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-warning w-100">Aplicar Filtros</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Productos -->
+                <div class="col-lg-9">
+                    <div class="row g-4">
+                        <!-- Producto 1 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=Motor+Industrial" class="card-img-top" alt="Motor Eléctrico Industrial">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Motores</span>
+                                    <h5 class="card-title">Motor Eléctrico Industrial</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">$1,299.99</span>
+                                        <button class="btn btn-sm btn-warning">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 2 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=Bomba+Hidraulica" class="card-img-top" alt="Bomba Hidráulica 2HP">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Bombas</span>
+                                    <h5 class="card-title">Bomba Hidráulica 2HP</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">$899.99</span>
+                                        <button class="btn btn-sm btn-warning">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 3 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=Compresor+Aire" class="card-img-top" alt="Compresor de Aire 50L">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Compresores</span>
+                                    <h5 class="card-title">Compresor de Aire 50L</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">$1,599.99</span>
+                                        <button class="btn btn-sm btn-warning">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 4 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=Generador" class="card-img-top" alt="Generador Eléctrico 5000W">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Generadores</span>
+                                    <h5 class="card-title">Generador Eléctrico 5000W</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">$2,499.99</span>
+                                        <button class="btn btn-sm btn-warning">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 5 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=Soldadora" class="card-img-top" alt="Soldadora Inverter 200A">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Soldadoras</span>
+                                    <h5 class="card-title">Soldadora Inverter 200A</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">$799.99</span>
+                                        <button class="btn btn-sm btn-warning">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 6 -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=Taladro" class="card-img-top" alt="Taladro Industrial 1200W">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">Herramientas</span>
+                                    <h5 class="card-title">Taladro Industrial 1200W</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">$349.99</span>
+                                        <button class="btn btn-sm btn-warning">Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Paginación -->
+                    <nav class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Siguiente</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-3">ElectroMecánica</h3>
+                    <p class="text-white small">Soluciones electromecánicas de calidad para todas sus necesidades industriales y comerciales.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-white">Catálogo</a></li>
+                        <li class="mb-2"><a href="envios.html" class="text-decoration-none text-white">Envíos</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Mi Cuenta</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-decoration-none text-white">Iniciar Sesión</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-decoration-none text-white">Registrarse</a></li>
+                        <li class="mb-2"><a href="recover-password.html" class="text-decoration-none text-white">Recuperar Contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Contacto</h4>
+                    <address class="text-white small mb-0">
+                        <p>Calle Principal #123</p>
+                        <p>Ciudad Industrial</p>
+                        <p>Teléfono: (506) 845-6789</p>
+                        <p>Email: info@electromecanica.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted small">
+                <p>&copy; <span id="current-year"></span> ElectroMecánica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - ElectroMecánica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-cogs me-2"></i>
+                <span class="fw-bold">ElectroMecánica</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="position-relative me-3">
+                        <button class="btn btn-link text-dark p-0">
+                            <i class="fas fa-shopping-cart fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-dark">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado del Catálogo -->
+    <section class="py-4 hero">
+        <div class="container">
+            <h1 class="mb-4">Gestion de Inventario</h1>
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white">
+                            <i class="fas fa-search text-muted"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Buscar productos...">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>Ordenar por</option>
+                        <option value="price-asc">Código</option>
+                        <option value="price-desc">Categoria</option>
+                        <option value="name-asc">Nombre: A-Z</option>
+                        <option value="name-desc">Nombre: Z-A</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+       
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+         
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group me-2">
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#addStockModal">
+                <i class="bi bi-plus-circle"></i> Entrada
+              </button>
+              <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#removeStockModal">
+                <i class="bi bi-dash-circle"></i> Salida
+              </button>
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exportInventoryModal">
+              <i class="bi bi-download"></i> Exportar
+            </button>
+          </div>
+        </div>
+
+       
+
+        <!-- Inventory Table -->
+        <div class="card mb-4">
+          <div class="card-header">
+            <div class="d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">Inventario Actual</h5>
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-funnel"></i> Filtrar
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" data-filter="all">Todos</a></li>
+                  <li><a class="dropdown-item" href="#" data-filter="low">Stock Bajo</a></li>
+                  <li><a class="dropdown-item" href="#" data-filter="critical">Stock Crítico</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#" data-filter="motors">Motores</a></li>
+                  <li><a class="dropdown-item" href="#" data-filter="pumps">Bombas</a></li>
+                  <li><a class="dropdown-item" href="#" data-filter="vfd">Variadores</a></li>
+                  <li><a class="dropdown-item" href="#" data-filter="contactors">Contactores</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body ">
+            <div class="table-responsive">
+              <table id="inventoryTable" class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Producto</th>
+                    <th>Categoría</th>
+                    <th>Stock Actual</th>
+                    <th>Stock Mínimo</th>
+                    <th>Ubicación</th>
+                    <th>Última Actualización</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>PRD-001</td>
+                    <td>Motor 1HP</td>
+                    <td>Motores</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>Estante A-1</td>
+                    <td>15/05/2023</td>
+                    <td><span class="badge bg-danger">Crítico</span></td>
+                    
+                      <td>
+                        <div class="d-flex align-items-center gap-1">
+                          <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewProductModal" data-id="PRD-001">
+                            <i class="bi bi-eye"></i> Ver
+                          </button>
+                        
+                          <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#addStockModal" data-id="PRD-001">
+                            <i class="bi bi-plus"></i> Editar
+                          </button>
+                        </div>
+                        
+                      </td>
+                      
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>PRD-002</td>
+                    <td>Bomba de Agua 1/2HP</td>
+                    <td>Bombas</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>Estante B-2</td>
+                    <td>16/05/2023</td>
+                    <td><span class="badge bg-success">Normal</span></td>
+                    <td>
+                      <div class="d-flex align-items-center gap-1">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewProductModal" data-id="PRD-001">
+                          <i class="bi bi-eye"></i> Ver
+                        </button>
+                      
+                        <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#addStockModal" data-id="PRD-001">
+                          <i class="bi bi-plus"></i> Editar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>PRD-003</td>
+                    <td>Variador de Frecuencia 2HP</td>
+                    <td>Variadores</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>Estante C-1</td>
+                    <td>17/05/2023</td>
+                    <td><span class="badge bg-success">Normal</span></td>
+                    <td>
+                      <div class="d-flex align-items-center gap-1">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewProductModal" data-id="PRD-001">
+                          <i class="bi bi-eye"></i> Ver
+                        </button>
+                      
+                        <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#addStockModal" data-id="PRD-001">
+                          <i class="bi bi-plus"></i> Editar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>PRD-015</td>
+                    <td>Contactor 25A</td>
+                    <td>Contactores</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>Estante D-3</td>
+                    <td>18/05/2023</td>
+                    <td><span class="badge bg-warning text-dark">Bajo</span></td>
+                    <td>
+                      <div class="d-flex align-items-center gap-1">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewProductModal" data-id="PRD-001">
+                          <i class="bi bi-eye"></i> Ver
+                        </button>
+                      
+                        <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#addStockModal" data-id="PRD-001">
+                          <i class="bi bi-plus"></i> Editar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>PRD-023</td>
+                    <td>Cable THW Cal. 12</td>
+                    <td>Cables</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>Estante E-1</td>
+                    <td>19/05/2023</td>
+                    <td><span class="badge bg-warning text-dark">Bajo</span></td>
+                    <td>
+                      <div class="d-flex align-items-center gap-1">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewProductModal" data-id="PRD-001">
+                          <i class="bi bi-eye"></i> Ver
+                        </button>
+                      
+                        <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#addStockModal" data-id="PRD-001">
+                          <i class="bi bi-plus"></i> Editar
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>PRD-042</td>
+                    <td>Sensor de proximidad</td>
+                    <td>Sensores</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>Estante F-2</td>
+                    <td>20/05/2023</td>
+                    <td><span class="badge bg-danger">Crítico</span></td>
+                    <td>
+                      <div class="d-flex align-items-center gap-1">
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#viewProductModal" data-id="PRD-001">
+                          <i class="bi bi-eye"></i> Ver
+                        </button>
+                      
+                        <button type="button" class="btn btn-sm btn-outline-success" data-bs-toggle="modal" data-bs-target="#addStockModal" data-id="PRD-001">
+                          <i class="bi bi-plus"></i> Editar
+                        </button>
+                      </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inventory Movement History -->
+        <div class="card">
+          <div class="card-header">
+            <h5 class="mb-0">Historial de Movimientos</h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table id="movementsTable" class="table table-striped table-hover">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Fecha</th>
+                    <th>Código Producto</th>
+                    <th>Producto</th>
+                    <th>Tipo</th>
+                    <th>Cantidad</th>
+                    <th>Usuario</th>
+                    <th>Nota</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>MOV-001</td>
+                    <td>20/05/2023 10:15</td>
+                    <td>PRD-001</td>
+                    <td>Motor 1HP</td>
+                    <td><span class="badge bg-success">Entrada</span></td>
+                    <td>5</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Compra a proveedor ABC</td>
+                  </tr>
+                  <tr>
+                    <td>MOV-002</td>
+                    <td>20/05/2023 11:30</td>
+                    <td>PRD-001</td>
+                    <td>Motor 1HP</td>
+                    <td><span class="badge bg-danger">Salida</span></td>
+                    <td>2</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Venta #V-123</td>
+                  </tr>
+                  <tr>
+                    <td>MOV-003</td>
+                    <td>19/05/2023 09:45</td>
+                    <td>PRD-015</td>
+                    <td>Contactor 25A</td>
+                    <td><span class="badge bg-success">Entrada</span></td>
+                    <td>10</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Compra a proveedor XYZ</td>
+                  </tr>
+                  <tr>
+                    <td>MOV-004</td>
+                    <td>19/05/2023 14:20</td>
+                    <td>PRD-015</td>
+                    <td>Contactor 25A</td>
+                    <td><span class="badge bg-danger">Salida</span></td>
+                    <td>5</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Venta #V-124</td>
+                  </tr>
+                  <tr>
+                    <td>MOV-005</td>
+                    <td>18/05/2023 16:10</td>
+                    <td>PRD-042</td>
+                    <td>Sensor de proximidad</td>
+                    <td><span class="badge bg-success">Entrada</span></td>
+                    <td>5</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Compra a proveedor DEF</td>
+                  </tr>
+                  <tr>
+                    <td>MOV-006</td>
+                    <td>18/05/2023 17:30</td>
+                    <td>PRD-042</td>
+                    <td>Sensor de proximidad</td>
+                    <td><span class="badge bg-danger">Salida</span></td>
+                    <td>3</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Venta #V-125</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- View Product Modal -->
+  <div class="modal fade" id="viewProductModal" tabindex="-1" aria-labelledby="viewProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewProductModalLabel">Detalles del Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="https://via.placeholder.com/200" alt="Producto" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+              <h4 id="productName">Motor 1HP</h4>
+              <p class="text-muted" id="productCode">Código: PRD-001</p>
+              <div class="mb-3">
+                <h6>Información General</h6>
+                <table class="table table-sm">
+                  <tbody>
+                    <tr>
+                      <td>Categoría:</td>
+                      <td id="productCategory">Motores</td>
+                    </tr>
+                    <tr>
+                      <td>Stock Actual:</td>
+                      <td id="productStock">3</td>
+                    </tr>
+                    <tr>
+                      <td>Stock Mínimo:</td>
+                      <td id="productMinStock">5</td>
+                    </tr>
+                    <tr>
+                      <td>Ubicación:</td>
+                      <td id="productLocation">Estante A-1</td>
+                    </tr>
+                    <tr>
+                      <td>Última Actualización:</td>
+                      <td id="productLastUpdate">15/05/2023</td>
+                    </tr>
+                    <tr>
+                      <td>Estado:</td>
+                      <td id="productStatus"><span class="badge bg-danger">Crítico</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <h6>Descripción</h6>
+                <p id="productDescription">Motor eléctrico monofásico de 1HP, 110V, 60Hz. Ideal para aplicaciones industriales ligeras y bombas de agua.</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <h6>Historial de Movimientos</h6>
+            <div class="table-responsive">
+              <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th>Fecha</th>
+                    <th>Tipo</th>
+                    <th>Cantidad</th>
+                    <th>Usuario</th>
+                    <th>Nota</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>20/05/2023 10:15</td>
+                    <td><span class="badge bg-success">Entrada</span></td>
+                    <td>5</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Compra a proveedor ABC</td>
+                  </tr>
+                  <tr>
+                    <td>20/05/2023 11:30</td>
+                    <td><span class="badge bg-danger">Salida</span></td>
+                    <td>2</td>
+                    <td>Carlos Rodríguez</td>
+                    <td>Venta #V-123</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Stock Modal -->
+  <div class="modal fade" id="addStockModal" tabindex="-1" aria-labelledby="addStockModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="addStockModalLabel">Registrar Entrada de Inventario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addStockForm">
+            <div class="mb-3">
+              <label for="addProductCode" class="form-label">Código de Producto</label>
+              <input type="text" class="form-control" id="addProductCode" required>
+            </div>
+            <div class="mb-3">
+              <label for="addProductName" class="form-label">Nombre del Producto</label>
+              <input type="text" class="form-control" id="addProductName" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="addQuantity" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="addQuantity" min="1" required>
+            </div>
+            <div class="mb-3">
+              <label for="addReason" class="form-label">Motivo</label>
+              <select class="form-select" id="addReason" required>
+                <option value="">Seleccionar motivo</option>
+                <option value="purchase">Compra</option>
+                <option value="return">Devolución</option>
+                <option value="adjustment">Ajuste de inventario</option>
+                <option value="other">Otro</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="addNotes" class="form-label">Notas</label>
+              <textarea class="form-control" id="addNotes" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="saveAddStockBtn">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Remove Stock Modal -->
+  <div class="modal fade" id="removeStockModal" tabindex="-1" aria-labelledby="removeStockModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="removeStockModalLabel">Registrar Salida de Inventario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="removeStockForm">
+            <div class="mb-3">
+              <label for="removeProductCode" class="form-label">Código de Producto</label>
+              <input type="text" class="form-control" id="removeProductCode" required>
+            </div>
+            <div class="mb-3">
+              <label for="removeProductName" class="form-label">Nombre del Producto</label>
+              <input type="text" class="form-control" id="removeProductName" readonly>
+            </div>
+            <div class="mb-3">
+              <label for="removeQuantity" class="form-label">Cantidad</label>
+              <input type="number" class="form-control" id="removeQuantity" min="1" required>
+            </div>
+            <div class="mb-3">
+              <label for="removeReason" class="form-label">Motivo</label>
+              <select class="form-select" id="removeReason" required>
+                <option value="">Seleccionar motivo</option>
+                <option value="sale">Venta</option>
+                <option value="damage">Daño/Deterioro</option>
+                <option value="adjustment">Ajuste de inventario</option>
+                <option value="other">Otro</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="removeNotes" class="form-label">Notas</label>
+              <textarea class="form-control" id="removeNotes" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="saveRemoveStockBtn">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Export Inventory Modal -->
+  <div class="modal fade" id="exportInventoryModal" tabindex="-1" aria-labelledby="exportInventoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exportInventoryModalLabel">Exportar Inventario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="exportInventoryForm">
+            <div class="mb-3">
+              <label for="exportFormat" class="form-label">Formato</label>
+              <select class="form-select" id="exportFormat" required>
+                <option value="excel">Excel (.xlsx)</option>
+                <option value="csv">CSV (.csv)</option>
+                <option value="pdf">PDF (.pdf)</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="exportContent" class="form-label">Contenido</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="exportCurrentInventory" checked>
+                <label class="form-check-label" for="exportCurrentInventory">
+                  Inventario actual
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="exportMovements">
+                <label class="form-check-label" for="exportMovements">
+                  Historial de movimientos
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exportDateRange" class="form-label">Rango de fechas (para movimientos)</label>
+              <div class="input-group">
+                <input type="date" class="form-control" id="exportStartDate">
+                <span class="input-group-text">a</span>
+                <input type="date" class="form-control" id="exportEndDate">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary" id="confirmExportBtn">Exportar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-3">ElectroMecánica</h3>
+                    <p class="text-white small">Soluciones electromecánicas de calidad para todas sus necesidades industriales y comerciales.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-white">Catálogo</a></li>
+                        <li class="mb-2"><a href="envios.html" class="text-decoration-none text-white">Envíos</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Mi Cuenta</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-decoration-none text-white">Iniciar Sesión</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-decoration-none text-white">Registrarse</a></li>
+                        <li class="mb-2"><a href="recover-password.html" class="text-decoration-none text-white">Recuperar Contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Contacto</h4>
+                    <address class="text-white small mb-0">
+                        <p>Calle Principal #123</p>
+                        <p>Ciudad Colon</p>
+                        <p>Teléfono: (506) 8649-2345</p>
+                        <p>Email: info@electromecanica.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white small">
+                <p>&copy; <span id="current-year"></span> ElectroMecánica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+      <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <!-- DataTables -->
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+  <!-- Custom JavaScript -->
+  <script src="../js/admin.js"></script>
+  <script src="../js/inventario.js"></script>
+</body>
+</body>
+</html>

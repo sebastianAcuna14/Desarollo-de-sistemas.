@@ -1,0 +1,140 @@
+/* Estilos personalizados para complementar Bootstrap */
+
+/* Colores personalizados */
+:root {
+    --bs-primary: #f5dd03;
+    --bs-primary-rgb: 245, 158, 11;
+    --bs-primary-dark: #d97706;
+    --bs-primary-light: #fef3c7;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bs-primary);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #000;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-dark .navbar-brand {
+    color: #000;
+}
+
+/* Header */
+header {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+header .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--bs-primary);
+    color: #000;
+}
+
+/* Botones */
+.btn-warning {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+.btn-warning:hover {
+    background-color: var(--bs-primary-dark);
+    border-color: var(--bs-primary-dark);
+}
+
+.btn-outline-warning {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary);
+}
+
+.btn-outline-warning:hover {
+    background-color: var(--bs-primary);
+    color: #000;
+}
+
+/* Tarjetas */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Textos */
+.text-warning {
+    color: var(--bs-primary) !important;
+}
+
+/* Badges */
+.bg-warning {
+    background-color: var(--bs-primary) !important;
+}
+
+/* Formularios */
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Tracking icons para la página de envíos */
+.tracking-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.tab-pane {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.nav-tabs .nav-link {
+    color: #495057;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.75rem 1rem;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--bs-primary);
+    border-bottom: 2px solid var(--bs-primary);
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover:not(.active) {
+    border-color: transparent;
+    color: var(--bs-primary);
+}

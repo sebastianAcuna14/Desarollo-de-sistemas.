@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos - ElectroMecánica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-cogs me-2"></i>
+                <span class="fw-bold">ElectroMecánica</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="position-relative me-3">
+                        <button class="btn btn-link text-dark p-0">
+                            <i class="fas fa-shopping-cart fs-5"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                            </span>
+                        </button>
+                    </div>
+                    <a href="login.html" class="btn btn-outline-dark">Iniciar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de Envíos -->
+    <section class="py-4 hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="mb-3">Servicio de Envíos</h1>
+                    <p class="lead">Entregamos tus productos de manera rápida y segura a cualquier parte del país.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x300?text=Servicio+de+Envios" alt="Servicio de Envíos" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Tabs de navegación -->
+            <ul class="nav nav-tabs mb-4" id="shippingTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="calculator-tab" data-bs-toggle="tab" data-bs-target="#calculator" type="button" role="tab" aria-controls="calculator" aria-selected="true">
+                        <i class="fas fa-calculator me-2"></i>Calculadora
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tracking-tab" data-bs-toggle="tab" data-bs-target="#tracking" type="button" role="tab" aria-controls="tracking" aria-selected="false">
+                        <i class="fas fa-truck me-2"></i>Seguimiento
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="policies-tab" data-bs-toggle="tab" data-bs-target="#policies" type="button" role="tab" aria-controls="policies" aria-selected="false">
+                        <i class="fas fa-file-alt me-2"></i>Políticas
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false">
+                        <i class="fas fa-question-circle me-2"></i>FAQ
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- Contenido de los tabs -->
+            <div class="tab-content" id="shippingTabsContent">
+                <!-- Calculadora de Envíos -->
+                <div class="tab-pane fade show active" id="calculator" role="tabpanel" aria-labelledby="calculator-tab">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title mb-4">Calcula el Costo de Envío</h3>
+                                    <form id="shipping-calculator-form">
+                                        <div class="mb-3">
+                                            <label for="origin" class="form-label">Origen</label>
+                                            <select class="form-select" id="origin" required>
+                                                <option value="" selected disabled>Selecciona el origen</option>
+                                                <option value="ciudad-industrial">Ciudad Industrial</option>
+                                                <option value="centro-distribucion">Centro de Distribución</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="destination" class="form-label">Destino</label>
+                                            <select class="form-select" id="destination" required>
+                                                <option value="" selected disabled>Selecciona el destino</option>
+                                                <option value="norte">Región Norte</option>
+                                                <option value="centro">Región Centro</option>
+                                                <option value="sur">Región Sur</option>
+                                                <option value="este">Región Este</option>
+                                                <option value="oeste">Región Oeste</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="weight" class="form-label">Peso (kg)</label>
+                                            <input type="number" class="form-control" id="weight" min="0.1" step="0.1" placeholder="Ingresa el peso en kg" required>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label class="form-label">Dimensiones (cm)</label>
+                                            <div class="row g-2">
+                                                <div class="col-4">
+                                                    <input type="number" class="form-control" id="length" min="1" placeholder="Largo" required>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="number" class="form-control" id="width" min="1" placeholder="Ancho" required>
+                                                </div>
+                                                <div class="col-4">
+                                                    <input type="number" class="form-control" id="height" min="1" placeholder="Alto" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="shipping-type" class="form-label">Tipo de Envío</label>
+                                            <select class="form-select" id="shipping-type" required>
+                                                <option value="" selected disabled>Selecciona el tipo de envío</option>
+                                                <option value="standard">Estándar (3-5 días)</option>
+                                                <option value="express">Express (1-2 días)</option>
+                                                <option value="same-day">Mismo día (Sólo algunas zonas)</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-warning">Calcular Costo</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mt-4 mt-lg-0">
+                            <div class="card border-0 shadow-sm h-100">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title mb-4">Resultado</h3>
+                                    <div id="shipping-result" class="d-none">
+                                        <div class="alert alert-warning p-4">
+                                            <h4 class="alert-heading mb-3">Resumen del Envío</h4>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Origen:</div>
+                                                <div class="col-6 fw-bold" id="result-origin">Ciudad Industrial</div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Destino:</div>
+                                                <div class="col-6 fw-bold" id="result-destination">Región Centro</div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Peso:</div>
+                                                <div class="col-6 fw-bold" id="result-weight">5 kg</div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Dimensiones:</div>
+                                                <div class="col-6 fw-bold" id="result-dimensions">30 x 20 x 15 cm</div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Tipo de Envío:</div>
+                                                <div class="col-6 fw-bold" id="result-type">Estándar (3-5 días)</div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Costo Base:</div>
+                                                <div class="col-6 fw-bold" id="result-base-cost">$150.00</div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Costo por Peso:</div>
+                                                <div class="col-6 fw-bold" id="result-weight-cost">$50.00</div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-6 text-muted">Costo por Distancia:</div>
+                                                <div class="col-6 fw-bold" id="result-distance-cost">$75.00</div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-6 text-muted">Impuestos (16%):</div>
+                                                <div class="col-6 fw-bold" id="result-tax">$44.00</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 h5">Total:</div>
+                                                <div class="col-6 h5 text-warning" id="result-total">$319.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-warning">Proceder al Pago</button>
+                                            <button class="btn btn-outline-secondary" id="reset-calculator">Calcular Otro Envío</button>
+                                        </div>
+                                    </div>
+                                    
+                                    <div id="shipping-placeholder" class="text-center py-5">
+                                        <i class="fas fa-truck-loading text-warning fa-4x mb-3"></i>
+                                        <h4>Calcula el costo de tu envío</h4>
+                                        <p class="text-muted">Completa el formulario para obtener un estimado del costo de envío.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Seguimiento de Envíos -->
+                <div class="tab-pane fade" id="tracking" role="tabpanel" aria-labelledby="tracking-tab">
+                    <div class="row">
+                        <div class="col-lg-6 mx-auto">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <h3 class="card-title mb-4">Seguimiento de Pedido</h3>
+                                    <form id="tracking-form">
+                                        <div class="mb-3">
+                                            <label for="tracking-number" class="form-label">Número de Seguimiento</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text bg-light">
+                                                    <i class="fas fa-search text-muted"></i>
+                                                </span>
+                                                <input type="text" class="form-control" id="tracking-number" placeholder="Ej: EM-123456789" required>
+                                            </div>
+                                            <div class="form-text">Ingresa el número de seguimiento que recibiste en tu correo electrónico.</div>
+                                        </div>
+                                        
+                                        <div class="d-grid">
+                                            <button type="submit" class="btn btn-warning">Rastrear Pedido</button>
+                                        </div>
+                                    </form>
+                                    
+                                    <div id="tracking-result" class="mt-4 d-none">
+                                        <h4 class="mb-3">Estado del Pedido: <span class="text-warning">En Tránsito</span></h4>
+                                        
+                                        <div class="tracking-timeline">
+                                            <div class="card border-0 shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="tracking-icon bg-warning text-white">
+                                                                <i class="fas fa-check"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h5 class="mb-1">Pedido Confirmado</h5>
+                                                            <p class="text-muted mb-0">10 Abril, 2025 - 09:15 AM</p>
+                                                            <p>Tu pedido ha sido confirmado y está siendo procesado.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card border-0 shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="tracking-icon bg-warning text-white">
+                                                                <i class="fas fa-box"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h5 class="mb-1">Pedido Empacado</h5>
+                                                            <p class="text-muted mb-0">10 Abril, 2025 - 14:30 PM</p>
+                                                            <p>Tu pedido ha sido empacado y está listo para ser enviado.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card border-0 shadow-sm mb-3">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="tracking-icon bg-warning text-white">
+                                                                <i class="fas fa-shipping-fast"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h5 class="mb-1">En Tránsito</h5>
+                                                            <p class="text-muted mb-0">11 Abril, 2025 - 10:45 AM</p>
+                                                            <p>Tu pedido está en camino a su destino.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="card border-0 shadow-sm mb-3 opacity-50">
+                                                <div class="card-body">
+                                                    <div class="d-flex">
+                                                        <div class="flex-shrink-0">
+                                                            <div class="tracking-icon bg-secondary text-white">
+                                                                <i class="fas fa-home"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 ms-3">
+                                                            <h5 class="mb-1">Entregado</h5>
+                                                            <p class="text-muted mb-0">Pendiente</p>
+                                                            <p>Tu pedido será entregado pronto.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="alert alert-warning mt-4">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0">
+                                                    <i class="fas fa-info-circle fa-2x"></i>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <h5>Información de Entrega</h5>
+                                                    <p class="mb-0">Fecha estimada de entrega: <strong>13 Abril, 2025</strong></p>
+                                                    <p class="mb-0">Dirección: Calle Principal #123, Ciudad Centro</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Políticas de Envío -->
+                <div class="tab-pane fade" id="policies" role="tabpanel" aria-labelledby="policies-tab">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Políticas de Envío</h3>
+                            
+                            <div class="accordion" id="shippingPoliciesAccordion">
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Tiempos de Entrega
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#shippingPoliciesAccordion">
+                                        <div class="accordion-body">
+                                            <p>Nuestros tiempos de entrega varían según la ubicación y el tipo de envío seleccionado:</p>
+                                            <ul>
+                                                <li><strong>Envío Estándar:</strong> 3-5 días hábiles</li>
+                                                <li><strong>Envío Express:</strong> 1-2 días hábiles</li>
+                                                <li><strong>Envío Mismo Día:</strong> Disponible solo en ciertas zonas urbanas y para pedidos realizados antes de las 12:00 PM</li>
+                                            </ul>
+                                            <p>Los tiempos de entrega comienzan a contar a partir de la confirmación del pago. Ten en cuenta que los envíos a zonas rurales o de difícil acceso pueden tomar días adicionales.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Costos de Envío
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#shippingPoliciesAccordion">
+                                        <div class="accordion-body">
+                                            <p>El costo de envío se calcula en base a los siguientes factores:</p>
+                                            <ul>
+                                                <li>Peso y dimensiones del paquete</li>
+                                                <li>Distancia entre el origen y el destino</li>
+                                                <li>Tipo de servicio de envío seleccionado</li>
+                                            </ul>
+                                            <p>Ofrecemos envío gratuito en pedidos superiores a $5,000 MXN con envío estándar a la mayoría de las ubicaciones.</p>
+                                            <p>Puedes calcular el costo exacto de tu envío utilizando nuestra calculadora de envíos antes de finalizar tu compra.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Restricciones de Envío
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#shippingPoliciesAccordion">
+                                        <div class="accordion-body">
+                                            <p>Existen ciertas restricciones para nuestros envíos:</p>
+                                            <ul>
+                                                <li>No realizamos envíos a apartados postales</li>
+                                                <li>Productos con peso superior a 100 kg pueden requerir servicios de flete especiales</li>
+                                                <li>Algunos productos peligrosos o con restricciones legales pueden tener limitaciones de envío</li>
+                                                <li>No realizamos envíos internacionales en este momento</li>
+                                            </ul>
+                                            <p>Si tienes dudas sobre si tu producto puede ser enviado, por favor contáctanos antes de realizar tu compra.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            Política de Devoluciones
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#shippingPoliciesAccordion">
+                                        <div class="accordion-body">
+                                            <p>Nuestra política de devoluciones es la siguiente:</p>
+                                            <ul>
+                                                <li>Tienes 30 días a partir de la fecha de recepción para solicitar una devolución</li>
+                                                <li>El producto debe estar en su empaque original y en condiciones óptimas</li>
+                                                <li>Los costos de envío para devoluciones corren por cuenta del cliente, excepto en casos de productos defectuosos o errores en el envío</li>
+                                                <li>Una vez recibido y verificado el producto devuelto, procesaremos el reembolso en un plazo de 5-7 días hábiles</li>
+                                            </ul>
+                                            <p>Para iniciar un proceso de devolución, contacta a nuestro servicio al cliente con tu número de pedido y el motivo de la devolución.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Preguntas Frecuentes -->
+                <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Preguntas Frecuentes sobre Envíos</h3>
+                            
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="faqHeadingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                                            ¿Cómo puedo rastrear mi pedido?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Puedes rastrear tu pedido de las siguientes maneras:</p>
+                                            <ol>
+                                                <li>Utilizando la pestaña de "Seguimiento" en esta página e ingresando tu número de seguimiento</li>
+                                                <li>A través del enlace de seguimiento que recibiste en tu correo electrónico de confirmación</li>
+                                                <li>Iniciando sesión en tu cuenta y revisando el estado de tus pedidos</li>
+                                            </ol>
+                                            <p>Si no encuentras tu número de seguimiento o tienes problemas para rastrear tu pedido, contáctanos y te ayudaremos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="faqHeadingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                                            ¿Qué hago si mi pedido llega dañado?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Si tu pedido llega dañado, sigue estos pasos:</p>
+                                            <ol>
+                                                <li>Toma fotografías del empaque y del producto dañado</li>
+                                                <li>Contacta a nuestro servicio al cliente dentro de las 48 horas siguientes a la recepción</li>
+                                                <li>Proporciona tu número de pedido y las fotografías del daño</li>
+                                            </ol>
+                                            <p>Procesaremos tu reclamo y te ofreceremos un reemplazo o reembolso según corresponda. No es necesario devolver el producto dañado en la mayoría de los casos, pero nuestro equipo te dará instrucciones específicas.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="faqHeadingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                                            ¿Puedo cambiar la dirección de entrega después de realizar mi pedido?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapseThree" class="accordion-collapse collapse" aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Es posible cambiar la dirección de entrega, pero con ciertas limitaciones:</p>
+                                            <ul>
+                                                <li>Solo puedes solicitar un cambio de dirección si el pedido aún no ha sido enviado</li>
+                                                <li>El cambio debe solicitarse dentro de las 24 horas posteriores a la realización del pedido</li>
+                                                <li>La nueva dirección debe estar dentro de la misma ciudad o región</li>
+                                            </ul>
+                                            <p>Para solicitar un cambio de dirección, contacta inmediatamente a nuestro servicio al cliente con tu número de pedido y la nueva dirección. Ten en cuenta que pueden aplicarse cargos adicionales si la nueva ubicación está más lejos que la original.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="faqHeadingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFour" aria-expanded="false" aria-controls="faqCollapseFour">
+                                            ¿Realizan envíos los fines de semana?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapseFour" class="accordion-collapse collapse" aria-labelledby="faqHeadingFour" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Nuestras políticas de envío en fines de semana son las siguientes:</p>
+                                            <ul>
+                                                <li>Procesamos pedidos de lunes a viernes, de 9:00 AM a 6:00 PM</li>
+                                                <li>Los pedidos realizados después de las 2:00 PM se procesarán al siguiente día hábil</li>
+                                                <li>No realizamos envíos los sábados y domingos, excepto para el servicio "Mismo Día" en zonas específicas</li>
+                                                <li>Los días festivos no se consideran días hábiles para el cálculo de tiempos de entrega</li>
+                                            </ul>
+                                            <p>Si necesitas recibir tu pedido con urgencia durante el fin de semana, te recomendamos contactar a nuestro servicio al cliente para verificar la disponibilidad de opciones especiales de entrega.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="accordion-item border-0 mb-3 shadow-sm">
+                                    <h2 class="accordion-header" id="faqHeadingFive">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseFive" aria-expanded="false" aria-controls="faqCollapseFive">
+                                            ¿Qué hago si mi pedido no llega en la fecha estimada?
+                                        </button>
+                                    </h2>
+                                    <div id="faqCollapseFive" class="accordion-collapse collapse" aria-labelledby="faqHeadingFive" data-bs-parent="#faqAccordion">
+                                        <div class="accordion-body">
+                                            <p>Si tu pedido no llega en la fecha estimada, te recomendamos seguir estos pasos:</p>
+                                            <ol>
+                                                <li>Verifica el estado actual de tu pedido en la sección de "Seguimiento"</li>
+                                                <li>Espera 24 horas adicionales, ya que pueden ocurrir retrasos por condiciones climáticas o de tráfico</li>
+                                                <li>Si después de este tiempo tu pedido aún no ha llegado, contacta a nuestro servicio al cliente proporcionando tu número de pedido</li>
+                                            </ol>
+                                            <p>Nuestro equipo investigará la situación y te proporcionará información actualizada sobre tu envío. En caso de retrasos significativos, podemos ofrecerte compensaciones como descuentos en futuros pedidos o reembolsos parciales de los costos de envío.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-3">ElectroMecánica</h3>
+                    <p class="text-white small">Soluciones electromecánicas de calidad para todas sus necesidades industriales y comerciales.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-white">Catálogo</a></li>
+                        <li class="mb-2"><a href="envios.html" class="text-decoration-none text-white">Envíos</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Mi Cuenta</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-decoration-none text-white">Iniciar Sesión</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-decoration-none text-white">Registrarse</a></li>
+                        <li class="mb-2"><a href="recover-password.html" class="text-decoration-none text-white">Recuperar Contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Contacto</h4>
+                    <address class="text-white small mb-0">
+                        <p>Calle Principal #123</p>
+                        <p>Ciudad Industrial</p>
+                        <p>Teléfono: (506) 845-6789</p>
+                        <p>Email: info@electromecanica.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-muted small">
+                <p>&copy; <span id="current-year"></span> ElectroMecánica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Calculadora de envíos
+        document.addEventListener('DOMContentLoaded', function() {
+            const shippingForm = document.getElementById('shipping-calculator-form');
+            const shippingResult = document.getElementById('shipping-result');
+            const shippingPlaceholder = document.getElementById('shipping-placeholder');
+            const resetCalculator = document.getElementById('reset-calculator');
+            
+            if (shippingForm) {
+                shippingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Obtener valores del formulario
+                    const origin = document.getElementById('origin').value;
+                    const destination = document.getElementById('destination').value;
+                    const weight = document.getElementById('weight').value;
+                    const length = document.getElementById('length').value;
+                    const width = document.getElementById('width').value;
+                    const height = document.getElementById('height').value;
+                    const shippingType = document.getElementById('shipping-type').value;
+                    
+                    // Actualizar resultados
+                    document.getElementById('result-origin').textContent = origin === 'ciudad-industrial' ? 'Ciudad Industrial' : 'Centro de Distribución';
+                    document.getElementById('result-destination').textContent = getDestinationName(destination);
+                    document.getElementById('result-weight').textContent = weight + ' kg';
+                    document.getElementById('result-dimensions').textContent = `${length} x ${width} x ${height} cm`;
+                    document.getElementById('result-type').textContent = getShippingTypeName(shippingType);
+                    
+                    // Calcular costos (simulación)
+                    const baseCost = 150;
+                    const weightCost = weight * 10;
+                    const distanceCost = getDistanceCost(destination);
+                    const subtotal = baseCost + weightCost + distanceCost;
+                    const tax = subtotal * 0.16;
+                    const total = subtotal + tax;
+                    
+                    document.getElementById('result-base-cost').textContent = '$' + baseCost.toFixed(2);
+                    document.getElementById('result-weight-cost').textContent = '$' + weightCost.toFixed(2);
+                    document.getElementById('result-distance-cost').textContent = '$' + distanceCost.toFixed(2);
+                    document.getElementById('result-tax').textContent = '$' + tax.toFixed(2);
+                    document.getElementById('result-total').textContent = '$' + total.toFixed(2);
+                    
+                    // Mostrar resultados
+                    shippingPlaceholder.classList.add('d-none');
+                    shippingResult.classList.remove('d-none');
+                });
+            }
+            
+            if (resetCalculator) {
+                resetCalculator.addEventListener('click', function() {
+                    shippingForm.reset();
+                    shippingResult.classList.add('d-none');
+                    shippingPlaceholder.classList.remove('d-none');
+                });
+            }
+            
+            // Formulario de seguimiento
+            const trackingForm = document.getElementById('tracking-form');
+            const trackingResult = document.getElementById('tracking-result');
+            
+            if (trackingForm) {
+                trackingForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    trackingResult.classList.remove('d-none');
+                });
+            }
+            
+            // Funciones auxiliares
+            function getDestinationName(code) {
+                const destinations = {
+                    'norte': 'Región Norte',
+                    'centro': 'Región Centro',
+                    'sur': 'Región Sur',
+                    'este': 'Región Este',
+                    'oeste': 'Región Oeste'
+                };
+                return destinations[code] || code;
+            }
+            
+            function getShippingTypeName(code) {
+                const types = {
+                    'standard': 'Estándar (3-5 días)',
+                    'express': 'Express (1-2 días)',
+                    'same-day': 'Mismo día'
+                };
+                return types[code] || code;
+            }
+            
+            function getDistanceCost(destination) {
+                const costs = {
+                    'norte': 100,
+                    'centro': 75,
+                    'sur': 150,
+                    'este': 120,
+                    'oeste': 130
+                };
+                return costs[destination] || 100;
+            }
+        });
+    </script>
+    <style>
+        /* Estilos adicionales para la página de envíos */
+        .tracking-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        
+        .tab-pane {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .nav-tabs .nav-link {
+            color: #495057;
+            border: none;
+            border-bottom: 2px solid transparent;
+            padding: 0.75rem 1rem;
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: var(--bs-primary);
+            border-bottom: 2px solid var(--bs-primary);
+            background-color: transparent;
+        }
+        
+        .nav-tabs .nav-link:hover:not(.active) {
+            border-color: transparent;
+            color: var(--bs-primary);
+        }
+    </style>
+</body>
+</html>

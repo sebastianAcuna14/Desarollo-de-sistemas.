@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos - ElectroMecánica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 mb-3 mb-lg-0 text-center text-lg-start">
+                    <a href="index.html" class="text-decoration-none">
+                        <h1 class="h3 mb-0 text-white d-flex align-items-center justify-content-center justify-content-lg-start">
+                            <i class="fas fa-cogs me-2 text-warning"></i>
+                            <span>ElectroMecánica</span>
+                        </h1>
+                    </a>
+                </div>
+                <div class="col-lg-5 mb-3 mb-lg-0">
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Buscar productos...">
+                            <button class="btn btn-warning" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <a href="login.html" class="btn btn-outline-warning me-2">Iniciar Sesión</a>
+                    <a href="register.html" class="btn btn-warning">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4" href="envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active px-4" href="contacto.html">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de Contacto -->
+    <section class="py-4 hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="mb-3">Contáctenos</h1>
+                    <p class="lead">Estamos aquí para responder a sus preguntas y ayudarle con sus necesidades electromecánicas.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://via.placeholder.com/600x300?text=Contacto" alt="Contacto" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Formulario de Contacto -->
+                <div class="col-lg-7">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 class="card-title mb-4">Envíenos un Mensaje</h2>
+                            <form id="contact-form">
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="firstName" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="firstName" placeholder="Su nombre" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="lastName" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="lastName" placeholder="Su apellido" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Asunto</label>
+                                    <select class="form-select" id="subject" required>
+                                        <option value="" selected disabled>Seleccione un asunto</option>
+                                        <option value="consulta">Consulta de Producto</option>
+                                        <option value="soporte">Soporte Técnico</option>
+                                        <option value="ventas">Ventas Corporativas</option>
+                                        <option value="reclamo">Reclamo</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+                                        Acepto la <a href="#" class="text-decoration-none text-warning">Política de Privacidad</a>
+                                    </label>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-warning btn-lg">Enviar Mensaje</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Información de Contacto -->
+                <div class="col-lg-5">
+                    <!-- Tarjeta de Información -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-4">Información de Contacto</h3>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-25 p-3 rounded-circle">
+                                        <i class="fas fa-map-marker-alt text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mt-0">Dirección</h5>
+                                    <p class="mb-0">Calle Principal #123</p>
+                                    <p class="mb-0">Ciudad Colon</p>
+                                    <p class="mb-0">Código Postal 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-25 p-3 rounded-circle">
+                                        <i class="fas fa-phone-alt text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mt-0">Teléfono</h5>
+                                    <p class="mb-0">Ventas: (506) 8960-4410</p>
+                                    <p class="mb-0">Soporte: (506) 8960-4410</p>
+                                    <p class="mb-0">WhatsApp: (506) 8960-4410</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-25 p-3 rounded-circle">
+                                        <i class="fas fa-envelope text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mt-0">Correo Electrónico</h5>
+                                    <p class="mb-0">info@electromecanica.com</p>
+                                    <p class="mb-0">ventas@electromecanica.com</p>
+                                    <p class="mb-0">soporte@electromecanica.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex">
+                                <div class="flex-shrink-0">
+                                    <div class="bg-warning bg-opacity-25 p-3 rounded-circle">
+                                        <i class="fas fa-clock text-warning"></i>
+                                    </div>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mt-0">Horario de Atención</h5>
+                                    <p class="mb-0">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                                    <p class="mb-0">Sábados: 9:00 AM - 2:00 PM</p>
+                                    <p class="mb-0">Domingos y Feriados: Cerrado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mapa -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="card-title mb-3">Nuestra Ubicación</h3>
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d-79.9009633!3d-2.1480297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMDgnNTIuOSJTIDc5wrA1NCcwMy41Ilc!5e0!3m2!1ses!2sec!4v1617734687085!5m2!1ses!2sec" style="border:0;" allowfullscreen="" loading="lazy" class="rounded"></iframe>
+                            </div>
+                            <div class="mt-3">
+                                <a href="https://goo.gl/maps/1JmMwvTwFx7kJVTu8" target="_blank" class="btn btn-outline-warning w-100">
+                                    <i class="fas fa-directions me-2"></i>Cómo Llegar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-3">ElectroMecánica</h3>
+                    <p class="text-white small">Soluciones electromecánicas de calidad para todas sus necesidades industriales y comerciales.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-white">Catálogo</a></li>
+                        <li class="mb-2"><a href="envios.html" class="text-decoration-none text-white">Envíos</a></li>
+                        <li class="mb-2"><a href="contacto.html" class="text-decoration-none text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Mi Cuenta</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-decoration-none text-white">Iniciar Sesión</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-decoration-none text-white">Registrarse</a></li>
+                        <li class="mb-2"><a href="recover-password.html" class="text-decoration-none text-white">Recuperar Contraseña</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white">Mis Pedidos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Contacto</h4>
+                    <address class="text-white small mb-0">
+                        <p>Calle Principal #123</p>
+                        <p>Ciudad Colon</p>
+                        <p>Teléfono: (506) 89604410</p>
+                        <p>Email: info@electromecanica.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white small">
+                <p>&copy; <span id="current-year"></span> ElectroMecánica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Formulario de contacto
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contact-form');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Aquí iría la lógica para enviar el formulario
+                    // Por ahora, solo mostraremos un alert
+                    alert('¡Gracias por contactarnos! Su mensaje ha sido enviado correctamente. Nos pondremos en contacto con usted lo antes posible.');
+                    
+                    // Resetear el formulario
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

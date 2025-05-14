@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - ElectroMecánica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-cogs me-2"></i>
+                <span class="fw-bold">ElectroMecánica</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-user-circle text-warning fa-3x mb-3"></i>
+                                <h2 class="fw-bold">Iniciar Sesión</h2>
+                                <p class="text-muted">Accede a tu cuenta para gestionar tus pedidos</p>
+                            </div>
+                            
+                            <form id="login-form">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light">
+                                            <i class="fas fa-envelope text-muted"></i>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <label for="password" class="form-label">Contraseña</label>
+                                        <a href="recover-password.html" class="text-decoration-none small text-warning">¿Olvidaste tu contraseña?</a>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light">
+                                            <i class="fas fa-lock text-muted"></i>
+                                        </span>
+                                        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                                        <button class="btn btn-outline-secondary" type="button" id="togglePassword">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">Recordarme</label>
+                                </div>
+                                
+                                <div class="d-grid gap-2 mb-4">
+                                    <button type="submit" class="btn btn-warning btn-lg">Iniciar Sesión</button>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <p class="mb-0">¿No tienes una cuenta? <a href="register.html" class="text-decoration-none text-warning">Regístrate</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5 mt-auto">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="h5 mb-3">ElectroMecánica</h3>
+                    <p class="text-white small">Soluciones electromecánicas de calidad para todas sus necesidades industriales y comerciales.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Enlaces Rápidos</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-white">Inicio</a></li>
+                        <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-white">Catálogo</a></li>
+                        <li class="mb-2"><a href="envios.html" class="text-decoration-none text-white">Envíos</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Mi Cuenta</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="login.html" class="text-decoration-none text-white">Iniciar Sesión</a></li>
+                        <li class="mb-2"><a href="register.html" class="text-decoration-none text-white">Registrarse</a></li>
+                        <li class="mb-2"><a href="recover-password.html" class="text-decoration-none text-white">Recuperar Contraseña</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h6 mb-3">Contacto</h4>
+                    <address class="text-white small mb-0">
+                        <p>Calle Principal #123</p>
+                        <p>Ciudad Industrial</p>
+                        <p>Teléfono: (123) 456-7890</p>
+                        <p>Email: info@electromecanica.com</p>
+                    </address>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="text-center text-white small">
+                <p>&copy; <span id="current-year"></span> ElectroMecánica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Toggle password visibility
+        document.getElementById('togglePassword').addEventListener('click', function() {
+            const passwordInput = document.getElementById('password');
+            const icon = this.querySelector('i');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                icon.classList.remove('fa-eye');
+                icon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                icon.classList.remove('fa-eye-slash');
+                icon.classList.add('fa-eye');
+            }
+        });
+        
+        // Form submission
+        document.getElementById('login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Aquí iría la lógica para iniciar sesión
+            alert('Inicio de sesión exitoso');
+        });
+    </script>
+</body>
+</html>

@@ -5005,51 +5005,6 @@
       ]
     },
     {
-      "Route": "prototipoTienda.48p15kwymy.styles.css",
-      "AssetFile": "prototipoTienda.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1133"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 20:13:05 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "48p15kwymy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc="
-        },
-        {
-          "Name": "label",
-          "Value": "prototipoTienda.styles.css"
-        }
-      ]
-    },
-    {
       "Route": "prototipoTienda.styles.css",
       "AssetFile": "prototipoTienda.styles.css",
       "Selectors": [],
@@ -5064,7 +5019,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1133"
+          "Value": "2271"
         },
         {
           "Name": "Content-Type",
@@ -5072,17 +5027,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=\""
+          "Value": "\"OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 20:13:05 GMT"
+          "Value": "Wed, 28 May 2025 21:01:09 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc="
+          "Value": "sha256-OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8="
+        }
+      ]
+    },
+    {
+      "Route": "prototipoTienda.zh8biv3dmi.styles.css",
+      "AssetFile": "prototipoTienda.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 21:01:09 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zh8biv3dmi"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8="
+        },
+        {
+          "Name": "label",
+          "Value": "prototipoTienda.styles.css"
         }
       ]
     }

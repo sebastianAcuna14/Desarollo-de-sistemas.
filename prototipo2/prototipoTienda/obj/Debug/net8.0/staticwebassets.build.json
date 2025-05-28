@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NBnwM5A30tvogXU2BAv6zlxnyYqRJgHpQa1gndwZ1gc=",
+  "Hash": "asFImmVeN8+LO/+ZY42anexhUJfyXa97WShTilJ3Smk=",
   "Source": "prototipoTienda",
   "BasePath": "_content/prototipoTienda",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "48p15kwymy",
-      "Integrity": "DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=",
+      "Fingerprint": "zh8biv3dmi",
+      "Integrity": "OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipoTienda.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "48p15kwymy",
-      "Integrity": "DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=",
+      "Fingerprint": "zh8biv3dmi",
+      "Integrity": "OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipoTienda.bundle.scp.css"
@@ -6344,96 +6344,6 @@
       ]
     },
     {
-      "Route": "prototipoTienda.48p15kwymy.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipoTienda.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1133"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 20:13:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "48p15kwymy"
-        },
-        {
-          "Name": "label",
-          "Value": "prototipoTienda.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc="
-        }
-      ]
-    },
-    {
-      "Route": "prototipoTienda.48p15kwymy.styles.css",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipoTienda.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1133"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 20:13:05 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "48p15kwymy"
-        },
-        {
-          "Name": "label",
-          "Value": "prototipoTienda.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc="
-        }
-      ]
-    },
-    {
       "Route": "prototipoTienda.bundle.scp.css",
       "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipoTienda.bundle.scp.css",
       "Selectors": [],
@@ -6444,7 +6354,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1133"
+          "Value": "2271"
         },
         {
           "Name": "Content-Type",
@@ -6452,11 +6362,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=\""
+          "Value": "\"OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 20:13:05 GMT"
+          "Value": "Wed, 28 May 2025 21:01:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6466,7 +6376,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc="
+          "Value": "sha256-OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8="
         }
       ]
     },
@@ -6481,7 +6391,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1133"
+          "Value": "2271"
         },
         {
           "Name": "Content-Type",
@@ -6489,11 +6399,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=\""
+          "Value": "\"OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 28 May 2025 20:13:05 GMT"
+          "Value": "Wed, 28 May 2025 21:01:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6503,7 +6413,97 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc="
+          "Value": "sha256-OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8="
+        }
+      ]
+    },
+    {
+      "Route": "prototipoTienda.zh8biv3dmi.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipoTienda.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 21:01:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zh8biv3dmi"
+        },
+        {
+          "Name": "label",
+          "Value": "prototipoTienda.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8="
+        }
+      ]
+    },
+    {
+      "Route": "prototipoTienda.zh8biv3dmi.styles.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipoTienda.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2271"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 28 May 2025 21:01:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zh8biv3dmi"
+        },
+        {
+          "Name": "label",
+          "Value": "prototipoTienda.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8="
         }
       ]
     }

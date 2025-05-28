@@ -33,3 +33,4 @@ C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipoTienda
 C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipoTienda\obj\Debug\net8.0\prototipoTienda.pdb
 C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipoTienda\obj\Debug\net8.0\prototipoTienda.genruntimeconfig.cache
 C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipoTienda\obj\Debug\net8.0\ref\prototipoTienda.dll
+C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipoTienda\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutLogin.cshtml.rz.scp.css

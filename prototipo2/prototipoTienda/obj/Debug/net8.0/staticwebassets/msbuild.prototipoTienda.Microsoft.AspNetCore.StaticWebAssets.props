@@ -1098,23 +1098,23 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\prototipoTienda.48p15kwymy.bundle.scp.css'))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\prototipoTienda.zh8biv3dmi.bundle.scp.css'))">
       <SourceType>Package</SourceType>
       <SourceId>prototipoTienda</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/prototipoTienda</BasePath>
-      <RelativePath>prototipoTienda.48p15kwymy.bundle.scp.css</RelativePath>
+      <RelativePath>prototipoTienda.zh8biv3dmi.bundle.scp.css</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>Reference</AssetMode>
       <AssetRole>Primary</AssetRole>
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>48p15kwymy</Fingerprint>
-      <Integrity>DFU1T+Lb4+vuNFFUMWbpbjHFaQ7m2Tf//Bg3+wOxAoc=</Integrity>
+      <Fingerprint>zh8biv3dmi</Fingerprint>
+      <Integrity>OWLc08rj1vHI9vSg5UkETW16wgWJBxIvQe92OO7aMq8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\prototipoTienda.48p15kwymy.bundle.scp.css'))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\prototipoTienda.zh8biv3dmi.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

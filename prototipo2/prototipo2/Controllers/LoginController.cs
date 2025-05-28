@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using prototipo2.Models;
 
-namespace prototipo2.Controllers.Login
+namespace prototipo2.Controllers
 {
     public class LoginController : Controller
     {

@@ -39,10 +39,10 @@
                         <a class="nav-link px-4" href="inventario.html">Inventario</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-4" href="reparaciones.html">Reparaciones</a>
+                        <a class="nav-link px-4" asp-area="" asp-controller="AdminController1" asp-action="Admi">Reparaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-4" href="usuarios.html">Administración</a>
+                        <a class="nav-link px-4" asp-area="" asp-controller="Empleado" asp-action="ListaEmpleado">Administración</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
                     <h1 class="display-4 fw-bold mb-3 text-dark">Soluciones Electromecánicas <span class="text-warning">de Calidad</span></h1>
                     <p class="lead mb-4">Ofrecemos los mejores productos y servicios para todas sus necesidades electromecánicas.</p>
                     <div class="d-flex flex-wrap gap-2">
-                        <a href="catalogo.html" class="btn btn-dark btn-lg">Ver Catálogo</a>
+                        <a  class="btn btn-dark btn-lg">Ver Catálogo</a>
                         <a href="contacto.html" class="btn btn-outline-dark btn-lg">Contáctenos</a>
 
                     </div>
@@ -75,21 +75,21 @@
                         <!-- Slides -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="imagenes/1200x600_Electromecanica.webp" class="d-block w-100" alt="Equipos Electromecánicos">
+                                <img src="~/images/1200x600_Electromecanica.webp" class="d-block w-100" alt="Equipos Electromecánicos">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Equipos de Alta Calidad</h5>
                                     <p>Tecnología de punta para sus proyectos</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="imagenes/Imagen1.jpeg" class="d-block w-100" alt="Motores Industriales">
+                                <img src="~/images/Imagen1.jpeg" class="d-block w-100" alt="Motores Industriales">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Motores Industriales</h5>
                                     <p>Potencia y eficiencia garantizada</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="images/carrusel-3.jpg" class="d-block w-100" alt="Servicio Técnico">
+                                <img src="~/images/images.jpg" class="d-block w-100" alt="Servicio Técnico">
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Soporte Técnico Especializado</h5>
                                     <p>Asistencia profesional para sus equipos</p>
@@ -223,5 +223,9 @@
             </div>
         </div>
     </section>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+   @*  @await RenderSectionAsync("Scripts", required: false) *@
 </body>
 </html>

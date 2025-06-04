@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipotienda\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|solutionrelative:prototipotienda\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipotienda\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|solutionrelative:prototipotienda\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipotienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|solutionrelative:prototipotienda\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipotienda\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|solutionrelative:prototipotienda\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipotienda\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|solutionrelative:prototipotienda\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipo2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipo2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipotienda\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{91D27B4E-E2A0-4B66-9474-94D0B46B2B04}|prototipoTienda\\prototipoTienda.csproj|solutionrelative:prototipotienda\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\luis\\documents\\desarrollo\\miproyectoanalisis\\prototipo2\\prototipo2\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 59,
           "Children": [
             {
               "$type": "Bookmark",
@@ -267,115 +251,57 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 3,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_LayoutLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeDocumentMoniker": "prototipoTienda\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeToolTip": "prototipoTienda\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T20:59:50.577Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Program.cs",
-              "RelativeDocumentMoniker": "prototipoTienda\\Program.cs",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Program.cs",
-              "RelativeToolTip": "prototipoTienda\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Models\\Login.cs",
+              "RelativeToolTip": "prototipo2\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T20:59:27.302Z",
+              "WhenOpened": "2025-06-04T02:41:39.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_LayoutLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
+              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T02:02:39.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "prototipoTienda\\Views\\Login\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "prototipoTienda\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Login\\Login.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Login\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Login\\Login.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Login\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T20:58:49.198Z",
+              "WhenOpened": "2025-06-04T02:02:09.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "prototipoTienda\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "prototipoTienda\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Title": "LoginController1.cs",
+              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Controllers\\LoginController1.cs",
+              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
+              "RelativeToolTip": "prototipo2\\Controllers\\LoginController1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T20:58:19.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "prototipoTienda\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "prototipoTienda\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T20:43:32.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T20:38:41.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAB/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T20:27:56.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "prototipoTienda\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipoTienda\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "prototipoTienda\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T20:12:25.426Z",
+              "WhenOpened": "2025-06-04T01:58:46.707Z",
               "EditorCaption": ""
             }
           ]

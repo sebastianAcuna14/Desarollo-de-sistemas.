@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/prototipo2.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link href="~/css/styles.css" rel="stylesheet" />
 </head>
 <body>
@@ -16,12 +17,15 @@
 
             <div class="row align-items-center">
                 <div class="col-lg-3 mb-3 mb-lg-0 text-center text-lg-start">
-                    <a class="text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">Iniciar Sesión</a>
+                    <a class="text-white text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                        
                         <h1 class="h3 mb-0 text-white d-flex align-items-center justify-content-center justify-content-lg-start">
                             <i class="fas fa-cogs me-2 text-warning"></i>
                             <span>ElectroMecánica</span>
+
                         </h1>
                     </a>
+                 
                 </div>
                 <div class="col-lg-5 mb-3 mb-lg-0">
                     <form class="d-flex">
@@ -35,7 +39,7 @@
                     </form>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
-                    <a class="btn btn-outline-warning me-2" asp-area="" asp-controller="Login" asp-action="Login">Iniciar Sesión</a>
+                    <a class="btn btn-outline-warning me-2" asp-area="" asp-controller="LoginController1" asp-action="Login">Iniciar Sesión</a>
                     <a href="register.html" class="btn btn-warning">Registrarse</a>
                 </div>
             </div>
@@ -91,9 +95,6 @@
             </div>
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+   
 </body>
 </html>

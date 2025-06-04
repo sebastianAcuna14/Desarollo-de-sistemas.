@@ -1,0 +1,52 @@
+﻿
+
+
+@model prototipo2.Models.Empleado
+
+@{
+    ViewData["Title"] = "Editar Empleado";
+}
+<div class="container py-4">
+
+
+
+<h2 class="mt-4 mb-3">Editar Empleado</h2>
+
+<form asp-action="EditarEmpleado" method="post" class="needs-validation" novalidate>
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="NombreCompleto" class="form-label"></label>
+        <input asp-for="NombreCompleto" class="form-control" />
+        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Cedula" class="form-label"></label>
+        <input asp-for="Cedula" class="form-control" />
+        <span asp-validation-for="Cedula" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Rol" class="form-label"></label>
+        <input asp-for="Rol" class="form-control" />
+        <span asp-validation-for="Rol" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Salario" class="form-label"></label>
+        <input asp-for="Salario" class="form-control" />
+        <span asp-validation-for="Salario" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 ">
+        <label asp-for="FechaContratacion" class="form-label"></label>
+        <input asp-for="FechaContratacion" class="form-control" type="date" />
+        <span asp-validation-for="FechaContratacion" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="ListaEmpleado" class="btn btn-secondary ms-2">Cancelar</a>
+</form>
+
+</div>

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model prototipo2.Models.Login
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -32,7 +34,7 @@
                                         <span class="input-group-text bg-light">
                                             <i class="fas fa-envelope text-muted"></i>
                                         </span>
-                                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                        <input type="email" asp-for= "Username" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
                                     </div>
                                 </div>
 
@@ -45,7 +47,7 @@
                                         <span class="input-group-text bg-light">
                                             <i class="fas fa-lock text-muted"></i>
                                         </span>
-                                        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+                                        <input type="password" asp-for="Password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
                                         <button class="btn btn-outline-secondary" type="button" id="togglePassword">
                                             <i class="fas fa-eye"></i>
                                         </button>

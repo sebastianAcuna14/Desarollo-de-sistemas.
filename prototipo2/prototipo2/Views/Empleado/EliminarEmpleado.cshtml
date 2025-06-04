@@ -1,0 +1,16 @@
+﻿@model prototipo2.Models.Empleado
+@{
+    ViewData["Title"] = "EliminarEmpleado";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>Eliminar Empleado</h2>
+<p>¿Estás seguro de que deseas eliminar a @Model.NombreCompleto?</p>
+
+<form asp-action="Eliminar" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Sí, eliminar</button>
+    <a asp-action="ListaEmpleado">Cancelar</a>
+</form>

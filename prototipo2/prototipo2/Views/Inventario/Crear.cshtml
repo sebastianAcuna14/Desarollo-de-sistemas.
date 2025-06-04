@@ -1,0 +1,52 @@
+﻿@model prototipo2.Models.Producto
+
+@{
+    ViewData["Title"] = "Agregar producto";
+}
+
+<h1 class="text-danger">Vista para agregar productos </h1>
+
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+    <p>Llene los campos para agregar un nuevo producto</p>
+
+    <form asp-action="Crear" method="post" class="mt-4">
+        <div class="mb-3">
+            <label asp-for="Nombre_Producto" class="form-label">Nombre del Producto</label>
+            <input asp-for="Nombre_Producto" class="form-control" />
+            <span asp-validation-for="Nombre_Producto" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Categoria" class="form-label">Ingrese la categoria del producto</label>
+            <input asp-for="Categoria" class="form-control" />
+            <span asp-validation-for="Categoria" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Proveedor" class="form-label">Ingrese el nombre del proveedor</label>
+            <input asp-for="Proveedor" class="form-control" />
+            <span asp-validation-for="Proveedor" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Precio" class="form-label">Ingrese el precio del producto</label>
+            <input asp-for="Precio" class="form-control" />
+            <span asp-validation-for="Precio" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Cantidad" class="form-label">Ingrese la cantidad</label>
+            <input asp-for="Cantidad" class="form-control" />
+            <span asp-validation-for="Cantidad" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+</div>

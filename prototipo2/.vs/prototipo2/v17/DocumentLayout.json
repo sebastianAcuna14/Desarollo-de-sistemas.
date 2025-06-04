@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\usuario\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\usuario\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\inventario\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\inventario\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\inventario\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\inventario\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\inventario\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\inventario\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\inventario\\consultar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\inventario\\consultar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1871,
-          "SelectedChildIndex": 56,
+          "SelectedChildIndex": 55,
           "Children": [
             {
               "$type": "Bookmark",
@@ -258,76 +266,107 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_LayoutLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T06:24:15.202Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Registro.cshtml",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Usuario\\Registro.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Usuario\\Registro.cshtml",
-              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Usuario\\Registro.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Usuario\\Registro.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAiwAcAAAA6AAAAAAAAAA==",
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T06:17:33.531Z",
+              "WhenOpened": "2025-06-04T20:36:13.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "prototipo2\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T06:06:16.607Z"
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Editar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Editar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Editar.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwDMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T20:34:17.438Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Login.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Models\\Login.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Login.cs",
-              "RelativeToolTip": "prototipo2\\Models\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:23:28.123Z"
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Eliminar.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Eliminar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Eliminar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T20:34:38.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Crear.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Crear.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Crear.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAmwDMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T20:33:58.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\EmpleadoController.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\EmpleadoController.cs",
-              "RelativeToolTip": "prototipo2\\Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwDoAAAAJAAAAAAAAAA==",
+              "Title": "Consultar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Consultar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Consultar.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Consultar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Consultar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T20:33:41.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Producto.cs",
+              "RelativeToolTip": "prototipo2\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:22:19.683Z"
+              "WhenOpened": "2025-06-04T20:31:18.95Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoginController1.cs",
-              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Controllers\\LoginController1.cs",
-              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
-              "RelativeToolTip": "prototipo2\\Controllers\\LoginController1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Index.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Index.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-04T20:29:34.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InventarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\InventarioController.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Controllers\\InventarioController.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\InventarioController.cs",
+              "RelativeToolTip": "prototipo2\\Controllers\\InventarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:21:24.042Z"
+              "WhenOpened": "2025-06-04T20:31:59.903Z",
+              "EditorCaption": ""
             }
           ]
         },

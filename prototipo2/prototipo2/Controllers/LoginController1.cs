@@ -5,7 +5,7 @@ namespace prototipo2.Controllers
 {
     public class LoginController : Controller
     {
-        private const string StaticUsername = "admin";
+        private const string StaticUsername = "admin@gmail.com";
         private const string StaticPassword = "1234";
 
         [HttpGet]
@@ -24,7 +24,7 @@ namespace prototipo2.Controllers
                     && model.Password == StaticPassword)
                 {
                     TempData["UsuarioAutenticado"] = model.Username;
-                    return RedirectToAction("Home", "Index"); // Cambia si tienes otra vista
+                    return RedirectToAction("Index", "Home"); // Cambia si tienes otra vista
                 }
 
                 ModelState.AddModelError(string.Empty, "Usuario o contraseña incorrectos.");

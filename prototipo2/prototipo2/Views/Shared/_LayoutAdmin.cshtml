@@ -10,7 +10,6 @@
 	<link href="~/css/estilo.css" rel="stylesheet" />
 </head>
 <body>
-    @RenderBody()
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
@@ -41,31 +40,18 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
+
                         <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-
-                            <a class="nav-link px-4" asp-controller="Inventario" asp-action="Index">Inventario</a>
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
                             Inventario
+                        </a>
+    
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                            Productos
+                        </a>
 
-                        </a>
-                        <div class="sb-sidenav-menu-heading">Interface</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Layouts
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                                <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Index</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                            Pages
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
+
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
@@ -92,14 +78,17 @@
                                 </div>
                             </nav>
                         </div>
-                        <div class="sb-sidenav-menu-heading">Addons</div>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" asp-area="" asp-controller="Empleado" asp-action="ListaEmpleado">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Charts
+                            Empleados
                         </a>
+                       @*  <a class="nav-link" asp-area="" asp-controller="Empleado" asp-action="ListaEmpleado"
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Empleados
+                        </a> *@
                         <a class="nav-link" href="tables.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Tables
+                            Clientes
                         </a>
                     </div>
                 </div>
@@ -110,8 +99,9 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
-                @RenderBody()
-          
+            @RenderBody()
+
+
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">

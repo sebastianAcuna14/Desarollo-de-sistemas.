@@ -5,8 +5,23 @@ namespace prototipo2.Controllers
 {
     public class LoginController : Controller
     {
-        private const string StaticUsername = "admin@gmail.com";
-        private const string StaticPassword = "1234";
+
+        private static List<Login> Usuario = new List<Login>
+        {
+            new() {
+                Id = 1,
+                Username = "admin@gmail.com",
+                Password = "1234",
+              },
+
+            new() {
+                Id = 2,
+                Username = "vendedor@gmail.com",
+                Password = "5678",
+              }
+        };
+
+
 
         [HttpGet]
         public IActionResult Login()
@@ -20,13 +35,15 @@ namespace prototipo2.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (model.Username == StaticUsername
-                    && model.Password == StaticPassword)
+                var usuario = Usuario.FirstOrDefault(u => u.Username == model.Username &&
+                u.Password == model.Password);
+                if (usuario != null)
                 {
                     TempData["UsuarioAutenticado"] = model.Username;
-                    return RedirectToAction("Index", "Home"); // Cambia si tienes otra vista
+                    TempData["UsuarioId"] = usuario.Id;
+                    return RedirectToAction("Index", "Home");
                 }
-
+               
                 ModelState.AddModelError(string.Empty, "Usuario o contraseña incorrectos.");
             }
 

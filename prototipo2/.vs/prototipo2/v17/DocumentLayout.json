@@ -1,29 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\",
+  "WorkspaceRootPath": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\usuario\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\usuario\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\usuario\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\shared\\_layoutlogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\logincontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1871,
-          "SelectedChildIndex": 57,
+          "SelectedChildIndex": 56,
           "Children": [
             {
               "$type": "Bookmark",
@@ -238,10 +238,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
@@ -264,22 +260,21 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "_LayoutLogin.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
               "RelativeToolTip": "prototipo2\\Views\\Shared\\_LayoutLogin.cshtml",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAEgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T06:24:15.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T06:24:15.202Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Registro.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Usuario\\Registro.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Usuario\\Registro.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Usuario\\Registro.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Usuario\\Registro.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Usuario\\Registro.cshtml",
               "RelativeToolTip": "prototipo2\\Views\\Usuario\\Registro.cshtml",
               "ViewState": "AgIAAAEAAAAAAAAAAAAiwAcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -290,53 +285,49 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "prototipo2\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "prototipo2\\Controllers\\UsuarioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T06:06:16.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T06:06:16.607Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Login.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Login.cs",
               "RelativeDocumentMoniker": "prototipo2\\Models\\Login.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Login.cs",
               "RelativeToolTip": "prototipo2\\Models\\Login.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:23:28.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T05:23:28.123Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\EmpleadoController.cs",
               "RelativeDocumentMoniker": "prototipo2\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\EmpleadoController.cs",
               "RelativeToolTip": "prototipo2\\Controllers\\EmpleadoController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwDoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:22:19.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T05:22:19.683Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "LoginController1.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
               "RelativeDocumentMoniker": "prototipo2\\Controllers\\LoginController1.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\LoginController1.cs",
               "RelativeToolTip": "prototipo2\\Controllers\\LoginController1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T05:21:24.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T05:21:24.042Z"
             }
           ]
         },

@@ -1,0 +1,19 @@
+﻿@model prototipo2.Models.Login
+@{
+    ViewData["Title"] = "Registro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Registro</h1>
+<form asp-action="RegistrarUsuario" asp-controller="Login" method="post">
+    <label asp-for="Username"></label>
+    <input asp-for="Username" />
+    <span asp-validation-for="Username"></span>
+
+    <label asp-for="Password"></label>
+    <input asp-for="Password" type="password" />
+    <span asp-validation-for="Password"></span>
+
+    <button type="submit">Registrar</button>
+</form>
+

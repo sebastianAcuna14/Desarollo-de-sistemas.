@@ -66,6 +66,17 @@
                                 <div class="text-center">
                                     <p class="mb-0">¿No tienes una cuenta? <a link px-4" asp-area="" asp-controller="Usuario" asp-action="Registro" class="text-decoration-none text-warning">Regístrate</a></p>
                                 </div>
+
+                                <div class="text-center">
+                                    <p class="mb-0">¿Olvidaste tu contraseña? <a link px-4" asp-area="" asp-controller="Login" asp-action="Recuperar" class="text-decoration-none text-warning">Recuperala</a></p>
+                                </div>
+                                @if (TempData["MensajeExito"] != null)
+                                {
+                                    <div class="alert alert-success text-center">
+                                        @TempData["MensajeExito"]
+                                    </div>
+                                }
+
                             </form>
                         </div>
                     </div>

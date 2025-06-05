@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Recuperar contraseña";
+}
+
+<div class="container mt-5">
+    <h2>Recuperar Contraseña</h2>
+
+    <form method="post" asp-action="Recuperar">
+        <div class="mb-3">
+            <label for="email">Correo electrónico</label>
+            <input type="email" class="form-control" name="email" required />
+        </div>
+        <button type="submit" class="btn btn-warning">Buscar</button>
+    </form>
+
+   
+    @if (ViewBag.UsuarioEncontrado != null && ViewBag.UsuarioEncontrado == true)
+    {
+        <hr />
+
+        <form method="post" asp-action="CambiarContrasena">
+            <input type="hidden" name="email" value="@ViewBag.Email" />
+            <div class="mb-3">
+                <label for="nuevaContrasena">Nueva contraseña</label>
+                <input type="password" class="form-control" name="nuevaContrasena" required />
+            </div>
+            <button type="submit" class="btn btn-success">Actualizar contraseña</button>
+        </form>
+    }
+</div>
+

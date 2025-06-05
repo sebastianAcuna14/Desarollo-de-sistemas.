@@ -49,5 +49,47 @@ namespace prototipo2.Controllers
 
             return View(model);
         }
+
+        [HttpGet]
+        public IActionResult Recuperar()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Recuperar(string email)
+        {
+            var usuario = Usuario.FirstOrDefault(u => u.Username == email);
+
+            if (usuario != null)
+            {
+                ViewBag.UsuarioEncontrado = true;
+                ViewBag.Email = email;
+            }
+            else
+            {
+                ViewBag.Mensaje = "Correo no registrado.";
+            }
+
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CambiarContrasena(string email, string nuevaContrasena)
+        {
+            var usuario = Usuario.FirstOrDefault(u => u.Username == email);
+
+            if (usuario != null)
+            {
+                usuario.Password = nuevaContrasena;
+                TempData["MensajeExito"] = "Contraseña actualizada correctamente. Inicia sesión con tu nueva contraseña.";
+                return RedirectToAction("Login");
+            }
+
+            ViewBag.Mensaje = "Error: Usuario no encontrado.";
+            return View("Recuperar");
+        }
+
+
     }
 }

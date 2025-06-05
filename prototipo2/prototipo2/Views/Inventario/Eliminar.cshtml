@@ -1,0 +1,32 @@
+﻿@model prototipo2.Models.Producto
+
+@{
+    ViewData["Title"] = "Eliminar producto";
+}
+
+<div class="container mt-4">
+    <h1>¿Está seguro que desea eliminar este producto?</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Nombre del Producto:</dt>
+        <dd class="col-sm-9">@Model.Nombre_Producto</dd>
+
+        <dt class="col-sm-3">Categoría del Producto:</dt>
+        <dd class="col-sm-9">@Model.Categoria</dd>
+
+        <dt class="col-sm-3">Proveedor Encargado:</dt>
+        <dd class="col-sm-9">@Model.Proveedor</dd>
+
+        <dt class="col-sm-3">Precio actual:</dt>
+        <dd class="col-sm-9">@Model.Precio.ToString("C")</dd>
+
+        <dt class="col-sm-3">Cantidad disponible:</dt>
+        <dd class="col-sm-9">@Model.Cantidad</dd>
+    </dl>
+
+    <form asp-action="EliminarProducto" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

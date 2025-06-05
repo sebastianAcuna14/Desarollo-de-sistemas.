@@ -1,58 +1,44 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using prototipo2.Models;
+using System.Linq;
 
 namespace prototipo2.Controllers
 {
     public class UsuarioController : Controller
     {
-        private static List<Login> Usuarios = new List<Login>();
+        private static List<Usuario> Usuarios = new List<Usuario>();
+        private static int nextId = 1;
 
-
-
+        [HttpGet]
         public IActionResult Registro()
         {
-            return View();
+            return View(new Usuario());
+        }
+        public IActionResult Usuario()
+        {
+            return View(Usuarios);
         }
 
         [HttpPost]
-
-        public IActionResult Registro(Login model)
+        [ValidateAntiForgeryToken]
+        public IActionResult Registro(Usuario usuario)
         {
             if (ModelState.IsValid)
             {
-                model.Id = Usuarios.Any() ? Usuarios.Max(e => e.Id) + 1 : 1;
-                Usuarios.Add(model);
+                if (Usuarios.Any(u => u.Email == usuario.Email))
+                {
+                    ModelState.AddModelError("Email", "Este correo electrónico ya está registrado");
+                    return View(usuario);
+                }
 
-                HttpContext.Session.SetString("Usuario", model.Username ?? "");
-                HttpContext.Session.SetInt32("UsuarioId", model.Id);
+                usuario.Id = nextId++;
+                Usuarios.Add(usuario);
 
-                return RedirectToAction("Usuario");
-            }
-
-            return View(model);
-
-        }
-
-        public IActionResult Usuario()
-        {
-            var usuario = HttpContext.Session.GetString("Usuario");
-
-            if (usuario == null)
-            {
+                TempData["MensajeExito"] = "¡Registro exitoso! Ahora puedes iniciar sesión.";
                 return RedirectToAction("Login", "Login");
             }
 
-            ViewBag.Usuario = usuario;
-            return View();
+            return View(usuario);
         }
-
-
-        public IActionResult CerrarSesion()
-        {
-            HttpContext.Session.Clear(); 
-            return RedirectToAction("Login", "Login");
-        }
-
-
     }
 }

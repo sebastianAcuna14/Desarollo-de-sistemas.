@@ -1,0 +1,61 @@
+﻿@model IEnumerable<prototipo2.Models.Producto>
+@using prototipo2.Models
+
+@{
+	Layout = "_LayoutAdmin";
+}
+
+@{
+    ViewData["Title"] = "Inventario de productos";
+}
+@* <h1 class="text-danger">Ojo esta es la vista de inventario</h1> *@
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+
+    <p>Este es el inventario de productos.</p>
+
+    <a asp-controller="Inventario" asp-action="Crear" class="btn btn-primary mt-3">Agregar producto</a>
+
+    <table class="table table-striped mt-4">
+        <thead class="table-secondary">
+            <tr>
+                <th>Nombre del Producto</th>
+                <th>Categoría</th>
+                <th>Proveedor</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Acciones</th> <!-- este es el header para los botones de editar, detalles y eliminar -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var producto in Model)
+            {
+                <tr>
+                    <td>@producto.Nombre_Producto</td>
+                    <td>@producto.Categoria</td>
+                    <td>@producto.Proveedor</td>
+                    <td>@producto.Precio.ToString("C")</td>
+                    <td>@producto.Cantidad</td>
+                    <td>
+                        <!-- muestra las acciones de la tabla   -->
+                        <a asp-controller="Inventario"
+                           asp-action="Editar"
+                           asp-route-id="@producto.Id"
+                           class="btn btn-warning">Editar</a>
+
+                        <a asp-controller="Inventario"
+                           asp-action="Consultar"
+                           asp-route-id="@producto.Id"
+                           class="btn btn-info">Ver detalles</a>
+
+                        <a asp-controller="Inventario"
+                           asp-action="Eliminar"
+                           asp-route-id="@producto.Id"
+                           class="btn btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

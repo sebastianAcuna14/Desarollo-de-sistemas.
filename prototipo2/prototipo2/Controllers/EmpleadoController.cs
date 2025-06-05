@@ -49,13 +49,38 @@ namespace prototipo2.Controllers
         [HttpPost]
         public IActionResult CrearEmpleado(Empleado empleado)
         {
-            if (ModelState.IsValid)
+            try
             {
-                empleado.Id = Empleados.Any() ? Empleados.Max(e => e.Id) + 1 : 1;
-                Empleados.Add(empleado);
-                return RedirectToAction(nameof(ListaEmpleado));
+                if (ModelState.IsValid)
+                {
+                    empleado.Id = Empleados.Any() ? Empleados.Max(e => e.Id) + 1 : 1;
+                    empleado.FechaContratacion = DateTime.Parse(empleado.FechaContratacion.ToString());
+                    Empleados.Add(empleado);
+
+                    return Json(new
+                    {
+                        success = true,
+                        empleado = empleado
+                    });
+                }
+
+                return Json(new
+                {
+                    success = false,
+                    errors = ModelState.Values
+                        .SelectMany(v => v.Errors)
+                        .Select(e => e.ErrorMessage)
+                });
             }
-            return View(empleado);
+            catch (Exception ex)
+            {
+                return Json(new
+                {
+                    success = false,
+                    error = ex.Message
+                });
+            }
+            //return View(empleado);
         }
 
 
@@ -66,6 +91,15 @@ namespace prototipo2.Controllers
             return View(empleado);
         }
 
+        [HttpPost]
+        public JsonResult AgregarDesdeModal([FromBody] Empleado nuevoEmpleado)
+        {
+            int nuevoId = Empleados.Any() ? Empleados.Max(e => e.Id) + 1 : 1;
+            nuevoEmpleado.Id = nuevoId;
+            Empleados.Add(nuevoEmpleado);
+
+            return Json(new { success = true });
+        }
 
 
 

@@ -5,6 +5,9 @@ wwwroot\favicon.ico
 wwwroot\images\1200x600_Electromecanica.webp
 wwwroot\images\Imagen1.jpeg
 wwwroot\images\images.jpg
+wwwroot\js\datatables-simple-demo.js
+wwwroot\js\Empleado.js
+wwwroot\js\scripts.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

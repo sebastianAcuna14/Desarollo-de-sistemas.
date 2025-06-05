@@ -2,60 +2,62 @@
 @using prototipo2.Models
 @{
     ViewData["Title"] = "ListaEmpleado";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - prototipo2</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/prototipo2.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="~/css/styles.css" rel="stylesheet" />
-</head>
+<div class="row justify-content-center">
+    <div class="container-sm py-3 col-11">
 
-<body>
-    <div class="container-sm py-5">
+        <!-- Botón normal para redirigir -->
+        <a asp-controller="Empleado" asp-action="CrearEmpleado" class="btn btn-primary mt-3">Agregar empleado</a>
+
+  
         
+       
 
-<a asp-controller="Empleado" asp-action="CrearEmpleado" class="btn btn-primary mt-3">Agregar empleado</a>
-
-<table class="table table-striped mt-4">
-    <thead class="table-secondary">
-        <tr>
-            <th>ID</th>
-            <th>Nombre Completo</th>
-            <th>Cédula</th>
-            <th>Rol</th>
-            <th>Salario</th>
-            <th>Fecha de Contratación</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var empleado in Model)
-        {
-            <tr>
-                <td>@empleado.Id</td>
-                <td>@empleado.NombreCompleto</td>
-                <td>@empleado.Cedula</td>
-                <td>@empleado.Rol</td>
-                <td>@empleado.Salario.ToString("C")</td>
-                <td>@empleado.FechaContratacion.ToShortDateString()</td>
-                <td>
-                    <a asp-controller="Empleado" asp-action="EditarEmpleado" asp-route-id="@empleado.Id" class="btn btn-warning">Editar</a>
-                    
-                    <a asp-controller="Empleado" asp-action="EliminarEmpleado" asp-route-id="@empleado.Id" class="btn btn-danger">Eliminar</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-
+        <!-- Tabla de empleados -->
+<div class="card mt-4">
+    <div class="card-body">
+<table class="table table-striped mt-4" id="datatablesSimple" style="width:100%">
+            <thead class="table-secondary">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre Completo</th>
+                    <th>Cédula</th>
+                    <th>Rol</th>
+                    <th>Salario</th>
+                    <th>Fecha de Contratación</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var empleado in Model)
+                {
+                    <tr>
+                        <td>@empleado.Id</td>
+                        <td>@empleado.NombreCompleto</td>
+                        <td>@empleado.Cedula</td>
+                        <td>@empleado.Rol</td>
+                        <td>@empleado.Salario.ToString("C")</td>
+                        <td>@empleado.FechaContratacion.ToShortDateString()</td>
+                        <td>
+                            <a asp-controller="Empleado" asp-action="EditarEmpleado" asp-route-id="@empleado.Id" class="btn btn-warning">Editar</a>
+                            <a asp-controller="Empleado" asp-action="EliminarEmpleado" asp-route-id="@empleado.Id" class="btn btn-danger">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+                
+            </tbody>
+        </table>
+             </div>
+        </div>
     </div>
-</body>
-</html>
+</div>
+  
+
+@section Scripts {
+    <!-- Simple DataTables JS -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"></script>
+   <script src="~/js/empleado.js"></script>
+}
+}

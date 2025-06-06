@@ -1,7 +1,20 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Login/Login"; // Ruta cuando no estás autenticado
+        options.LogoutPath = "/Usuario/CerrarSesion";
+        options.AccessDeniedPath = "/Login/AccessDenied"; // Opcional
+    });
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddSession();
 
 builder.Services.AddSession(options =>
 {
@@ -25,11 +38,12 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseSession(); 
+app.UseAuthentication();
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=AdminController1}/{action=Admi}/{id?}");
+     name: "default",
+    pattern: "{controller=Login}/{action=Login}/{id?}");
 
 app.Run();

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using prototipo2.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace prototipo2.Controllers
 {
@@ -14,6 +16,7 @@ namespace prototipo2.Controllers
         {
             return View(new Usuario());
         }
+
         public IActionResult Usuario()
         {
             return View(Usuarios);
@@ -39,6 +42,17 @@ namespace prototipo2.Controllers
             }
 
             return View(usuario);
+        }
+
+        // ✅ Método corregido a GET para que funcione al hacer clic en el enlace
+        [HttpGet]
+        public async Task<IActionResult> CerrarSesion()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Clear();
+
+            TempData["MensajeSesion"] = "Sesión cerrada correctamente.";
+            return RedirectToAction("Login", "Login");
         }
     }
 }

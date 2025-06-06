@@ -17,97 +17,99 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = prototipo2
 build_property.RootNamespace = prototipo2
-build_property.ProjectDir = C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipo2\
+build_property.ProjectDir = C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipo2
+build_property.MSBuildProjectDirectory = C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/AdminController1/Admi.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/AdminController1/Admi.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Db250cm9sbGVyMVxBZG1pLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Empleado/CrearEmpleado.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Empleado/CrearEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cQ3JlYXJFbXBsZWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Empleado/EditarEmpleado.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Empleado/EditarEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRWRpdGFyRW1wbGVhZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Empleado/EliminarEmpleado.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Empleado/EliminarEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cRWxpbWluYXJFbXBsZWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Empleado/ListaEmpleado.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Empleado/ListaEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cTGlzdGFFbXBsZWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Home/Index.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Home/Privacy.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Inventario/Consultar.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Inventario/Consultar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xDb25zdWx0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Inventario/Crear.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Inventario/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Inventario/Editar.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Inventario/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xFZGl0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Inventario/Eliminar.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Inventario/Eliminar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xFbGltaW5hci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Inventario/Index.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Inventario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Login/Login.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Shared/Error.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Login/Recuperar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVjdXBlcmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Usuario/Registro.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Usuario/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/_ViewImports.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/_ViewStart.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Shared/_Layout.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w4dssvnjcf
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-50ig55ynom
 
-[C:/Users/Luis/Documents/Desarrollo/MiProyectoAnalisis/prototipo2/prototipo2/Views/Shared/_LayoutLogin.cshtml]
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Shared/_LayoutLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-i8iwf82xh7

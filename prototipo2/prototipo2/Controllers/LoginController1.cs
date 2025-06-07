@@ -50,6 +50,42 @@ namespace prototipo2.Controllers
             return View(model);
         }
 
+
+        [HttpGet]
+        public IActionResult Registrar()
+        {
+            return View(new Usuario());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Registrar(Usuario model)
+        {
+            if (ModelState.IsValid)
+            {
+                // Verifica si ya existe un usuario con ese correo
+                if (Usuario.Any(u => u.Username == model.Email))
+                {
+                    ModelState.AddModelError("Correo", "Este correo ya está registrado.");
+                    return View(model);
+                }
+
+                // Crea el nuevo usuario (conversión simplificada de Usuario a Login)
+                Usuario.Add(new Login
+                {
+                    Id = Usuario.Max(u => u.Id) + 1,
+                    Username = model.Email,
+                    Password = model.Password
+                });
+
+                TempData["MensajeRegistro"] = "Registro exitoso. Ahora puedes iniciar sesión.";
+                return RedirectToAction("Login");
+            }
+
+            return View(model);
+        }
+
+
         [HttpGet]
         public IActionResult Recuperar()
         {

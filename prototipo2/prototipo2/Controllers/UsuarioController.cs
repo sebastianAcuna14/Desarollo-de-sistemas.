@@ -1,49 +1,33 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using prototipo2.Models;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Mvc;
+using prototipo2.Models;
+
 
 namespace prototipo2.Controllers
 {
     public class UsuarioController : Controller
     {
-        private static List<Usuario> Usuarios = new List<Usuario>();
-        private static int nextId = 1;
-
-        [HttpGet]
+        private static List<Login> Usuarios = new List<Login>();
         public IActionResult Registro()
         {
-            return View(new Usuario());
+            return View();
         }
-
         public IActionResult Usuario()
         {
-            return View(Usuarios);
+            return View();
         }
-
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult Registro(Usuario usuario)
+        public IActionResult Registro(Login usuario)
         {
             if (ModelState.IsValid)
             {
-                if (Usuarios.Any(u => u.Email == usuario.Email))
-                {
-                    ModelState.AddModelError("Email", "Este correo electrónico ya está registrado");
-                    return View(usuario);
-                }
-
-                usuario.Id = nextId++;
+                usuario.Id = Usuarios.Any() ? Usuarios.Max(e => e.Id) + 1 : 1;
                 Usuarios.Add(usuario);
-
-                TempData["MensajeExito"] = "¡Registro exitoso! Ahora puedes iniciar sesión.";
-                return RedirectToAction("Login", "Login");
+                return RedirectToAction(nameof(Login));
             }
-
             return View(usuario);
         }
-
         // ✅ Método corregido a GET para que funcione al hacer clic en el enlace
         [HttpGet]
         public async Task<IActionResult> CerrarSesion()

@@ -1,4 +1,4 @@
-﻿@model prototipo2.Models.Usuario
+﻿@model prototipo2.Models.Login
 @{
     ViewData["Title"] = "Registro";
     Layout = "_LayoutLogin";
@@ -99,8 +99,8 @@
                                     <button type="submit" class="btn btn-warning btn-lg">Registrarse</button>
                                 </div>
 
-                                <div class="text-center">
-                                    <p class="mb-0">¿Ya tienes una cuenta? <a href="login.html" class="text-decoration-none text-warning">Iniciar Sesión</a></p>
+                                <div class="text-center mt-3">
+                                    ¿Ya tienes una cuenta? <a href="@Url.Action("Index", "Login")">Iniciar Sesión</a>
                                 </div>
                             </form>
                         </div>

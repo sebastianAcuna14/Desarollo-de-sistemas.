@@ -286,8 +286,7 @@
               "RelativeToolTip": "prototipo2\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAACAAAAAAAAAAAAAYwC8AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T20:30:42.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T20:30:42.069Z"
             },
             {
               "$type": "Document",
@@ -295,9 +294,9 @@
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "prototipo2\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwDAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-08T18:35:23.438Z",
               "EditorCaption": ""

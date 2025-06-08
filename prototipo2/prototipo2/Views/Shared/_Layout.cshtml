@@ -9,6 +9,13 @@
 	<link rel="stylesheet" href="~/prototipo2.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link href="~/css/styles.css" rel="stylesheet" />
+    <style>
+        header.bg-dark {
+            position: relative;
+            overflow: visible; 
+            z-index: 1030; 
+        }
+    </style>
 </head>
 <body>
     <header class="bg-dark text-white py-3">
@@ -36,11 +43,20 @@
                                 <i class="fas fa-search"></i>
                             </button>
                         </div>
+                        <ul class="navbar-nav ms-3 ms-md-4">
+                            <li class="nav-item dropend ms-4">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user fa-fw"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Login" asp-action="Recuperar">Cambiar Contraseña</a></li>
+                                    <li><hr class="dropdown-divider" /></li>
+                                    <li><a class="dropdown-item" asp-controller="Usuario" asp-action="CerrarSesion">Cerrar Sesion</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
                     </form>
-                </div>
-                <div class="col-lg-4 text-center text-lg-end">
-                    <a class="btn btn-outline-warning me-2" asp-area="" asp-controller="LoginController1" asp-action="Login">Iniciar Sesión</a>
-                    <a href="register.html" class="btn btn-warning">Registrarse</a>
                 </div>
             </div>
             </div>

@@ -21,16 +21,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\1200x600_Electromecanica.webp",
-      "PackagePath": "staticwebassets\\images\\1200x600_Electromecanica.webp"
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\Imagen1.jpeg",
-      "PackagePath": "staticwebassets\\images\\Imagen1.jpeg"
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\images.jpg",
-      "PackagePath": "staticwebassets\\images\\images.jpg"
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\5 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\6 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "PackagePath": "staticwebassets\\images\\logo_light.png"
     },
     {
       "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",

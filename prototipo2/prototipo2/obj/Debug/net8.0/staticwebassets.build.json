@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cx0zjjUZh70WVO7uQgJ+RmRVOBpbgs2BwMHpuQ5ktFE=",
+  "Hash": "vy9UDY69pdTzTDKFsdO+Lvxe94X5KLoWW38tLHHKYyU=",
   "Source": "prototipo2",
   "BasePath": "_content/prototipo2",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t1zooivxqe",
-      "Integrity": "j2icOCcH2FOk9/9CZMatvlrnNdme0SjmzSDmR2bx3hc=",
+      "Fingerprint": "39vy450h41",
+      "Integrity": "STURWSUwkzbv62p3wR7vnWt3UuJLaC6gxCcAPSWk4sA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Styles.css"
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\1200x600_Electromecanica.webp",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
-      "RelativePath": "images/1200x600_Electromecanica#[.{fingerprint}]?.webp",
+      "RelativePath": "images/2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -157,19 +157,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ka59firoew",
-      "Integrity": "9NW+s2AUYiW5TegjB4K/suviB8Ghnb1/MO01RuyDR2Q=",
+      "Fingerprint": "20vl9nt75d",
+      "Integrity": "MoXMLeKTfgJ0S9idc8lROcWCVqhN6SdwI6pyb8/0Wlg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\1200x600_Electromecanica.webp"
+      "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\Imagen1.jpeg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
-      "RelativePath": "images/Imagen1#[.{fingerprint}]?.jpeg",
+      "RelativePath": "images/4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -178,19 +178,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "48fcx4bkck",
-      "Integrity": "7CagnVuaKuSyR9kjq8IRIRnci5Q2tBlconuV0GCac00=",
+      "Fingerprint": "62xkv89g9z",
+      "Integrity": "XhO/3qgUdvN9mRnC3UpQCtKcCJCdRRj5yZERam3jQLU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Imagen1.jpeg"
+      "OriginalItemSpec": "wwwroot\\images\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\images.jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
-      "RelativePath": "images/images#[.{fingerprint}]?.jpg",
+      "RelativePath": "images/5 (1)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -199,11 +199,95 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "6o78a7hiv7",
-      "Integrity": "1i4sHKvGflENRk8mfC9T7wY1z4nCjN0s2p5jNq7L/Zc=",
+      "Fingerprint": "d9xtzkvnuh",
+      "Integrity": "Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\images.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\5 (1).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "SourceId": "prototipo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
+      "BasePath": "_content/prototipo2",
+      "RelativePath": "images/5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d9xtzkvnuh",
+      "Integrity": "Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "SourceId": "prototipo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
+      "BasePath": "_content/prototipo2",
+      "RelativePath": "images/6 (1)#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ml8q63yc4t",
+      "Integrity": "CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6 (1).jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "SourceId": "prototipo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
+      "BasePath": "_content/prototipo2",
+      "RelativePath": "images/6#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ml8q63yc4t",
+      "Integrity": "CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "SourceId": "prototipo2",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
+      "BasePath": "_content/prototipo2",
+      "RelativePath": "images/logo_light#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ubnxkqy37d",
+      "Integrity": "WhBjrz2CA+NvU3HU54fpuDxBeJxEohRJ03LaJacrmKQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo_light.png"
     },
     {
       "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
@@ -1758,6 +1842,51 @@
       ]
     },
     {
+      "Route": "css/Styles.39vy450h41.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3219"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"STURWSUwkzbv62p3wR7vnWt3UuJLaC6gxCcAPSWk4sA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 05:28:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39vy450h41"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-STURWSUwkzbv62p3wR7vnWt3UuJLaC6gxCcAPSWk4sA="
+        }
+      ]
+    },
+    {
       "Route": "css/Styles.css",
       "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
       "Selectors": [],
@@ -1768,7 +1897,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3078"
+          "Value": "3219"
         },
         {
           "Name": "Content-Type",
@@ -1776,11 +1905,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j2icOCcH2FOk9/9CZMatvlrnNdme0SjmzSDmR2bx3hc=\""
+          "Value": "\"STURWSUwkzbv62p3wR7vnWt3UuJLaC6gxCcAPSWk4sA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:38:12 GMT"
+          "Value": "Tue, 10 Jun 2025 05:28:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1790,52 +1919,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j2icOCcH2FOk9/9CZMatvlrnNdme0SjmzSDmR2bx3hc="
-        }
-      ]
-    },
-    {
-      "Route": "css/Styles.t1zooivxqe.css",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3078"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j2icOCcH2FOk9/9CZMatvlrnNdme0SjmzSDmR2bx3hc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:38:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "t1zooivxqe"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-j2icOCcH2FOk9/9CZMatvlrnNdme0SjmzSDmR2bx3hc="
+          "Value": "sha256-STURWSUwkzbv62p3wR7vnWt3UuJLaC6gxCcAPSWk4sA="
         }
       ]
     },
@@ -1922,8 +2006,8 @@
       ]
     },
     {
-      "Route": "images/1200x600_Electromecanica.ka59firoew.webp",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\1200x600_Electromecanica.webp",
+      "Route": "images/2.20vl9nt75d.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1932,19 +2016,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "311982"
+          "Value": "111168"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"9NW+s2AUYiW5TegjB4K/suviB8Ghnb1/MO01RuyDR2Q=\""
+          "Value": "\"MoXMLeKTfgJ0S9idc8lROcWCVqhN6SdwI6pyb8/0Wlg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:08:36 GMT"
+          "Value": "Tue, 10 Jun 2025 04:21:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1954,21 +2038,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ka59firoew"
+          "Value": "20vl9nt75d"
         },
         {
           "Name": "label",
-          "Value": "images/1200x600_Electromecanica.webp"
+          "Value": "images/2.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9NW+s2AUYiW5TegjB4K/suviB8Ghnb1/MO01RuyDR2Q="
+          "Value": "sha256-MoXMLeKTfgJ0S9idc8lROcWCVqhN6SdwI6pyb8/0Wlg="
         }
       ]
     },
     {
-      "Route": "images/1200x600_Electromecanica.webp",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\1200x600_Electromecanica.webp",
+      "Route": "images/2.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1977,19 +2061,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "311982"
+          "Value": "111168"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"9NW+s2AUYiW5TegjB4K/suviB8Ghnb1/MO01RuyDR2Q=\""
+          "Value": "\"MoXMLeKTfgJ0S9idc8lROcWCVqhN6SdwI6pyb8/0Wlg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:08:36 GMT"
+          "Value": "Tue, 10 Jun 2025 04:21:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1999,13 +2083,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-9NW+s2AUYiW5TegjB4K/suviB8Ghnb1/MO01RuyDR2Q="
+          "Value": "sha256-MoXMLeKTfgJ0S9idc8lROcWCVqhN6SdwI6pyb8/0Wlg="
         }
       ]
     },
     {
-      "Route": "images/Imagen1.48fcx4bkck.jpeg",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\Imagen1.jpeg",
+      "Route": "images/4.62xkv89g9z.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2014,7 +2098,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160027"
+          "Value": "58548"
         },
         {
           "Name": "Content-Type",
@@ -2022,11 +2106,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7CagnVuaKuSyR9kjq8IRIRnci5Q2tBlconuV0GCac00=\""
+          "Value": "\"XhO/3qgUdvN9mRnC3UpQCtKcCJCdRRj5yZERam3jQLU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:08:36 GMT"
+          "Value": "Tue, 10 Jun 2025 04:22:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2036,21 +2120,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "48fcx4bkck"
+          "Value": "62xkv89g9z"
         },
         {
           "Name": "label",
-          "Value": "images/Imagen1.jpeg"
+          "Value": "images/4.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7CagnVuaKuSyR9kjq8IRIRnci5Q2tBlconuV0GCac00="
+          "Value": "sha256-XhO/3qgUdvN9mRnC3UpQCtKcCJCdRRj5yZERam3jQLU="
         }
       ]
     },
     {
-      "Route": "images/Imagen1.jpeg",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\Imagen1.jpeg",
+      "Route": "images/4.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2059,7 +2143,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "160027"
+          "Value": "58548"
         },
         {
           "Name": "Content-Type",
@@ -2067,11 +2151,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7CagnVuaKuSyR9kjq8IRIRnci5Q2tBlconuV0GCac00=\""
+          "Value": "\"XhO/3qgUdvN9mRnC3UpQCtKcCJCdRRj5yZERam3jQLU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:08:36 GMT"
+          "Value": "Tue, 10 Jun 2025 04:22:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2081,13 +2165,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7CagnVuaKuSyR9kjq8IRIRnci5Q2tBlconuV0GCac00="
+          "Value": "sha256-XhO/3qgUdvN9mRnC3UpQCtKcCJCdRRj5yZERam3jQLU="
         }
       ]
     },
     {
-      "Route": "images/images.6o78a7hiv7.jpg",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\images.jpg",
+      "Route": "images/5 (1).d9xtzkvnuh.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2096,7 +2180,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6675"
+          "Value": "91906"
         },
         {
           "Name": "Content-Type",
@@ -2104,11 +2188,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1i4sHKvGflENRk8mfC9T7wY1z4nCjN0s2p5jNq7L/Zc=\""
+          "Value": "\"Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:08:36 GMT"
+          "Value": "Tue, 10 Jun 2025 04:22:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2118,21 +2202,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "6o78a7hiv7"
+          "Value": "d9xtzkvnuh"
         },
         {
           "Name": "label",
-          "Value": "images/images.jpg"
+          "Value": "images/5 (1).jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1i4sHKvGflENRk8mfC9T7wY1z4nCjN0s2p5jNq7L/Zc="
+          "Value": "sha256-Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ="
         }
       ]
     },
     {
-      "Route": "images/images.jpg",
-      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\images.jpg",
+      "Route": "images/5 (1).jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2141,7 +2225,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6675"
+          "Value": "91906"
         },
         {
           "Name": "Content-Type",
@@ -2149,11 +2233,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1i4sHKvGflENRk8mfC9T7wY1z4nCjN0s2p5jNq7L/Zc=\""
+          "Value": "\"Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 10 Jun 2025 03:08:36 GMT"
+          "Value": "Tue, 10 Jun 2025 04:22:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2163,7 +2247,335 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1i4sHKvGflENRk8mfC9T7wY1z4nCjN0s2p5jNq7L/Zc="
+          "Value": "sha256-Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/5.d9xtzkvnuh.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d9xtzkvnuh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/5.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:21:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xy94ELkm9V+n8dI3Vyp7LbeLFcEYscuJ/PYsmexl6zQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/6 (1).jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:22:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY="
+        }
+      ]
+    },
+    {
+      "Route": "images/6 (1).ml8q63yc4t.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:22:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ml8q63yc4t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/6 (1).jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY="
+        }
+      ]
+    },
+    {
+      "Route": "images/6.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:22:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY="
+        }
+      ]
+    },
+    {
+      "Route": "images/6.ml8q63yc4t.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "84241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:22:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ml8q63yc4t"
+        },
+        {
+          "Name": "label",
+          "Value": "images/6.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CoAvSRY/qRxAIcZY66kOVBDhZ1l4LhAzRpJQ5GDF6mY="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo_light.png",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WhBjrz2CA+NvU3HU54fpuDxBeJxEohRJ03LaJacrmKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WhBjrz2CA+NvU3HU54fpuDxBeJxEohRJ03LaJacrmKQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo_light.ubnxkqy37d.png",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62714"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WhBjrz2CA+NvU3HU54fpuDxBeJxEohRJ03LaJacrmKQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 04:59:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ubnxkqy37d"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo_light.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WhBjrz2CA+NvU3HU54fpuDxBeJxEohRJ03LaJacrmKQ="
         }
       ]
     },

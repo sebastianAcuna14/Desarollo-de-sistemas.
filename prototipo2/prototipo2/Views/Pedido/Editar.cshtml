@@ -1,0 +1,79 @@
+﻿@model prototipo2.Models.Pedido
+
+@{
+    ViewData["Title"] = "Editar pedido";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="card shadow rounded">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">
+                <i class="fas fa-edit me-2"></i>Editar Pedido
+            </h3>
+        </div>
+
+        <div class="card-body">
+            <p class="mb-4 text-muted">Complete los campos para editar el pedido.</p>
+
+            <form asp-action="Editar" method="post">
+                <input type="hidden" asp-for="Id" />
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Nombre_Producto" class="form-label">Nombre del Producto</label>
+                        <input asp-for="Nombre_Producto" class="form-control" />
+                        <span asp-validation-for="Nombre_Producto" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Numero_Pedido" class="form-label">Número de Pedido</label>
+                        <input asp-for="Numero_Pedido" class="form-control" />
+                        <span asp-validation-for="Numero_Pedido" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="Cantidad" class="form-label">Cantidad</label>
+                        <input asp-for="Cantidad" class="form-control" />
+                        <span asp-validation-for="Cantidad" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="Precio" class="form-label">Precio</label>
+                        <input asp-for="Precio" class="form-control" />
+                        <span asp-validation-for="Precio" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="Estado" class="form-label">Estado</label>
+                        <input asp-for="Estado" class="form-control" />
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                    </div>
+
+
+                    <div class="col-md-4 mb-3">
+                        <label asp-for="FechaPedido" class="form-label">Fecha del Pedido</label>
+                        <input asp-for="FechaPedido" type="date" class="form-control" />
+                        <span asp-validation-for="FechaPedido" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="text-end">
+                    <div class="text-end mt-4">
+                        <a asp-controller="Inventario" asp-action="Index" class="btn btn-secondary me-2">
+                            <i class="fas fa-arrow-left me-1"></i>Cancelar
+                        </a>
+
+                        <button type="submit" class="btn btn-success px-4">
+                            <i class="fas fa-save me-1"></i>Guardar Cambios
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

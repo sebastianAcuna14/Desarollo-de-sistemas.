@@ -1,53 +1,70 @@
-﻿
-
-
-@model prototipo2.Models.Empleado
+﻿@model prototipo2.Models.Empleado
 
 @{
     ViewData["Title"] = "Editar Empleado";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
-<div class="container py-4">
 
+<div class="container mt-5">
+    <div class="card shadow rounded-4">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">
+                <i class="fas fa-edit me-2"></i>Editar Empleado
+            </h3>
+        </div>
 
+        <div class="card-body">
+            <p class="mb-4 text-muted">Complete los campos para editar el empleado.</p>
 
-<h2 class="mt-4 mb-3">Editar Empleado</h2>
+            <form asp-action="EditarEmpleado" method="post">
+                <input type="hidden" asp-for="Id" />
 
-<form asp-action="EditarEmpleado" method="post" class="needs-validation" novalidate>
-    <input type="hidden" asp-for="Id" />
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="NombreCompleto" class="form-label">Nombre Completo</label>
+                        <input asp-for="NombreCompleto" class="form-control" />
+                        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                    </div>
 
-    <div class="mb-3">
-        <label asp-for="NombreCompleto" class="form-label"></label>
-        <input asp-for="NombreCompleto" class="form-control" />
-        <span asp-validation-for="NombreCompleto" class="text-danger"></span>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Cedula" class="form-label">Cédula</label>
+                        <input asp-for="Cedula" class="form-control" />
+                        <span asp-validation-for="Cedula" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="Rol" class="form-label">Rol</label>
+                        <input asp-for="Rol" class="form-control" />
+                        <span asp-validation-for="Rol" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label asp-for="Salario" class="form-label">Salario</label>
+                        <input asp-for="Salario" class="form-control" />
+                        <span asp-validation-for="Salario" class="text-danger"></span>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label asp-for="FechaContratacion" class="form-label">Fecha de Contratación</label>
+                        <input asp-for="FechaContratacion" class="form-control" type="date" />
+                        <span asp-validation-for="FechaContratacion" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="text-end mt-4">
+                    <a asp-action="ListaEmpleado" class="btn btn-secondary me-2">
+                        <i class="fas fa-arrow-left me-1"></i>Cancelar
+                    </a>
+
+                    <button type="submit" class="btn btn-success px-4">
+                        <i class="fas fa-save me-1"></i>Guardar Cambios
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <div class="mb-3">
-        <label asp-for="Cedula" class="form-label"></label>
-        <input asp-for="Cedula" class="form-control" />
-        <span asp-validation-for="Cedula" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label asp-for="Rol" class="form-label"></label>
-        <input asp-for="Rol" class="form-control" />
-        <span asp-validation-for="Rol" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label asp-for="Salario" class="form-label"></label>
-        <input asp-for="Salario" class="form-control" />
-        <span asp-validation-for="Salario" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3 ">
-        <label asp-for="FechaContratacion" class="form-label"></label>
-        <input asp-for="FechaContratacion" class="form-control" type="date" />
-        <span asp-validation-for="FechaContratacion" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-    <a asp-action="ListaEmpleado" class="btn btn-secondary ms-2">Cancelar</a>
-</form>
-
 </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

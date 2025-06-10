@@ -138,3 +138,8 @@ header .input-group {
     border-color: transparent;
     color: var(--bs-primary);
 }
+header.bg-dark {
+    position: relative;
+    overflow: visible;
+    z-index: 1030;
+}

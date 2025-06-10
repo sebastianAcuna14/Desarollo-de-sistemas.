@@ -1,16 +1,35 @@
 ﻿@model prototipo2.Models.Empleado
 @{
-    ViewData["Title"] = "EliminarEmpleado";
+    ViewData["Title"] = "Eliminar Empleado";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow rounded-4 border-danger">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-trash-alt me-2"></i>Eliminar Empleado
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="fs-5">¿Estás seguro de que deseas eliminar a <strong>@Model.NombreCompleto</strong>?</p>
 
+                    <form asp-action="Eliminar" method="post">
+                        <input type="hidden" asp-for="Id" />
 
-<h2>Eliminar Empleado</h2>
-<p>¿Estás seguro de que deseas eliminar a @Model.NombreCompleto?</p>
-
-<form asp-action="Eliminar" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit">Sí, eliminar</button>
-    <a asp-action="ListaEmpleado">Cancelar</a>
-</form>
+                        <div class="d-flex justify-content-between mt-4">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-check-circle me-1"></i> Sí, eliminar
+                            </button>
+                            <a asp-action="ListaEmpleado" class="btn btn-secondary">
+                                <i class="fas fa-times-circle me-1"></i> Cancelar
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

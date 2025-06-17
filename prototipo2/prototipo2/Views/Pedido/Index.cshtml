@@ -1,0 +1,56 @@
+﻿@model IEnumerable<prototipo2.Models.Pedido>
+
+@{
+    ViewData["Title"] = "Listado de Pedidos";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm rounded-4">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-box me-2"></i>Listado de Pedidos</h4>
+            <a asp-action="Crear" class="btn btn-success">
+                <i class="fas fa-plus me-1"></i> Crear Pedido
+            </a>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>Número de Pedido</th>
+                        <th>Nombre del Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Fecha del Pedido</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pedido in Model)
+                    {
+                        <tr>
+                            <td>@pedido.Numero_Pedido</td>
+                            <td>@pedido.Nombre_Producto</td>
+                            <td>@pedido.Cantidad</td>
+                            <td>@pedido.Precio.ToString("C")</td>
+                            <td>@pedido.FechaPedido.ToShortDateString()</td>
+                            <td>@pedido.Estado</td>
+                            <td>
+                                <a asp-action="Consultar" asp-route-id="@pedido.Id" class="btn btn-info btn-sm me-1">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a asp-action="Editar" asp-route-id="@pedido.Id" class="btn btn-warning btn-sm me-1">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <a asp-action="Eliminar" asp-route-id="@pedido.Id" class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

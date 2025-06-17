@@ -2,9 +2,13 @@ wwwroot\css\Estilo.css
 wwwroot\css\site.css
 wwwroot\css\Styles.css
 wwwroot\favicon.ico
-wwwroot\images\1200x600_Electromecanica.webp
-wwwroot\images\Imagen1.jpeg
-wwwroot\images\images.jpg
+wwwroot\images\2.jpg
+wwwroot\images\4.jpg
+wwwroot\images\5 (1).jpg
+wwwroot\images\5.jpg
+wwwroot\images\6 (1).jpg
+wwwroot\images\6.jpg
+wwwroot\images\logo_light.png
 wwwroot\js\datatables-simple-demo.js
 wwwroot\js\Empleado.js
 wwwroot\js\Producto.js

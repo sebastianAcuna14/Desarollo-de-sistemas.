@@ -138,3 +138,14 @@ header .input-group {
     border-color: transparent;
     color: var(--bs-primary);
 }
+header.bg-dark {
+    position: relative;
+    overflow: visible;
+    z-index: 1030;
+}
+
+.carousel-img {
+    height: auto; /* O la altura que prefieras */
+   
+    object-fit: cover; /* Para que la imagen no se deforme */
+}

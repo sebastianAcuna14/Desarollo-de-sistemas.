@@ -1,0 +1,41 @@
+﻿@model prototipo2.Models.Pedido
+
+@{
+    ViewData["Title"] = "Detalles del pedido";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm rounded-4">
+        <div class="card-header bg-info text-white">
+            <h4 class="mb-0"><i class="fas fa-info-circle me-2"></i>Detalles del pedido</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row fs-5">
+                <dt class="col-sm-4">Nombre del Producto:</dt>
+                <dd class="col-sm-8">@Model.Nombre_Producto</dd>
+
+                <dt class="col-sm-4">Número de Pedido:</dt>
+                <dd class="col-sm-8">@Model.Numero_Pedido</dd>
+
+                <dt class="col-sm-4">Cantidad:</dt>
+                <dd class="col-sm-8">@Model.Cantidad</dd>
+
+                <dt class="col-sm-4">Fecha del Pedido:</dt>
+                <dd class="col-sm-8">@Model.FechaPedido.ToShortDateString()</dd>
+
+                <dt class="col-sm-4">Precio:</dt>
+                <dd class="col-sm-8">@Model.Precio.ToString("C")</dd>
+
+                <dt class="col-sm-4">Estado:</dt>
+                <dd class="col-sm-8">@Model.Estado</dd>
+            </dl>
+
+            <div class="d-flex justify-content-end">
+                <a asp-action="Index" asp-controller="Pedido" class="btn btn-secondary">
+                    <i class="fas fa-arrow-left me-1"></i> Volver a pedidos
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

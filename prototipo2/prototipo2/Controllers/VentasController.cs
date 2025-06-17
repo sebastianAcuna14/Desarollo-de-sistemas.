@@ -30,6 +30,12 @@ namespace prototipo2.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Venta venta)
         {
+
+            if (venta.Productos == null || !venta.Productos.Any())
+            {
+                ModelState.AddModelError("", "Debe seleccionar al menos un producto.");
+            }
+
             if (!ModelState.IsValid)
                 return View(venta);
 
@@ -75,6 +81,17 @@ namespace prototipo2.Controllers
             if (venta == null)
                 return NotFound();
 
+            if (devolucion.ProductosDevueltos == null || !devolucion.ProductosDevueltos.Any())
+            {
+                ModelState.AddModelError("", "Debe seleccionar al menos un producto para devolver.");
+            }
+
+
+            if ((DateTime.Now - venta.Fecha).TotalDays > 30)
+            {
+                ModelState.AddModelError("", "El plazo para devolución ha expirado.");
+            }
+
             if (!ModelState.IsValid)
             {
                 ViewBag.VentaId = id;
@@ -93,7 +110,6 @@ namespace prototipo2.Controllers
                 Comentario = $"Reembolso por devolución del {DateTime.Now:dd/MM/yyyy}"
             };
 
-
             FinanzasController.AgregarMovimientoDesdeVenta(new MovimientoFinanciero
             {
                 Fecha = DateTime.Now,
@@ -101,7 +117,6 @@ namespace prototipo2.Controllers
                 Monto = -totalDevuelto,
                 Tipo = MovimientoFinanciero.TipoMovimiento.EGRESO
             });
-
 
             return RedirectToAction(nameof(Details), new { id });
         }

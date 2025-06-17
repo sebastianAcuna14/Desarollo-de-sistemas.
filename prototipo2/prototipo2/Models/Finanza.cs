@@ -23,6 +23,8 @@ namespace prototipo2.Models
 
         public bool Pagada { get; set; } = false;
 
+        public bool Anulada { get; set; } = false;
+
         public enum TipoMovimiento
         {
             INGRESO,

@@ -46,6 +46,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cTGlzdGFFbXBsZWFkby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Finanzas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW56YXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Finanzas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW56YXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Finanzas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmluYW56YXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -112,6 +124,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Usuario/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Ventas/AgregarDevolucion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEFncmVnYXJEZXZvbHVjaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Ventas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Ventas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/Ventas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/JOSHUA/Desktop/Nueva carpeta/prototipo2/prototipo2/Views/_ViewImports.cshtml]

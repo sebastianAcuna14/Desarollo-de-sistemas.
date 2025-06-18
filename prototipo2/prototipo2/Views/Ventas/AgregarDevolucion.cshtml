@@ -1,0 +1,24 @@
+﻿@model prototipo2.Models.Devolucion
+
+@{
+    ViewData["Title"] = "Agregar Devolución";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Agregar Devolución</h2>
+
+<p>Lamentamos mucho los inconvenientes. Por favor, indique el motivo de su devolución:</p>
+<form asp-action="AgregarDevolucion" asp-route-id="@ViewBag.VentaId" method="post">
+    <div class="mb-3">
+        <label>Motivo de la devolución</label>
+        <input asp-for="Motivo" class="form-control" />
+        <span asp-validation-for="Motivo" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Confirmar devolución</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

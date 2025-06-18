@@ -73,16 +73,19 @@ namespace prototipo2.Controllers
             return View(mov);
         }
 
-        // POST: Marcar como pagada una cuenta por cobrar
         [HttpPost]
         public IActionResult MarcarComoPagada(int id)
         {
             var mov = _movimientos.FirstOrDefault(m => m.Id == id && m.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR);
             if (mov != null)
+            {
                 mov.Pagada = true;
+                mov.Tipo = MovimientoFinanciero.TipoMovimiento.INGRESO; 
+            }
 
             return RedirectToAction(nameof(Index));
         }
+
 
         public static void AgregarMovimientoDesdeVenta(MovimientoFinanciero movimiento)
         {

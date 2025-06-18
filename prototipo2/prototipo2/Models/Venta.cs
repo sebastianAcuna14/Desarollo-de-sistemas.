@@ -13,7 +13,6 @@ namespace prototipo2.Models
 
         public List<MetodoPago> Pagos { get; set; } = new();
 
-
         public List<Devolucion> Devoluciones { get; set; } = new();
 
         public NotaCredito? NotaCredito { get; set; }
@@ -39,6 +38,9 @@ namespace prototipo2.Models
 
         [Required]
         public decimal Monto { get; set; }
+
+        [Required]
+        public TipoPago Tipo { get; set; }  
     }
 
     public class Devolucion

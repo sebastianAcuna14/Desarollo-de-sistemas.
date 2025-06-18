@@ -6,59 +6,59 @@ namespace prototipo2.Controllers
 {
     public class VentasController : Controller
     {
-        private static int _nextId = 1;
-
+        private static int _nextId = 3;
 
         private static List<Venta> _ventas = new()
-{
-    new Venta
-    {
-        Id = 1,
-        Fecha = DateTime.Now.AddDays(-3),
-        Productos = new List<ItemVendido>
         {
-            new ItemVendido { Producto = "Taladro", Cantidad = 2, PrecioUnitario = 2500 },
-            new ItemVendido { Producto = "Desatornillador", Cantidad = 1, PrecioUnitario = 4500 }
-        },
-        Pagos = new List<MetodoPago>
-        {
-            new MetodoPago { Monto = 9500 }
-        },
-        Devoluciones = new List<Devolucion>(),
-        NotaCredito = null
-    },
-    new Venta
-    {
-        Id = 2,
-        Fecha = DateTime.Now.AddDays(-1),
-        Productos = new List<ItemVendido>
-        {
-            new ItemVendido { Producto = "Sierra", Cantidad = 3, PrecioUnitario = 1200 }
-        },
-        Pagos = new List<MetodoPago>
-        {
-            new MetodoPago { Monto = 3600 }
-        },
-        Devoluciones = new List<Devolucion>
-        {
-            new Devolucion
+            new Venta
             {
-                Fecha = DateTime.Now.AddDays(-1),
-                Motivo = "Producto vencido",
-                ProductosDevueltos = new List<ItemDevuelto>
+                Id = 1,
+                Fecha = DateTime.Now.AddDays(-3),
+                Productos = new List<ItemVendido>
                 {
-                    new ItemDevuelto { Producto = "Conjunto de llaves inglesas", Cantidad = 1, Observaciones = "Cliente mostró recibo" }
+                    new ItemVendido { Producto = "Taladro", Cantidad = 2, PrecioUnitario = 2500 },
+                    new ItemVendido { Producto = "Desatornillador", Cantidad = 1, PrecioUnitario = 4500 }
+                },
+                Pagos = new List<MetodoPago>
+                {
+                    new MetodoPago { Tipo = MetodoPago.TipoPago.EFECTIVO, Monto = 9500 }
+                },
+                Devoluciones = new List<Devolucion>(),
+                NotaCredito = null
+            },
+            new Venta
+            {
+                Id = 2,
+                Fecha = DateTime.Now.AddDays(-1),
+                Productos = new List<ItemVendido>
+                {
+                    new ItemVendido { Producto = "Sierra", Cantidad = 3, PrecioUnitario = 1200 }
+                },
+                Pagos = new List<MetodoPago>
+                {
+                    new MetodoPago { Tipo = MetodoPago.TipoPago.TARJETA, Monto = 3600 }
+                },
+                Devoluciones = new List<Devolucion>
+                {
+                    new Devolucion
+                    {
+                        Fecha = DateTime.Now.AddDays(-1),
+                        Motivo = "Producto vencido",
+                        ProductosDevueltos = new List<ItemDevuelto>
+                        {
+                            new ItemDevuelto { Producto = "Conjunto de llaves inglesas", Cantidad = 1, Observaciones = "Cliente mostró recibo" }
+                        }
+                    }
+                },
+                NotaCredito = new NotaCredito
+                {
+                    Fecha = DateTime.Now.AddDays(-1),
+                    Monto = 1200,
+                    Comentario = "Algunas Llaves venian rotas"
                 }
             }
-        },
-        NotaCredito = new NotaCredito
-        {
-            Fecha = DateTime.Now.AddDays(-1),
-            Monto = 1200,
-            Comentario = "Algunas Llaves venian rotas"
-        }
-    }
-};
+        };
+
 
         // GET: /Ventas
         public IActionResult Index()
@@ -71,8 +71,8 @@ namespace prototipo2.Controllers
         {
             return View(new Venta
             {
-                Productos = new List<ItemVendido>(),
-                Pagos = new List<MetodoPago>()
+                Productos = new List<ItemVendido> { new ItemVendido() },
+                Pagos = new List<MetodoPago> { new MetodoPago() }
             });
         }
 
@@ -81,14 +81,30 @@ namespace prototipo2.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(Venta venta)
         {
-
             if (venta.Productos == null || !venta.Productos.Any())
             {
                 ModelState.AddModelError("", "Debe seleccionar al menos un producto.");
             }
 
+            if (venta.Pagos == null || !venta.Pagos.Any())
+            {
+                ModelState.AddModelError("", "Debe seleccionar al menos un método de pago.");
+            }
+
             if (!ModelState.IsValid)
                 return View(venta);
+
+            // Calcular total de la venta
+            decimal totalVenta = venta.Productos.Sum(p => p.Cantidad * p.PrecioUnitario);
+
+            // Distribuir el monto total entre los métodos de pago igualitariamente
+            int pagosCount = venta.Pagos.Count;
+            decimal montoPorPago = totalVenta / pagosCount;
+
+            foreach (var pago in venta.Pagos)
+            {
+                pago.Monto = montoPorPago;
+            }
 
             venta.Id = _nextId++;
             venta.Fecha = DateTime.Now;
@@ -117,10 +133,19 @@ namespace prototipo2.Controllers
                 return NotFound();
 
             ViewBag.VentaId = id;
-            return View(new Devolucion
+
+            // Inicializar con los productos de la venta para ayudar a seleccionar devoluciones
+            var devolucion = new Devolucion
             {
-                ProductosDevueltos = new List<ItemDevuelto>()
-            });
+                ProductosDevueltos = venta.Productos.Select(p => new ItemDevuelto
+                {
+                    Producto = p.Producto,
+                    Cantidad = 0,
+                    Observaciones = ""
+                }).ToList()
+            };
+
+            return View(devolucion);
         }
 
         // POST: /Ventas/AgregarDevolucion/5
@@ -132,15 +157,21 @@ namespace prototipo2.Controllers
             if (venta == null)
                 return NotFound();
 
-            if (devolucion.ProductosDevueltos == null || !devolucion.ProductosDevueltos.Any())
-            {
-                ModelState.AddModelError("", "Debe seleccionar al menos un producto para devolver.");
-            }
 
-
+            // Validar plazo de devolución (máx 30 días)
             if ((DateTime.Now - venta.Fecha).TotalDays > 30)
             {
                 ModelState.AddModelError("", "El plazo para devolución ha expirado.");
+            }
+
+            // Validar que la cantidad devuelta no supere la vendida
+            foreach (var itemDevuelto in devolucion.ProductosDevueltos.Where(p => p.Cantidad > 0))
+            {
+                var productoVendido = venta.Productos.FirstOrDefault(p => p.Producto == itemDevuelto.Producto);
+                if (productoVendido == null || itemDevuelto.Cantidad > productoVendido.Cantidad)
+                {
+                    ModelState.AddModelError("", $"La cantidad a devolver de {itemDevuelto.Producto} no puede ser mayor que la vendida.");
+                }
             }
 
             if (!ModelState.IsValid)
@@ -152,14 +183,17 @@ namespace prototipo2.Controllers
             devolucion.Fecha = DateTime.Now;
             venta.Devoluciones.Add(devolucion);
 
-            decimal totalDevuelto = CalcularTotalDevuelto(venta, devolucion);
+            decimal totalDevuelto = venta.Productos.Sum(p => p.Cantidad * p.PrecioUnitario);
+
 
             venta.NotaCredito = new NotaCredito
             {
                 Fecha = DateTime.Now,
                 Monto = totalDevuelto,
-                Comentario = $"Reembolso por devolución del {DateTime.Now:dd/MM/yyyy}"
+                Comentario = devolucion.Motivo
             };
+
+
 
             FinanzasController.AgregarMovimientoDesdeVenta(new MovimientoFinanciero
             {
@@ -169,19 +203,8 @@ namespace prototipo2.Controllers
                 Tipo = MovimientoFinanciero.TipoMovimiento.EGRESO
             });
 
-            return RedirectToAction(nameof(Details), new { id });
-        }
+            return RedirectToAction(nameof(Index));
 
-        private decimal CalcularTotalDevuelto(Venta venta, Devolucion devolucion)
-        {
-            decimal total = 0;
-            foreach (var item in devolucion.ProductosDevueltos)
-            {
-                var productoOriginal = venta.Productos.FirstOrDefault(p => p.Producto == item.Producto);
-                if (productoOriginal != null)
-                    total += item.Cantidad * productoOriginal.PrecioUnitario;
-            }
-            return total;
         }
     }
 }

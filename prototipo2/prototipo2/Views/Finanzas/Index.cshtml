@@ -1,0 +1,77 @@
+﻿@model IEnumerable<prototipo2.Models.MovimientoFinanciero>
+
+@{
+    ViewData["Title"] = "Movimientos Financieros";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm rounded-4">
+        <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+            <h4 class="mb-0"><i class="fas fa-coins me-2"></i>Movimientos Financieros</h4>
+            <a asp-action="Create" class="btn btn-warning">
+                <i class="fas fa-plus me-1"></i> Nuevo Movimiento
+            </a>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover table-bordered">
+                <thead class="table-light">
+                    <tr>
+                        <th>Descripción</th>
+                        <th>Monto</th>
+                        <th>Tipo</th>
+                        <th>Fecha</th>
+                        <th>Vence</th>
+                        <th>Pagada</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var mov in Model)
+                    {
+                        <tr class="@(mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR ? "table-warning" : "")">
+                            <td>@mov.Id</td>
+                            <td>@mov.Descripcion</td>
+                            <td>@mov.Monto.ToString("C")</td>
+                            <td>@mov.Tipo</td>
+                            <td>@mov.Fecha.ToShortDateString()</td>
+                            <td>@(mov.FechaVencimiento?.ToShortDateString() ?? "-")</td>
+                            <td>
+                                @if (mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR)
+                                {
+                                    @if (mov.Pagada)
+                                    {
+                                        <span class="badge bg-success">Sí</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">No</span>
+                                    }
+                                }
+                                else
+                                {
+                                    <span class="text-muted">N/A</span>
+                                }
+                            </td>
+                            <td>
+                                @if (mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR && !mov.Pagada)
+                                {
+                                    <form asp-action="MarcarComoPagada" method="post" class="d-inline">
+                                        <input type="hidden" name="id" value="@mov.Id" />
+                                        <button type="submit" class="btn btn-sm btn-success">
+                                            <i class="fas fa-check"></i> Marcar Pagada
+                                        </button>
+                                    </form>
+                                }
+                                <a asp-action="Details" asp-route-id="@mov.Id" class="btn btn-sm btn-info ms-1">
+                                    <i class="fas fa-eye"></i> Detalles
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,125 @@
+﻿@model prototipo2.Models.Venta
+
+@{
+    ViewData["Title"] = "Nueva Venta";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Nueva Venta</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label>Productos</label>
+        <table class="table" id="productosTable">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Método de Pago</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Productos != null && Model.Productos.Any())
+                {
+                    for (int i = 0; i < Model.Productos.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                <input asp-for="@Model.Productos[i].Producto" class="form-control" />
+                                <span asp-validation-for="@Model.Productos[i].Producto" class="text-danger"></span>
+                            </td>
+                            <td>
+                                <input asp-for="@Model.Productos[i].Cantidad" type="number" min="1" class="form-control" />
+                                <span asp-validation-for="@Model.Productos[i].Cantidad" class="text-danger"></span>
+                            </td>
+                            <td>
+                                <input asp-for="@Model.Productos[i].PrecioUnitario" type="number" step="0.01" min="0" class="form-control" />
+                                <span asp-validation-for="@Model.Productos[i].PrecioUnitario" class="text-danger"></span>
+                            </td>
+                            <td>
+                                <select name="Pagos[0].Tipo" class="form-select">
+                                    <option value="EFECTIVO">Efectivo</option>
+                                    <option value="TARJETA">Tarjeta</option>
+                                    <option value="SINPE">SINPE</option>
+                                </select>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="removeProductoRow(this)">Eliminar</button>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td>
+                            <input name="Productos[0].Producto" class="form-control" />
+                        </td>
+                        <td>
+                            <input name="Productos[0].Cantidad" type="number" min="1" class="form-control" />
+                        </td>
+                        <td>
+                            <input name="Productos[0].PrecioUnitario" type="number" step="0.01" min="0" class="form-control" />
+                        </td>
+                        <td>
+                            <select name="Pagos[0].Tipo" class="form-select">
+                                <option value="EFECTIVO">Efectivo</option>
+                                <option value="TARJETA">Tarjeta</option>
+                                <option value="SINPE">SINPE</option>
+                            </select>
+                        </td>
+                        <td></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" onclick="addProductoRow()">Agregar Producto</button>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar Venta</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+    <script>
+        function addProductoRow() {
+            const tableBody = document.getElementById('productosTable').getElementsByTagName('tbody')[0];
+            const index = tableBody.rows.length;
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td><input name="Productos[${index}].Producto" class="form-control" /></td>
+                <td><input name="Productos[${index}].Cantidad" type="number" min="1" class="form-control" /></td>
+                <td><input name="Productos[${index}].PrecioUnitario" type="number" step="0.01" min="0" class="form-control" /></td>
+                <td>
+                    <select name="Pagos[${index}].Tipo" class="form-select">
+                        <option value="EFECTIVO">Efectivo</option>
+                        <option value="TARJETA">Tarjeta</option>
+                        <option value="SINPE">SINPE</option>
+                    </select>
+                </td>
+                <td><button type="button" class="btn btn-danger btn-sm" onclick="removeProductoRow(this)">Eliminar</button></td>
+            `;
+            tableBody.appendChild(row);
+        }
+
+        function removeProductoRow(button) {
+            const row = button.closest('tr');
+            row.remove();
+            updateIndices();
+        }
+
+        function updateIndices() {
+            const rows = document.getElementById('productosTable').getElementsByTagName('tbody')[0].rows;
+            for (let i = 0; i < rows.length; i++) {
+                rows[i].querySelector('input[name^="Productos"][name$=".Producto"]').setAttribute('name', `Productos[${i}].Producto`);
+                rows[i].querySelector('input[name^="Productos"][name$=".Cantidad"]').setAttribute('name', `Productos[${i}].Cantidad`);
+                rows[i].querySelector('input[name^="Productos"][name$=".PrecioUnitario"]').setAttribute('name', `Productos[${i}].PrecioUnitario`);
+                rows[i].querySelector('select[name^="Pagos"]').setAttribute('name', `Pagos[${i}].Tipo`);
+            }
+        }
+    </script>
+}

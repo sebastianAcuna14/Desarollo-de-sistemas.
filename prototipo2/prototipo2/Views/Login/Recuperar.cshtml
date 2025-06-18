@@ -2,7 +2,7 @@
     ViewData["Title"] = "Recuperar contraseña";
 }
 
-<div class="container mt-5">
+<main class="container mt-5 mb-5">
     <h2>Recuperar Contraseña</h2>
 
     <form method="post" asp-action="Recuperar">
@@ -13,7 +13,6 @@
         <button type="submit" class="btn btn-warning">Buscar</button>
     </form>
 
-   
     @if (ViewBag.UsuarioEncontrado != null && ViewBag.UsuarioEncontrado == true)
     {
         <hr />
@@ -27,5 +26,4 @@
             <button type="submit" class="btn btn-success">Actualizar contraseña</button>
         </form>
     }
-</div>
-
+</main>

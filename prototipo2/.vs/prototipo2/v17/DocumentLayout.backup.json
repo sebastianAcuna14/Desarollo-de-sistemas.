@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\",
+  "WorkspaceRootPath": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\reparacion\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\reparacion\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\ventas\\agregardevolucion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\ventas\\agregardevolucion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\reparacion\\consultar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\reparacion\\consultar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\ventas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\ventas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\reparacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\reparacion\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\reparacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\reparacion\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\ventas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\ventas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\reparacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\reparacion\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\ventas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\ventas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\reparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\reparacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\kenneth\\desktop\\dise\u00F1o y desarrollo de sistemas iic2025\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\reparacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\reparacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,19 +42,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 2606,
-          "SelectedChildIndex": 68,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Consultar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Consultar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Reparacion\\Consultar.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Consultar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Reparacion\\Consultar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T22:25:02.774Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Reparacion\\Eliminar.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Eliminar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Reparacion\\Eliminar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T22:24:48.46Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Editar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Reparacion\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Editar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Reparacion\\Editar.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T22:24:27.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Crear.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Reparacion\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Crear.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Reparacion\\Crear.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T22:24:11.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Index.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Reparacion\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Reparacion\\Index.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Reparacion\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAmwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-18T22:23:54.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Reparacion.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Reparacion.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Models\\Reparacion.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Reparacion.cs",
+              "RelativeToolTip": "prototipo2\\Models\\Reparacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:23:17.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\appsettings.json",
+              "RelativeDocumentMoniker": "prototipo2\\appsettings.json",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\appsettings.json",
+              "RelativeToolTip": "prototipo2\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-18T22:20:06.738Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -67,6 +154,10 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Bookmark",
@@ -238,7 +329,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{ca8cc5c7-0231-406a-95cd-aa5ed6ac0190}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -250,7 +341,15 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -270,6 +369,22 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             },
             {
@@ -278,96 +393,19 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Details.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Ventas\\Details.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Details.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Ventas\\Details.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T21:46:28.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Create.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Ventas\\Create.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Create.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Ventas\\Create.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T21:42:25.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgregarDevolucion.cshtml",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\AgregarDevolucion.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Ventas\\AgregarDevolucion.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\AgregarDevolucion.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Ventas\\AgregarDevolucion.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T21:28:00.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Venta.cs",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Models\\Venta.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Models\\Venta.cs",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Models\\Venta.cs",
-              "RelativeToolTip": "prototipo2\\Models\\Venta.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAgwEkAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ReparacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\ReparacionController.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Controllers\\ReparacionController.cs",
+              "ToolTip": "C:\\Users\\Kenneth\\Desktop\\Dise\u00F1o y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\ReparacionController.cs",
+              "RelativeToolTip": "prototipo2\\Controllers\\ReparacionController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T23:16:19.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VentasController.cs",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\VentasController.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Controllers\\VentasController.cs",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\VentasController.cs",
-              "RelativeToolTip": "prototipo2\\Controllers\\VentasController.cs",
-              "ViewState": "AgIAAKUAAAAAAAAAAAAqwLoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T23:16:10.66Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Index.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Ventas\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Index.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Ventas\\Index.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-18T21:47:09.627Z",
+              "WhenOpened": "2025-06-18T22:18:44.293Z",
               "EditorCaption": ""
             }
           ]
@@ -376,6 +414,14 @@
           "DockedWidth": 636,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
@@ -398,15 +444,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
             }
           ]
         }

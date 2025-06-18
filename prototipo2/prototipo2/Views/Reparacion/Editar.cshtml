@@ -1,0 +1,49 @@
+﻿@model prototipo2.Models.Reparacion
+
+@{
+    ViewData["Title"] = "Editar Reparación";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h1>@ViewData["Title"]</h1>
+    <p>Modifique los datos de la reparación.</p>
+
+    <form asp-action="Editar" method="post">
+        <input type="hidden" asp-for="IdReparacion" />
+
+        <div class="mb-3">
+            <label asp-for="Fecha_Ingreso" class="form-label">Fecha de Ingreso</label>
+            <input asp-for="Fecha_Ingreso" class="form-control" type="date" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Fecha_Salida" class="form-label">Fecha de Salida</label>
+            <input asp-for="Fecha_Salida" class="form-control" type="date" />
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Descripcion" class="form-label">Descripción</label>
+            <textarea asp-for="Descripcion" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Estado" class="form-label">Estado</label>
+            <select asp-for="Estado" class="form-select">
+                <option value="En proceso">En proceso</option>
+                <option value="Completada">Completada</option>
+            </select>
+        </div>
+
+        @* ESTO ESTA PENDIENTE DADO QUE ES UNA LLAVE FORANEA DE LA TABLA CLIENTE SE DEBE REVISAR SI SE PUEDE ELIMINAR O NO *@
+        @*  <div class="mb-3">
+            <label asp-for="IdCliente" class="form-label">Cédula del Cliente</label>
+            <input asp-for="IdCliente" class="form-control" />
+        </div> *@
+
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+

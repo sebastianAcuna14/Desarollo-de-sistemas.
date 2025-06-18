@@ -1,0 +1,32 @@
+﻿@model prototipo2.Models.Reparacion
+
+@{
+    ViewData["Title"] = "Detalles de la Reparación";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">@ViewData["Title"]</h1>
+    <div class="card">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-4">Fecha de Ingreso:</dt>
+                <dd class="col-sm-8">@Model.Fecha_Ingreso.ToShortDateString()</dd>
+
+                <dt class="col-sm-4">Fecha de Salida:</dt>
+                <dd class="col-sm-8">@Model.Fecha_Salida.ToShortDateString()</dd>
+
+                <dt class="col-sm-4">Descripción:</dt>
+                <dd class="col-sm-8">@Model.Descripcion</dd>
+
+                <dt class="col-sm-4">Estado:</dt>
+                <dd class="col-sm-8">@Model.Estado</dd>
+
+                <dt class="col-sm-4">Cédula del Cliente:</dt>
+                <dd class="col-sm-8">@Model.IdCliente</dd>
+            </dl>
+            <a asp-action="Index" class="btn btn-secondary mt-3">Volver al listado</a>
+        </div>
+    </div>
+</div>
+

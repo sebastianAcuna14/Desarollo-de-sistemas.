@@ -1,0 +1,33 @@
+﻿@model prototipo2.Models.Reparacion
+
+@{
+    ViewData["Title"] = "Eliminar Reparación";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container mt-4">
+    <h1>¿Está seguro que desea eliminar esta reparación?</h1>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">Fecha de Ingreso:</dt>
+        <dd class="col-sm-9">@Model.Fecha_Ingreso.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Fecha de Salida:</dt>
+        <dd class="col-sm-9">@Model.Fecha_Salida.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Descripción:</dt>
+        <dd class="col-sm-9">@Model.Descripcion</dd>
+
+        <dt class="col-sm-3">Estado:</dt>
+        <dd class="col-sm-9">@Model.Estado</dd>
+
+        <dt class="col-sm-3">Cédula del Cliente:</dt>
+        <dd class="col-sm-9">@Model.IdCliente</dd>
+    </dl>
+
+    <form asp-action="Eliminar" method="post">
+        <input type="hidden" asp-for="IdReparacion" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

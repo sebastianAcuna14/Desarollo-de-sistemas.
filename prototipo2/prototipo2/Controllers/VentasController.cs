@@ -6,8 +6,59 @@ namespace prototipo2.Controllers
 {
     public class VentasController : Controller
     {
-        private static List<Venta> _ventas = new();
         private static int _nextId = 1;
+
+
+        private static List<Venta> _ventas = new()
+{
+    new Venta
+    {
+        Id = 1,
+        Fecha = DateTime.Now.AddDays(-3),
+        Productos = new List<ItemVendido>
+        {
+            new ItemVendido { Producto = "Taladro", Cantidad = 2, PrecioUnitario = 2500 },
+            new ItemVendido { Producto = "Desatornillador", Cantidad = 1, PrecioUnitario = 4500 }
+        },
+        Pagos = new List<MetodoPago>
+        {
+            new MetodoPago { Monto = 9500 }
+        },
+        Devoluciones = new List<Devolucion>(),
+        NotaCredito = null
+    },
+    new Venta
+    {
+        Id = 2,
+        Fecha = DateTime.Now.AddDays(-1),
+        Productos = new List<ItemVendido>
+        {
+            new ItemVendido { Producto = "Sierra", Cantidad = 3, PrecioUnitario = 1200 }
+        },
+        Pagos = new List<MetodoPago>
+        {
+            new MetodoPago { Monto = 3600 }
+        },
+        Devoluciones = new List<Devolucion>
+        {
+            new Devolucion
+            {
+                Fecha = DateTime.Now.AddDays(-1),
+                Motivo = "Producto vencido",
+                ProductosDevueltos = new List<ItemDevuelto>
+                {
+                    new ItemDevuelto { Producto = "Conjunto de llaves inglesas", Cantidad = 1, Observaciones = "Cliente mostró recibo" }
+                }
+            }
+        },
+        NotaCredito = new NotaCredito
+        {
+            Fecha = DateTime.Now.AddDays(-1),
+            Monto = 1200,
+            Comentario = "Algunas Llaves venian rotas"
+        }
+    }
+};
 
         // GET: /Ventas
         public IActionResult Index()

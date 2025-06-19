@@ -87,6 +87,7 @@ namespace prototipo2.Controllers
         }
 
 
+
         public static void AgregarMovimientoDesdeVenta(MovimientoFinanciero movimiento)
         {
             movimiento.Id = _nextId++;

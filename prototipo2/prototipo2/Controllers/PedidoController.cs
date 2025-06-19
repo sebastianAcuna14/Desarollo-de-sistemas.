@@ -113,5 +113,18 @@ namespace prototipo2.Controllers
 
             return View(pedido);
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult MarcarComoEnviado(int id)
+        {
+            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
+            if (pedido != null && pedido.Estado == "Pendiente")
+            {
+                pedido.Estado = "Enviado";
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

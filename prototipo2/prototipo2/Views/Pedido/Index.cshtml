@@ -29,7 +29,7 @@
                 <tbody>
                     @foreach (var pedido in Model)
                     {
-                        <tr>
+                        <tr class="@(pedido.Estado == "Pendiente" ? "table-warning" : "")">
                             <td>@pedido.Numero_Pedido</td>
                             <td>@pedido.Nombre_Producto</td>
                             <td>@pedido.Cantidad</td>
@@ -46,10 +46,20 @@
                                 <a asp-action="Eliminar" asp-route-id="@pedido.Id" class="btn btn-danger btn-sm">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
+                                @if (pedido.Estado == "Pendiente")
+                                {
+                                    <form asp-action="MarcarComoEnviado" method="post" class="d-inline ms-2">
+                                        <input type="hidden" name="id" value="@pedido.Id" />
+                                        <button type="submit" class="btn btn-sm btn-success">
+                                            Enviado
+                                        </button>
+                                    </form>
+                                }
                             </td>
                         </tr>
                     }
                 </tbody>
+
             </table>
         </div>
     </div>

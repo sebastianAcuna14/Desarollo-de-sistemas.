@@ -30,24 +30,33 @@
                     @foreach (var mov in Model)
                     {
                         <tr class="@(mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR ? "table-warning" : "")">
-
                             <td>@mov.Descripcion</td>
                             <td>@mov.Monto.ToString("C")</td>
                             <td>@mov.Tipo.ToString().Replace("_", " ")</td>
                             <td>@mov.Fecha.ToString("dd/MM/yyyy hh:mm tt")</td>
-                            <td>@(mov.FechaVencimiento?.ToString("dd/MM/yyyy") ?? "-")</td>
+
+                            <td>
+                                @if (mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR)
+                                {
+                                    @(mov.FechaVencimiento?.ToString("dd/MM/yyyy") ?? "N/A")
+                                }
+                                else
+                                {
+                                    <span class="text-muted">N/A</span>
+                                }
+                            </td>
+
                             <td>
                                 @if (mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR ||
                                mov.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.INGRESO)
                                 {
-                                    if (mov.Pagada)
-                                    {
-                                        <span class="badge bg-success">Sí</span>
-                                    }
-                                    else
-                                    {
-                                        <span class="badge bg-danger">No</span>
-                                    }
+                                    <span class="badge @(mov.Pagada ? "bg-success" : "bg-danger")">
+                                        @(mov.Pagada ? "Sí" : "No")
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span class="text-muted">N/A</span>
                                 }
                             </td>
 
@@ -67,8 +76,8 @@
                             </td>
                         </tr>
                     }
-
                 </tbody>
+
             </table>
         </div>
     </div>

@@ -60,10 +60,15 @@ namespace prototipo2.Controllers
                 if (!movimiento.FechaVencimiento.HasValue)
                     movimiento.FechaVencimiento = DateTime.Now.AddDays(30);
             }
+            else if (movimiento.Tipo == MovimientoFinanciero.TipoMovimiento.INGRESO)
+            {
+                movimiento.Pagada = true; // ✅ Aquí se marca como pagado si es ingreso
+            }
 
             _movimientos.Add(movimiento);
             return RedirectToAction(nameof(Index));
         }
+
 
         // GET: Ver detalles
         public IActionResult Details(int id)

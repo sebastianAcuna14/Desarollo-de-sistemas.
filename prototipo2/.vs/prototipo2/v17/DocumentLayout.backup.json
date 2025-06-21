@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\ventas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\ventas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\finanzas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\finanzas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 2606,
-          "SelectedChildIndex": 67,
+          "SelectedChildIndex": 66,
           "Children": [
             {
               "$type": "Bookmark",
@@ -287,6 +295,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Index.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Ventas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Ventas\\Index.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Ventas\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T20:49:46.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAFgAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T20:49:10.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FinanzaController.cs",
               "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\FinanzaController.cs",
               "RelativeDocumentMoniker": "prototipo2\\Controllers\\FinanzaController.cs",
@@ -299,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Finanzas\\Create.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Finanzas\\Create.cshtml",
@@ -307,18 +341,17 @@
               "RelativeToolTip": "prototipo2\\Views\\Finanzas\\Create.cshtml",
               "ViewState": "AgIAAB8AAAAAAAAAAAAuwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-21T20:39:37.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T20:39:37.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Finanzas\\Index.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Finanzas\\Index.cshtml",
               "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Finanzas\\Index.cshtml",
               "RelativeToolTip": "prototipo2\\Views\\Finanzas\\Index.cshtml",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-21T20:38:55.881Z",
               "EditorCaption": ""

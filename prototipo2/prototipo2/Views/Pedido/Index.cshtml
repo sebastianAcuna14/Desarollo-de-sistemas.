@@ -29,7 +29,7 @@
                 <tbody>
                     @foreach (var pedido in Model)
                     {
-                        <tr class="@(pedido.Estado == "Pendiente" ? "table-warning" : "")">
+                        <tr class="@(pedido.Estado == "En camino" ? "table-warning" : "")">
                             <td>@pedido.Numero_Pedido</td>
                             <td>@pedido.Nombre_Producto</td>
                             <td>@pedido.Cantidad</td>
@@ -46,15 +46,25 @@
                                 <a asp-action="Eliminar" asp-route-id="@pedido.Id" class="btn btn-danger btn-sm">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
-                                @if (pedido.Estado == "Pendiente")
+                                @if (pedido.Estado == "Preparando")
                                 {
-                                    <form asp-action="MarcarComoEnviado" method="post" class="d-inline ms-2">
+                                    <form asp-controller="Pedido" asp-action="MarcarComoEnCamino" method="post" class="d-inline ms-2">
                                         <input type="hidden" name="id" value="@pedido.Id" />
-                                        <button type="submit" class="btn btn-sm btn-success">
-                                            Enviado
+                                        <button type="submit" class="btn btn-sm btn-warning">
+                                            En camino
                                         </button>
                                     </form>
                                 }
+                                else if (pedido.Estado == "En camino")
+                                {
+                                    <form asp-controller="Pedido" asp-action="MarcarComoEnviado" method="post" class="d-inline ms-2">
+                                        <input type="hidden" name="id" value="@pedido.Id" />
+                                        <button type="submit" class="btn btn-sm btn-success">
+                                            Marcar como Enviado
+                                        </button>
+                                    </form>
+                                }
+
                             </td>
                         </tr>
                     }

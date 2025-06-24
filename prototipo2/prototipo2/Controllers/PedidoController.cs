@@ -8,7 +8,7 @@ namespace prototipo2.Controllers
         // Esta lista simula una base de datos en memoria para pedidos
         private static List<Pedido> Pedidos = new List<Pedido>
         {
-            new() { Id = 1, Nombre_Producto = "Producto A", Numero_Pedido = "NP001", Cantidad = 10, FechaPedido = DateTime.Today.AddDays(-1), Precio = 150.00m, Estado = "Pendiente" },
+            new() { Id = 1, Nombre_Producto = "Producto A", Numero_Pedido = "NP001", Cantidad = 10, FechaPedido = DateTime.Today.AddDays(-1), Precio = 150.00m, Estado = "En camino" },
             new() { Id = 2, Nombre_Producto = "Producto B", Numero_Pedido = "NP002", Cantidad = 5, FechaPedido = DateTime.Today, Precio = 250.00m, Estado = "Enviado" },
         };
 
@@ -116,15 +116,28 @@ namespace prototipo2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        public IActionResult MarcarComoEnCamino(int id)
+        {
+            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
+            if (pedido != null && pedido.Estado == "Preparando")
+            {
+                pedido.Estado = "En camino";
+            }
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult MarcarComoEnviado(int id)
         {
             var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido != null && pedido.Estado == "Pendiente")
+            if (pedido != null && pedido.Estado == "En camino")
             {
                 pedido.Estado = "Enviado";
             }
             return RedirectToAction("Index");
         }
+
 
     }
 }

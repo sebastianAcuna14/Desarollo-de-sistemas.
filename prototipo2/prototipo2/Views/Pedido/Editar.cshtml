@@ -46,7 +46,12 @@
 
                     <div class="col-md-4 mb-3">
                         <label asp-for="Estado" class="form-label">Estado</label>
-                        <input asp-for="Estado" class="form-control" />
+                        <select asp-for="Estado" class="form-select">
+                            <option value="">-- Seleccione --</option>
+                            <option value="Preparando">Preparando</option>
+                            <option value="En camino">En camino</option>
+                            <option value="Enviado">Enviado</option>
+                        </select>
                         <span asp-validation-for="Estado" class="text-danger"></span>
                     </div>
 

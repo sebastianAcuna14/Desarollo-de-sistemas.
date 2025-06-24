@@ -43,15 +43,16 @@
                         <span asp-validation-for="Precio" class="text-danger"></span>
                     </div>
                 </div>
-<div class="mb-3">
-    <label asp-for="Estado" class="form-label">Estado</label>
-    <select asp-for="Estado" class="form-select">
-        <option value="">-- Seleccione --</option>
-        <option value="Pendiente">Pendiente</option>
-        <option value="Enviado">Enviado</option>
-    </select>
-    <span asp-validation-for="Estado" class="text-danger"></span>
-</div>
+                <div class="mb-3">
+                <label asp-for="Estado" class="form-label">Estado</label>
+                <select asp-for="Estado" class="form-select">
+                <option value="">-- Seleccione --</option>
+                        <option value="Preparando">Preparando</option>
+                        <option value="En camino">En camino</option>
+                        <option value="Enviado">Enviado</option>
+                </select>
+                <span asp-validation-for="Estado" class="text-danger"></span>
+                </div>
 
 
                 <div class="d-flex justify-content-end mt-4">

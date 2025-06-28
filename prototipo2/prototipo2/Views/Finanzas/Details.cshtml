@@ -27,7 +27,7 @@
                 <dt class="col-sm-4">Tipo de Movimiento</dt>
                 <dd class="col-sm-8">@Model.Tipo</dd>
 
-                @if (Model.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR)
+                @if (Model.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString())
                 {
                     <dt class="col-sm-4">Fecha de Vencimiento</dt>
                     <dd class="col-sm-8">
@@ -52,7 +52,7 @@
                 <a asp-action="Index" class="btn btn-secondary">
                     <i class="fas fa-arrow-left me-1"></i> Volver al listado
                 </a>
-                @if (Model.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR && !Model.Pagada)
+                @if (Model.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString() && !Model.Pagada)
                 {
                     <form method="post" asp-action="MarcarComoPagada" asp-route-id="@Model.Id" class="d-inline">
                         <button type="submit" class="btn btn-success">

@@ -1,113 +1,89 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using prototipo2.Models;
+using prototipo2.Data;
 
 namespace prototipo2.Controllers
 {
     public class FinanzasController : Controller
     {
-        private static List<MovimientoFinanciero> _movimientos = new()
-{
-    new MovimientoFinanciero
-    {
-        Id = 1,
-        Fecha = DateTime.Now.AddDays(-2),
-        Descripcion = "Venta de producto A",
-        Monto = 150000,
-        Tipo = MovimientoFinanciero.TipoMovimiento.INGRESO,
-        Pagada = true
-    },
-    new MovimientoFinanciero
-    {
-        Id = 2,
-        Fecha = DateTime.Now,
-        Descripcion = "Cuenta por cobrar - Cliente Juan Pérez",
-        Monto = 85000,
-        Tipo = MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR,
-        Pagada = false,
-        FechaVencimiento = DateTime.Now.AddDays(15)
-    }
-};
+        private readonly FerreteriaContext _context;
 
-        private static int _nextId = 3;
-
-
-        // GET: Finanzas
-        public IActionResult Index()
+        public FinanzasController(FerreteriaContext context)
         {
-            return View(_movimientos);
+            _context = context;
         }
 
-        // GET: Agregar movimiento manual (ingreso, egreso, cuenta por cobrar)
+        // GET: Finanzas
+        public async Task<IActionResult> Index()
+        {
+            var movimientos = await _context.Finanza.ToListAsync();
+            return View(movimientos);
+        }
+
+        // GET: Finanzas/Create
         public IActionResult Create()
         {
             return View(new MovimientoFinanciero());
         }
 
-        // POST: Crear nuevo movimiento financiero
+        // POST: Finanzas/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(MovimientoFinanciero movimiento)
+        public async Task<IActionResult> Create(MovimientoFinanciero movimiento)
         {
             if (!ModelState.IsValid)
                 return View(movimiento);
 
-            movimiento.Id = _nextId++;
             movimiento.Fecha = DateTime.Now;
 
-            if (movimiento.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR)
+            if (movimiento.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString())
             {
                 movimiento.Pagada = false;
                 if (!movimiento.FechaVencimiento.HasValue)
                     movimiento.FechaVencimiento = DateTime.Now.AddDays(30);
             }
-            else if (movimiento.Tipo == MovimientoFinanciero.TipoMovimiento.INGRESO)
+            else if (movimiento.Tipo == MovimientoFinanciero.TipoMovimiento.INGRESO.ToString())
             {
-                movimiento.Pagada = true; // ✅ Aquí se marca como pagado si es ingreso
+                movimiento.Pagada = true;
             }
 
-            _movimientos.Add(movimiento);
+            _context.Finanza.Add(movimiento);
+            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
 
-
-        // GET: Ver detalles
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var mov = _movimientos.FirstOrDefault(m => m.Id == id);
+            var mov = await _context.Finanza.FindAsync(id);
             if (mov == null) return NotFound();
             return View(mov);
         }
 
         [HttpPost]
-        public IActionResult MarcarComoPagada(int id)
+        public async Task<IActionResult> MarcarComoPagada(int id)
         {
-            var mov = _movimientos.FirstOrDefault(m => m.Id == id && m.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR);
-            if (mov != null)
+            var mov = await _context.Finanza.FindAsync(id);
+            if (mov != null && mov.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString())
             {
                 mov.Pagada = true;
-                mov.Tipo = MovimientoFinanciero.TipoMovimiento.INGRESO; 
+                mov.Tipo = MovimientoFinanciero.TipoMovimiento.INGRESO.ToString();
+                await _context.SaveChangesAsync();
             }
-
             return RedirectToAction(nameof(Index));
-        }
-
-
-
-        public static void AgregarMovimientoDesdeVenta(MovimientoFinanciero movimiento)
-        {
-            movimiento.Id = _nextId++;
-            _movimientos.Add(movimiento);
         }
 
         [HttpPost]
-        public IActionResult Anular(int id)
+        public async Task<IActionResult> Anular(int id)
         {
-            var mov = _movimientos.FirstOrDefault(m => m.Id == id);
+            var mov = await _context.Finanza.FindAsync(id);
             if (mov != null && !mov.Anulada)
+            {
                 mov.Anulada = true;
-
+                await _context.SaveChangesAsync();
+            }
             return RedirectToAction(nameof(Index));
         }
-
     }
 }

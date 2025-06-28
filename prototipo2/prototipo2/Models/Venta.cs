@@ -16,10 +16,18 @@ namespace prototipo2.Models
         public List<Devolucion> Devoluciones { get; set; } = new();
 
         public NotaCredito? NotaCredito { get; set; }
+        public int? NotaCreditoId { get; set; }
     }
 
     public class ItemVendido
     {
+        [Key]
+        public int Id { get; set; }
+
+        public int VentaId { get; set; }
+
+        public Venta Venta { get; set; }
+
         [Required]
         public string Producto { get; set; }
 
@@ -34,26 +42,33 @@ namespace prototipo2.Models
 
     public class MetodoPago
     {
-        public enum TipoPago { EFECTIVO, TARJETA, SINPE }
+        [Key]
+        public int Id { get; set; }
 
         [Required]
         public decimal Monto { get; set; }
 
         [Required]
-        public TipoPago Tipo { get; set; }  
+        public string Tipo { get; set; }
+        public int VentaId { get; set; }           // FK
+        public Venta Venta { get; set; }
     }
+
 
     public class Devolucion
     {
+        [Key]
+        public int Id { get; set; }
+        public int VentaId { get; set; }
         public DateTime Fecha { get; set; } = DateTime.Now;
-
         public string Motivo { get; set; } = "";
-
         public List<ItemDevuelto> ProductosDevueltos { get; set; } = new();
     }
 
     public class ItemDevuelto
     {
+        [Key]
+        public int Id { get; set; }
         [Required]
         public string Producto { get; set; }
 
@@ -65,6 +80,8 @@ namespace prototipo2.Models
 
     public class NotaCredito
     {
+        [Key]
+        public int Id { get; set; }
         public DateTime Fecha { get; set; } = DateTime.Now;
 
         [Required]

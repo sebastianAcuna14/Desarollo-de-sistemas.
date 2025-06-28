@@ -17,7 +17,7 @@ namespace prototipo2.Models
         public decimal Monto { get; set; }
 
         [Required]
-        public TipoMovimiento Tipo { get; set; }
+        public String Tipo { get; set; }
 
         public DateTime? FechaVencimiento { get; set; }
 

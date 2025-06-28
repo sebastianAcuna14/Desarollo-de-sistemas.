@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\prototipo2.csproj": {}
+    "C:\\Users\\Kenneth\\Desktop\\Diseño y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\prototipo2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\prototipo2.csproj": {
+    "C:\\Users\\Kenneth\\Desktop\\Diseño y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\prototipo2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\prototipo2.csproj",
+        "projectUniqueName": "C:\\Users\\Kenneth\\Desktop\\Diseño y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\prototipo2.csproj",
         "projectName": "prototipo2",
-        "projectPath": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\prototipo2.csproj",
-        "packagesPath": "C:\\Users\\JOSHUA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\obj\\",
+        "projectPath": "C:\\Users\\Kenneth\\Desktop\\Diseño y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\prototipo2.csproj",
+        "packagesPath": "C:\\Users\\Kenneth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Kenneth\\Desktop\\Diseño y Desarrollo de Sistemas IIC2025\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\JOSHUA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Kenneth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -53,14 +57,6 @@
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[6.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.6, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.6, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -86,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

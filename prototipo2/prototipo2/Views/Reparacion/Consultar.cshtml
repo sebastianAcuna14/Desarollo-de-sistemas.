@@ -5,28 +5,35 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="container mt-4">
-    <h1 class="mb-4">@ViewData["Title"]</h1>
-    <div class="card">
-        <div class="card-body">
-            <dl class="row">
-                <dt class="col-sm-4">Fecha de Ingreso:</dt>
-                <dd class="col-sm-8">@Model.Fecha_Ingreso.ToShortDateString()</dd>
+<div class="row justify-content-center">
+    <div class="container-sm py-3 col-11">
+        <div class="card shadow rounded-4 p-4 mt-4">
+            <div class="card-body">
+                <h2 class="card-title mb-4 text-primary">Detalles de la Reparación</h2>
 
-                <dt class="col-sm-4">Fecha de Salida:</dt>
-                <dd class="col-sm-8">@Model.Fecha_Salida.ToShortDateString()</dd>
+                <dl class="row mb-4">
+                    <dt class="col-sm-4">Fecha de Ingreso:</dt>
+                    <dd class="col-sm-8">@Model.Fecha_Ingreso.ToShortDateString()</dd>
 
-                <dt class="col-sm-4">Descripción:</dt>
-                <dd class="col-sm-8">@Model.Descripcion</dd>
+                    <dt class="col-sm-4">Fecha de Salida:</dt>
+                    <dd class="col-sm-8">@Model.Fecha_Salida.ToShortDateString()</dd>
 
-                <dt class="col-sm-4">Estado:</dt>
-                <dd class="col-sm-8">@Model.Estado</dd>
+                    <dt class="col-sm-4">Descripción:</dt>
+                    <dd class="col-sm-8">@Model.Descripcion</dd>
 
-                <dt class="col-sm-4">Cédula del Cliente:</dt>
-                <dd class="col-sm-8">@Model.IdCliente</dd>
-            </dl>
-            <a asp-action="Index" class="btn btn-secondary mt-3">Volver al listado</a>
+                    <dt class="col-sm-4">Estado:</dt>
+                    <dd class="col-sm-8">@Model.Estado</dd>
+
+                    <dt class="col-sm-4">Cédula del Cliente:</dt>
+                    <dd class="col-sm-8">@Model.IdCliente</dd>
+                </dl>
+
+                <div class="d-flex justify-content-end">
+                    <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
 

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<prototipo2.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Listado de Categorías";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="container-sm py-3 col-11">
+
+        <h1 class="mb-4">@ViewData["Title"]</h1>
+
+        <a asp-controller="Categoria" asp-action="Crear" class="btn btn-primary mb-3">Agregar Categoría</a>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <table class="table table-striped" id="datatablesSimple" style="width:100%">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre de la Categoría</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var categoria in Model)
+                        {
+                            <tr>
+                                <td>@categoria.IdCategoria</td>
+                                <td>@categoria.Nombre</td>
+                                <td>@categoria.Descripcion</td>
+                                <td>
+                                    <a asp-controller="Categoria"
+                                       asp-action="Editar"
+                                       asp-route-id="@categoria.IdCategoria"
+                                       class="btn btn-warning btn-sm">Editar</a>
+
+                                    <a asp-controller="Categoria"
+                                       asp-action="Consultar"
+                                       asp-route-id="@categoria.IdCategoria"
+                                       class="btn btn-info btn-sm">Ver</a>
+
+                                    <a asp-controller="Categoria"
+                                       asp-action="Eliminar"
+                                       asp-route-id="@categoria.IdCategoria"
+                                       class="btn btn-danger btn-sm">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"></script>
+    <script src="~/js/Categoria.js"></script>
+}

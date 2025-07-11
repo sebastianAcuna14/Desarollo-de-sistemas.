@@ -49,12 +49,20 @@
       "PackagePath": "staticwebassets\\images\\logo_light.png"
     },
     {
+      "Id": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
+      "PackagePath": "staticwebassets\\js\\Categoria.js"
+    },
+    {
       "Id": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
       "PackagePath": "staticwebassets\\js\\Empleado.js"
     },
     {
       "Id": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
       "PackagePath": "staticwebassets\\js\\Producto.js"
+    },
+    {
+      "Id": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
+      "PackagePath": "staticwebassets\\js\\Reparacion.js"
     },
     {
       "Id": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",

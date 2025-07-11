@@ -1,66 +1,47 @@
 ﻿@model prototipo2.Models.MovimientoFinanciero
 
 @{
-    ViewData["Title"] = "Detalle de Movimiento";
+    ViewData["Title"] = "Editar Movimiento Financiero";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="container mt-4">
-    <div class="card shadow-sm rounded-4">
-        <div class="card-header bg-info text-white">
-            <h4 class="mb-0"><i class="fas fa-file-alt me-2"></i>Detalle del Movimiento Financiero</h4>
-        </div>
-        <div class="card-body">
-            <dl class="row">
-                <dt class="col-sm-4">ID</dt>
-                <dd class="col-sm-8">@Model.Id</dd>
+<h2>Editar Movimiento Financiero</h2>
 
-                <dt class="col-sm-4">Fecha</dt>
-                <dd class="col-sm-8">@Model.Fecha.ToString("dd/MM/yyyy")</dd>
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
 
-                <dt class="col-sm-4">Descripción</dt>
-                <dd class="col-sm-8">@Model.Descripcion</dd>
-
-                <dt class="col-sm-4">Monto</dt>
-                <dd class="col-sm-8">@Model.Monto.ToString("C")</dd>
-
-                <dt class="col-sm-4">Tipo de Movimiento</dt>
-                <dd class="col-sm-8">@Model.Tipo</dd>
-
-                @if (Model.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString())
-                {
-                    <dt class="col-sm-4">Fecha de Vencimiento</dt>
-                    <dd class="col-sm-8">
-                        @(Model.FechaVencimiento?.ToString("dd/MM/yyyy") ?? "No definida")
-                    </dd>
-
-                    <dt class="col-sm-4">¿Pagada?</dt>
-                    <dd class="col-sm-8">
-                        @if (Model.Pagada)
-                        {
-                            <span class="badge bg-success">Sí</span>
-                        }
-                        else
-                        {
-                            <span class="badge bg-danger">No</span>
-                        }
-                    </dd>
-                }
-            </dl>
-
-            <div class="mt-4">
-                <a asp-action="Index" class="btn btn-secondary">
-                    <i class="fas fa-arrow-left me-1"></i> Volver al listado
-                </a>
-                @if (Model.Tipo == prototipo2.Models.MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString() && !Model.Pagada)
-                {
-                    <form method="post" asp-action="MarcarComoPagada" asp-route-id="@Model.Id" class="d-inline">
-                        <button type="submit" class="btn btn-success">
-                            <i class="fas fa-check-circle me-1"></i> Marcar como pagada
-                        </button>
-                    </form>
-                }
-            </div>
-        </div>
+    <div class="mb-3">
+        <label asp-for="Descripcion" class="form-label">Descripción</label>
+        <input asp-for="Descripcion" class="form-control" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
     </div>
-</div>
+
+    <div class="mb-3">
+        <label asp-for="Monto" class="form-label">Monto</label>
+        <input asp-for="Monto" class="form-control" />
+        <span asp-validation-for="Monto" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Tipo" class="form-label">Tipo</label>
+        <select asp-for="Tipo" class="form-select">
+            <option value="INGRESO">Ingreso</option>
+            <option value="EGRESO">Egreso</option>
+            <option value="CUENTA_POR_COBRAR">Cuenta por cobrar</option>
+        </select>
+        <span asp-validation-for="Tipo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="FechaVencimiento" class="form-label">Fecha de Vencimiento</label>
+        <input asp-for="FechaVencimiento" class="form-control" type="date" />
+        <span asp-validation-for="FechaVencimiento" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

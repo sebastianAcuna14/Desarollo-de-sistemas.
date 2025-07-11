@@ -74,16 +74,49 @@ namespace prototipo2.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+
         [HttpPost]
-        public async Task<IActionResult> Anular(int id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
         {
             var mov = await _context.Finanza.FindAsync(id);
-            if (mov != null && !mov.Anulada)
+
+            if (mov == null)
             {
-                mov.Anulada = true;
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
+
+            _context.Finanza.Remove(mov);
+            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(Index));
         }
+
+
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(MovimientoFinanciero movimiento)
+        {
+            if (!ModelState.IsValid)
+                return View("Details", movimiento);
+
+            var movOriginal = await _context.Finanza.FindAsync(movimiento.Id);
+            if (movOriginal == null) return NotFound();
+
+            movOriginal.Descripcion = movimiento.Descripcion;
+            movOriginal.Monto = movimiento.Monto;
+            movOriginal.Tipo = movimiento.Tipo;
+            movOriginal.FechaVencimiento = movimiento.FechaVencimiento;
+            movOriginal.Pagada = movimiento.Pagada;
+            movOriginal.Anulada = movimiento.Anulada;
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+        }
+
     }
 }

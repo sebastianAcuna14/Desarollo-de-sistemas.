@@ -70,10 +70,20 @@
                                         </button>
                                     </form>
                                 }
+
                                 <a asp-action="Details" asp-route-id="@mov.Id" class="btn btn-sm btn-info ms-1">
                                     <i class="fas fa-eye"></i> Detalles
                                 </a>
+
+                                <form asp-action="Delete" method="post" class="d-inline ms-1">
+                                    <input type="hidden" name="id" value="@mov.Id" />
+                                    <button type="submit" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
                             </td>
+
+
                         </tr>
                     }
                 </tbody>

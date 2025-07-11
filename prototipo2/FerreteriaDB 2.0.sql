@@ -286,87 +286,90 @@ GO
 
 
 //////////////////////////////////////JOSHUA
--- Tabla principal de ventas
-CREATE TABLE Venta (
-    Id INT PRIMARY KEY IDENTITY,
-    Fecha DATETIME NOT NULL,
-    NotaCreditoMonto DECIMAL(10,2) NULL,
-    NotaCreditoComentario NVARCHAR(255) NULL
-);
+DROP TABLE IF EXISTS ItemsDevueltos, Devoluciones, MetodosPago, ItemsVendidos, Venta, NotaCredito;
+GO
 
--- Tabla de productos vendidos en cada venta
-CREATE TABLE ItemsVendidos (
-    Id INT PRIMARY KEY IDENTITY,
-    VentaId INT NOT NULL,
-    Producto NVARCHAR(100) NOT NULL,
-    Cantidad INT NOT NULL,
-    PrecioUnitario DECIMAL(10,2) NOT NULL,
-    FOREIGN KEY (VentaId) REFERENCES Venta(Id)
-);
-
--- Tabla de métodos de pago
-CREATE TABLE MetodosPago (
-    Id INT PRIMARY KEY IDENTITY,
-    VentaId INT NOT NULL,
-    Monto DECIMAL(10,2) NOT NULL,
-    Tipo NVARCHAR(20)
-    FOREIGN KEY (VentaId) REFERENCES Venta(Id)
-);
-
--- Tabla de devoluciones asociadas a una venta
-CREATE TABLE Devoluciones (
-    Id INT PRIMARY KEY IDENTITY,
-    VentaId INT NOT NULL,
-    Fecha DATETIME NOT NULL DEFAULT GETDATE(),
-    Motivo NVARCHAR(255),
-    FOREIGN KEY (VentaId) REFERENCES Venta(Id)
-);
-
--- Tabla de productos devueltos en una devolución
-CREATE TABLE ItemsDevueltos (
-    Id INT PRIMARY KEY IDENTITY,
-    DevolucionId INT NOT NULL,
-    Producto NVARCHAR(100) NOT NULL,
-    Cantidad INT NOT NULL,
-    Observaciones NVARCHAR(255),
-    FOREIGN KEY (DevolucionId) REFERENCES Devoluciones(Id)
-);
-
---Tabla de Notas de Credito
+-- Tabla de Notas de Crédito
 CREATE TABLE NotaCredito (
     Id INT PRIMARY KEY IDENTITY(1,1),
     Fecha DATETIME NOT NULL DEFAULT GETDATE(),
     Monto DECIMAL(18,2) NOT NULL,
     Comentario NVARCHAR(MAX) NULL
 );
+GO
 
+-- Tabla principal de ventas
+CREATE TABLE Venta (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Fecha DATETIME NOT NULL,
+    NotaCreditoId INT NULL,
+    FOREIGN KEY (NotaCreditoId) REFERENCES NotaCredito(Id)
+);
+GO
 
+-- Tabla de productos vendidos
+CREATE TABLE ItemsVendidos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    VentaId INT NOT NULL,
+    Producto NVARCHAR(100) NOT NULL,
+    Cantidad INT NOT NULL,
+    PrecioUnitario DECIMAL(10,2) NOT NULL,
+    FOREIGN KEY (VentaId) REFERENCES Venta(Id) ON DELETE CASCADE
+);
+GO
 
+-- Tabla de métodos de pago
+CREATE TABLE MetodosPago (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    VentaId INT NOT NULL,
+    Monto DECIMAL(10,2) NOT NULL,
+    Tipo NVARCHAR(20) NOT NULL,
+    FOREIGN KEY (VentaId) REFERENCES Venta(Id) ON DELETE CASCADE
+);
+GO
 
+-- Tabla de devoluciones
+CREATE TABLE Devoluciones (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    VentaId INT NOT NULL,
+    Fecha DATETIME NOT NULL DEFAULT GETDATE(),
+    Motivo NVARCHAR(255),
+    FOREIGN KEY (VentaId) REFERENCES Venta(Id) ON DELETE CASCADE
+);
+GO
 
+-- Productos devueltos por devolución
+CREATE TABLE ItemsDevueltos (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    DevolucionId INT NOT NULL,
+    Producto NVARCHAR(100) NOT NULL,
+    Cantidad INT NOT NULL,
+    Observaciones NVARCHAR(255),
+    FOREIGN KEY (DevolucionId) REFERENCES Devoluciones(Id) ON DELETE CASCADE
+);
+GO
 
 --Precedimientos almacenados
 -- Crear una venta
 CREATE OR ALTER PROCEDURE CrearVenta
     @Fecha DATETIME,
-    @NotaCreditoMonto DECIMAL(10,2),
-    @NotaCreditoComentario NVARCHAR(255)
+    @NotaCreditoId INT = NULL
 AS
 BEGIN
-    INSERT INTO Venta (Fecha, NotaCreditoMonto, NotaCreditoComentario)
-    VALUES (@Fecha, @NotaCreditoMonto, @NotaCreditoComentario);
+    INSERT INTO Venta (Fecha, NotaCreditoId)
+    VALUES (@Fecha, @NotaCreditoId);
 
     SELECT SCOPE_IDENTITY() AS NuevaVentaId;
 END
 GO
 
--- Obtener todas las ventas
 CREATE OR ALTER PROCEDURE ObtenerVentas
 AS
 BEGIN
     SELECT * FROM Venta;
 END
 GO
+
 
 -- Consultar venta por ID
 CREATE OR ALTER PROCEDURE ConsultarVentaPorId
@@ -377,21 +380,21 @@ BEGIN
 END
 GO
 
+
 -- Actualizar venta
 CREATE OR ALTER PROCEDURE ActualizarVenta
     @Id INT,
     @Fecha DATETIME,
-    @NotaCreditoMonto DECIMAL(10,2),
-    @NotaCreditoComentario NVARCHAR(255)
+    @NotaCreditoId INT = NULL
 AS
 BEGIN
     UPDATE Venta
     SET Fecha = @Fecha,
-        NotaCreditoMonto = @NotaCreditoMonto,
-        NotaCreditoComentario = @NotaCreditoComentario
+        NotaCreditoId = @NotaCreditoId
     WHERE Id = @Id;
 END
 GO
+
 
 -- Eliminar venta
 CREATE OR ALTER PROCEDURE EliminarVenta
@@ -402,21 +405,22 @@ BEGIN
 END
 GO
 
+
 -- Tabla de movimientos financieros
 CREATE TABLE Finanza (
-    Id INT PRIMARY KEY IDENTITY,
+    Id INT PRIMARY KEY IDENTITY(1,1),
     Fecha DATETIME NOT NULL DEFAULT GETDATE(),
     Descripcion NVARCHAR(500) NOT NULL,
     Monto DECIMAL(10,2) NOT NULL,
-    Tipo NVARCHAR(30),
+    Tipo NVARCHAR(30) NOT NULL,
     FechaVencimiento DATE NULL,
     Pagada BIT NOT NULL DEFAULT 0,
     Anulada BIT NOT NULL DEFAULT 0
 );
+GO
 
 
-
--- Crear Movimiento Financiero
+-- Crear movimiento financiero
 CREATE OR ALTER PROCEDURE CrearMovimientoFinanciero
     @Fecha DATETIME,
     @Descripcion NVARCHAR(500),
@@ -429,12 +433,13 @@ AS
 BEGIN
     INSERT INTO Finanza (Fecha, Descripcion, Monto, Tipo, FechaVencimiento, Pagada, Anulada)
     VALUES (@Fecha, @Descripcion, @Monto, @Tipo, @FechaVencimiento, @Pagada, @Anulada);
-    
+
     SELECT SCOPE_IDENTITY() AS NuevoMovimientoId;
 END
 GO
 
--- Obtener movimientos financieros
+
+-- Obtener movimientos financieros no anulados
 CREATE OR ALTER PROCEDURE ObtenerMovimientosFinancieros
 AS
 BEGIN
@@ -443,14 +448,15 @@ BEGIN
 END
 GO
 
--- Actualizar movimiento financiero
+
+-- Actualizar movimiento financiero existente
 CREATE OR ALTER PROCEDURE ActualizarMovimientoFinanciero
     @Id INT,
     @Fecha DATETIME,
     @Descripcion NVARCHAR(500),
     @Monto DECIMAL(10,2),
     @Tipo NVARCHAR(30),
-    @FechaVencimiento DATE,
+    @FechaVencimiento DATE = NULL,
     @Pagada BIT,
     @Anulada BIT
 AS
@@ -467,7 +473,8 @@ BEGIN
 END
 GO
 
--- Marcar cuenta por cobrar como pagada
+
+-- Marcar cuenta por cobrar como pagada (y cambiar tipo a ingreso)
 CREATE OR ALTER PROCEDURE MarcarCuentaPorCobrarComoPagada
     @Id INT
 AS
@@ -476,6 +483,16 @@ BEGIN
     SET Pagada = 1,
         Tipo = 'INGRESO'
     WHERE Id = @Id AND Tipo = 'CUENTA_POR_COBRAR';
+END
+GO
+
+
+-- Eliminar movimiento financiero (eliminación real)
+CREATE OR ALTER PROCEDURE EliminarMovimientoFinanciero
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Finanza WHERE Id = @Id;
 END
 GO
 

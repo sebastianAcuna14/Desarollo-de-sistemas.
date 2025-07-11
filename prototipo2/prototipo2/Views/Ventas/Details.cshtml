@@ -45,7 +45,7 @@
         <thead>
             <tr>
                 <th>Tipo</th>
-                <th>Monto</th>
+
             </tr>
         </thead>
         <tbody>
@@ -53,7 +53,6 @@
             {
                 <tr>
                     <td>@pago.Tipo</td>
-                    <td>₡@pago.Monto</td>
                 </tr>
             }
         </tbody>
@@ -109,9 +108,11 @@
 
 @if (Model.NotaCredito == null)
 {
-    <a asp-action="AgregarDevolucion" asp-route-id="@Model.Id" class="btn btn-danger me-2">
+    <a asp-controller="Ventas" asp-action="AgregarDevolucion" asp-route-id="@Model.Id" class="btn btn-danger me-2">
         <i class="bi bi-arrow-clockwise"></i> Devolucion
     </a>
+
+
 }
 <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
 

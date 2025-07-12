@@ -61,7 +61,7 @@
                             <td>
                                 @if (venta.NotaCredito != null)
                                 {
-                                    <div><strong>@venta.NotaCredito.Fecha.ToShortDateString()</strong></div>
+                                    <div><strong>@venta.Devoluciones.First().Motivo</strong></div>
                                     <div>@venta.NotaCredito.Comentario</div>
                                 }
                                 else

@@ -1,33 +1,40 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Data;
+using System.Data.SqlClient;
+using Dapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using prototipo2.Models;
-using prototipo2.Data;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+using System;
+using Microsoft.Data.SqlClient;
 
 namespace prototipo2.Controllers
 {
     public class FinanzasController : Controller
     {
-        private readonly FerreteriaContext _context;
+        private readonly string _connectionString;
 
-        public FinanzasController(FerreteriaContext context)
+        public FinanzasController(IConfiguration configuration)
         {
-            _context = context;
+            _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        // GET: Finanzas
+        private IDbConnection Connection => new SqlConnection(_connectionString);
+
         public async Task<IActionResult> Index()
         {
-            var movimientos = await _context.Finanza.ToListAsync();
+            using var db = Connection;
+            var movimientos = await db.QueryAsync<MovimientoFinanciero>("SELECT * FROM Finanza WHERE Anulada = 0 ORDER BY Fecha DESC");
             return View(movimientos);
         }
 
-        // GET: Finanzas/Create
         public IActionResult Create()
         {
             return View(new MovimientoFinanciero());
         }
 
-        // POST: Finanzas/Create
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(MovimientoFinanciero movimiento)
@@ -48,52 +55,64 @@ namespace prototipo2.Controllers
                 movimiento.Pagada = true;
             }
 
-            _context.Finanza.Add(movimiento);
-            await _context.SaveChangesAsync();
+            using var db = Connection;
+            var parameters = new DynamicParameters();
+            parameters.Add("@Fecha", movimiento.Fecha);
+            parameters.Add("@Descripcion", movimiento.Descripcion);
+            parameters.Add("@Monto", movimiento.Monto);
+            parameters.Add("@Tipo", movimiento.Tipo);
+            parameters.Add("@FechaVencimiento", movimiento.FechaVencimiento);
+            parameters.Add("@Pagada", movimiento.Pagada);
+            parameters.Add("@Anulada", movimiento.Anulada);
+
+            await db.ExecuteAsync("CrearMovimientoFinanciero", parameters, commandType: CommandType.StoredProcedure);
 
             return RedirectToAction(nameof(Index));
         }
 
         public async Task<IActionResult> Details(int id)
         {
-            var mov = await _context.Finanza.FindAsync(id);
-            if (mov == null) return NotFound();
-            return View(mov);
+            using var db = Connection;
+            var sql = "SELECT * FROM Finanza WHERE Id = @Id";
+            var movimiento = await db.QueryFirstOrDefaultAsync<MovimientoFinanciero>(sql, new { Id = id });
+
+            if (movimiento == null) return NotFound();
+
+            return View(movimiento);
         }
+
 
         [HttpPost]
         public async Task<IActionResult> MarcarComoPagada(int id)
         {
-            var mov = await _context.Finanza.FindAsync(id);
-            if (mov != null && mov.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString())
+            using var db = Connection;
+
+            var movimiento = await db.QueryFirstOrDefaultAsync<MovimientoFinanciero>(
+                "SELECT * FROM Finanza WHERE Id = @Id", new { Id = id });
+
+            if (movimiento != null && movimiento.Tipo == MovimientoFinanciero.TipoMovimiento.CUENTA_POR_COBRAR.ToString())
             {
-                mov.Pagada = true;
-                mov.Tipo = MovimientoFinanciero.TipoMovimiento.INGRESO.ToString();
-                await _context.SaveChangesAsync();
+                await db.ExecuteAsync("MarcarCuentaPorCobrarComoPagada", new { Id = id }, commandType: CommandType.StoredProcedure);
             }
+
             return RedirectToAction(nameof(Index));
         }
+
 
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
         {
-            var mov = await _context.Finanza.FindAsync(id);
+            using var db = Connection;
+            var movimiento = await db.QueryFirstOrDefaultAsync<MovimientoFinanciero>("SELECT * FROM Finanza WHERE Id = @Id", new { Id = id });
 
-            if (mov == null)
-            {
-                return NotFound();
-            }
+            if (movimiento == null) return NotFound();
 
-            _context.Finanza.Remove(mov);
-            await _context.SaveChangesAsync();
+            await db.ExecuteAsync("EliminarMovimientoFinanciero", new { Id = id }, commandType: CommandType.StoredProcedure);
 
             return RedirectToAction(nameof(Index));
         }
-
-
-
 
 
         [HttpPost]
@@ -103,20 +122,26 @@ namespace prototipo2.Controllers
             if (!ModelState.IsValid)
                 return View("Details", movimiento);
 
-            var movOriginal = await _context.Finanza.FindAsync(movimiento.Id);
+            using var db = Connection;
+
+            var movOriginal = await db.QueryFirstOrDefaultAsync<MovimientoFinanciero>(
+                "SELECT * FROM Finanza WHERE Id = @Id", new { Id = movimiento.Id });
+
             if (movOriginal == null) return NotFound();
 
-            movOriginal.Descripcion = movimiento.Descripcion;
-            movOriginal.Monto = movimiento.Monto;
-            movOriginal.Tipo = movimiento.Tipo;
-            movOriginal.FechaVencimiento = movimiento.FechaVencimiento;
-            movOriginal.Pagada = movimiento.Pagada;
-            movOriginal.Anulada = movimiento.Anulada;
+            var parameters = new DynamicParameters();
+            parameters.Add("@Id", movimiento.Id);
+            parameters.Add("@Fecha", movimiento.Fecha);
+            parameters.Add("@Descripcion", movimiento.Descripcion);
+            parameters.Add("@Monto", movimiento.Monto);
+            parameters.Add("@Tipo", movimiento.Tipo);
+            parameters.Add("@FechaVencimiento", movimiento.FechaVencimiento);
+            parameters.Add("@Pagada", movimiento.Pagada);
+            parameters.Add("@Anulada", movimiento.Anulada);
 
-            await _context.SaveChangesAsync();
+            await db.ExecuteAsync("ActualizarMovimientoFinanciero", parameters, commandType: CommandType.StoredProcedure);
 
             return RedirectToAction(nameof(Index));
         }
-
     }
 }

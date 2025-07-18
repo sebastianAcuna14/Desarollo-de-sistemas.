@@ -1,20 +1,28 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Data;
+using Dapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using prototipo2.Models;
 
 namespace prototipo2.Controllers
 {
     public class PedidoController : Controller
     {
-        // Esta lista simula una base de datos en memoria para pedidos
-        private static List<Pedido> Pedidos = new List<Pedido>
-        {
-            new() { Id = 1, Nombre_Producto = "Producto A", Numero_Pedido = "NP001", Cantidad = 10, FechaPedido = DateTime.Today.AddDays(-1), Precio = 150.00m, Estado = "En camino" },
-            new() { Id = 2, Nombre_Producto = "Producto B", Numero_Pedido = "NP002", Cantidad = 5, FechaPedido = DateTime.Today, Precio = 250.00m, Estado = "Enviado" },
-        };
+        private readonly IConfiguration _configuration;
 
+        public PedidoController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
+        // Mostrar todos los pedidos usando procedimiento almacenado
         public IActionResult Index()
         {
-            return View(Pedidos);
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
+            {
+                var lista = context.Query<Pedido>("ObtenerPedido", commandType: CommandType.StoredProcedure).ToList();
+                return View(lista);
+            }
         }
 
         // Mostrar formulario para crear un pedido
@@ -24,32 +32,54 @@ namespace prototipo2.Controllers
             return View();
         }
 
-        // Procesar creación del pedido
+        // Procesar creación de un pedido
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Crear(Pedido pedido)
         {
             if (!ModelState.IsValid)
             {
+                // Si el modelo es inválido, regresa a la vista con los errores
                 return View(pedido);
             }
 
-            pedido.Id = Pedidos.Count + 1; // Asignar nuevo ID
-            Pedidos.Add(pedido);
-            return RedirectToAction("Index");
+            Console.WriteLine($"Precio recibido: {pedido.Precio}");
+
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
+            {
+                var resultado = context.Execute("Crear_Pedido", new
+                {
+                    pedido.Nombre_Producto,
+                    pedido.Numero_Pedido,
+                    pedido.Cantidad,
+                    pedido.FechaPedido,
+                    pedido.Precio,
+                    pedido.Estado
+                }, commandType: CommandType.StoredProcedure);
+
+                if (resultado > 0)
+                    return RedirectToAction("Index");
+
+                return View(pedido);
+            }
         }
+
+
 
         // Mostrar pedido para editar
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido == null)
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
             {
-                return NotFound();
-            }
+                var pedido = context.QueryFirstOrDefault<Pedido>(
+                    "SELECT * FROM Pedido WHERE Id = @id", new { id });
 
-            return View(pedido);
+                if (pedido == null)
+                    return NotFound();
+
+                return View(pedido);
+            }
         }
 
         // Procesar edición del pedido
@@ -57,72 +87,83 @@ namespace prototipo2.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Editar(Pedido pedido)
         {
-            if (!ModelState.IsValid)
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
             {
+                var resultado = context.Execute("ActualizarPedido", new
+                {
+                    pedido.Id,
+                    pedido.Nombre_Producto,
+                    pedido.Numero_Pedido,
+                    pedido.Cantidad,
+                    pedido.FechaPedido,
+                    pedido.Precio,
+                    pedido.Estado
+                }, commandType: CommandType.StoredProcedure);
+
+                if (resultado > 0)
+                    return RedirectToAction("Index");
+
                 return View(pedido);
             }
-
-            var pedidoExistente = Pedidos.FirstOrDefault(p => p.Id == pedido.Id);
-            if (pedidoExistente == null)
-            {
-                return NotFound();
-            }
-
-            pedidoExistente.Nombre_Producto = pedido.Nombre_Producto;
-            pedidoExistente.Numero_Pedido = pedido.Numero_Pedido;
-            pedidoExistente.Cantidad = pedido.Cantidad;
-            pedidoExistente.FechaPedido = pedido.FechaPedido;
-            pedidoExistente.Precio = pedido.Precio;
-            pedidoExistente.Estado = pedido.Estado;
-
-            return RedirectToAction("Index");
         }
 
-        // Confirmar eliminación
+        // Mostrar pedido para confirmar eliminación
         [HttpGet]
         public IActionResult Eliminar(int id)
         {
-            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido == null)
-                return NotFound();
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
+            {
+                var pedido = context.QueryFirstOrDefault<Pedido>(
+                    "SELECT * FROM Pedido WHERE Id = @id", new { id });
 
-            return View(pedido);
+                if (pedido == null)
+                    return NotFound();
+
+                return View(pedido);
+            }
         }
 
-        // Eliminar pedido
+        // Procesar eliminación del pedido
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult EliminarPedido(int id)
+        public IActionResult Eliminar(Pedido pedido)
         {
-            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido != null)
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
             {
-                Pedidos.Remove(pedido);
-            }
+                var resultado = context.Execute("EliminarPedido", new { pedido.Id }, commandType: CommandType.StoredProcedure);
 
-            return RedirectToAction("Index");
+                if (resultado > 0)
+                    return RedirectToAction("Index");
+
+                return View(pedido);
+            }
         }
 
         // Consultar detalles de un pedido
         [HttpGet]
         public IActionResult Consultar(int id)
         {
-            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido == null)
-                return NotFound();
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
+            {
+                var pedido = context.QueryFirstOrDefault<Pedido>(
+                    "SELECT * FROM Pedido WHERE Id = @id", new { id });
 
-            return View(pedido);
+                if (pedido == null)
+                    return NotFound();
+
+                return View(pedido);
+            }
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult MarcarComoEnCamino(int id)
         {
-            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido != null && pedido.Estado == "Preparando")
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
             {
-                pedido.Estado = "En camino";
+                context.Execute("MarcarPedidoComoEnCamino", new { Id = id }, commandType: CommandType.StoredProcedure);
             }
+
             return RedirectToAction("Index");
         }
 
@@ -130,14 +171,17 @@ namespace prototipo2.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult MarcarComoEnviado(int id)
         {
-            var pedido = Pedidos.FirstOrDefault(p => p.Id == id);
-            if (pedido != null && pedido.Estado == "En camino")
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
             {
-                pedido.Estado = "Enviado";
+                context.Execute("MarcarPedidoComoEnviado", new { Id = id }, commandType: CommandType.StoredProcedure);
             }
+
             return RedirectToAction("Index");
         }
 
 
+
     }
-}
+    }
+
+    

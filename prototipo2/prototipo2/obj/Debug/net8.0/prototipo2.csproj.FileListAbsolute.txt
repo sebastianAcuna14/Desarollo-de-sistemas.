@@ -1319,3 +1319,12 @@ C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\ref
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.pdb
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.genruntimeconfig.cache
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\ref\prototipo2.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll

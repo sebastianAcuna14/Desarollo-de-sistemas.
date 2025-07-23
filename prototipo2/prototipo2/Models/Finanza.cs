@@ -32,4 +32,13 @@ namespace prototipo2.Models
             CUENTA_POR_COBRAR
         }
     }
-}
+        public class ReporteFinanciero
+        {
+            public decimal TotalIngresos { get; set; }
+            public decimal TotalEgresos { get; set; }
+            public decimal TotalCuentasPorCobrar { get; set; }
+            public decimal TotalCuentasPorCobrarVencidas { get; set; }
+            public int CantPendientes { get; set; }
+            public int CantPendientesVencidas { get; set; }
+        }
+    }

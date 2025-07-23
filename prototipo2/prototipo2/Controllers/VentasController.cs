@@ -17,7 +17,7 @@ namespace prototipo2.Controllers
 
         public VentasController(IConfiguration config)
         {
-            _connectionString = config.GetConnectionString("DefaultConnection");
+            _connectionString = config.GetConnectionString("Connection");
         }
 
         private IDbConnection Connection => new SqlConnection(_connectionString);

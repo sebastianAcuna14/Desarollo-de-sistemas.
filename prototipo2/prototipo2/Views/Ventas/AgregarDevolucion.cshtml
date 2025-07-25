@@ -5,19 +5,29 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Agregar Devolución</h2>
+<div class="container mt-4">
+    <div class="card shadow rounded-3">
+        <div class="card-header bg-danger text-white">
+            <h4 class="mb-0">Solicitud de Devolución</h4>
+        </div>
+        <div class="card-body">
+            <p class="text-muted">Lamentamos mucho los inconvenientes. Por favor, indique el motivo de su devolución:</p>
 
-<p>Lamentamos mucho los inconvenientes. Por favor, indique el motivo de su devolución:</p>
-<form asp-action="AgregarDevolucion" asp-route-id="@ViewBag.VentaId" method="post">
-    <div class="mb-3">
-        <label>Motivo de la devolución</label>
-        <input asp-for="Motivo" class="form-control" />
-        <span asp-validation-for="Motivo" class="text-danger"></span>
+            <form asp-action="AgregarDevolucion" asp-route-id="@ViewBag.VentaId" method="post">
+                <div class="mb-3">
+                    <label asp-for="Motivo" class="form-label fw-semibold">Motivo de la devolución</label>
+                    <input asp-for="Motivo" class="form-control" placeholder="Describa brevemente el motivo" />
+                    <span asp-validation-for="Motivo" class="text-danger small"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <button type="submit" class="btn btn-success px-4">✔ Confirmar devolución</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                </div>
+            </form>
+        </div>
     </div>
-
-    <button type="submit" class="btn btn-success">Confirmar devolución</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-</form>
+</div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />

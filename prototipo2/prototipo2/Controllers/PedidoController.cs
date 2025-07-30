@@ -1,4 +1,6 @@
-﻿using System.Data;
+﻿using ClosedXML.Excel;
+using System.IO;
+using System.Data;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
@@ -179,9 +181,53 @@ namespace prototipo2.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult ExportarExcel()
+        {
+            using (var context = new SqlConnection(_configuration.GetConnectionString("Connection")))
+            {
+                var pedidos = context.Query<Pedido>("ObtenerPedido", commandType: CommandType.StoredProcedure).ToList();
+
+                using (var workbook = new XLWorkbook())
+                {
+                    var worksheet = workbook.Worksheets.Add("Pedidos");
+
+                    // Encabezados
+                    worksheet.Cell(1, 1).Value = "Número de Pedido";
+                    worksheet.Cell(1, 2).Value = "Nombre del Producto";
+                    worksheet.Cell(1, 3).Value = "Cantidad";
+                    worksheet.Cell(1, 4).Value = "Precio";
+                    worksheet.Cell(1, 5).Value = "Fecha del Pedido";
+                    worksheet.Cell(1, 6).Value = "Estado";
+
+                    int fila = 2;
+
+                    foreach (var pedido in pedidos)
+                    {
+                        worksheet.Cell(fila, 1).Value = pedido.Numero_Pedido;
+                        worksheet.Cell(fila, 2).Value = pedido.Nombre_Producto;
+                        worksheet.Cell(fila, 3).Value = pedido.Cantidad;
+                        worksheet.Cell(fila, 4).Value = pedido.Precio;
+                        worksheet.Cell(fila, 5).Value = pedido.FechaPedido.ToShortDateString();
+                        worksheet.Cell(fila, 6).Value = pedido.Estado;
+                        fila++;
+                    }
+
+                    // Opcional: ajustar tamaño de las columnas
+                    worksheet.Columns().AdjustToContents();
+
+                    using (var stream = new MemoryStream())
+                    {
+                        workbook.SaveAs(stream);
+                        var content = stream.ToArray();
+
+                        return File(content,
+                            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                            "ListadoPedidos.xlsx");
+                    }
 
 
+                }
+            }
+        }
     }
-    }
-
-    
+}

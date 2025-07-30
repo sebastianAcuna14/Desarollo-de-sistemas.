@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8f8LSrknxgYt1HDhnCcHK8olT7HkGUETLA9IRax/3+Q=",
+  "Hash": "bpMKw+aX8Eka84D2FdYdrC5ZZDLZdd2xJFON7pu4TiM=",
   "Source": "prototipo2",
   "BasePath": "_content/prototipo2",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "prototipo2\\wwwroot",
       "Source": "prototipo2",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css",
       "SourceId": "prototipo2",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "prototipo2#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -35,13 +35,13 @@
       "Integrity": "Fc5JZ/cxZKPbHdOlB5INTGbtkrfOtfmylUaNabF91YE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css",
       "SourceId": "prototipo2",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "prototipo2#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -56,13 +56,13 @@
       "Integrity": "Fc5JZ/cxZKPbHdOlB5INTGbtkrfOtfmylUaNabF91YE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\Estilo.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Estilo.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "css/Estilo#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Estilo.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\site.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "css/Styles#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\Styles.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\favicon.ico",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/5 (1)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5 (1).jpg"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5.jpg"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/6 (1)#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6 (1).jpg"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6.jpg"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "images/logo_light#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo_light.png"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/Categoria#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Categoria.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/datatables-simple-demo#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\js\\datatables-simple-demo.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/Empleado#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Empleado.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/Producto#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Producto.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/Reparacion#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\js\\Reparacion.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\scripts.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\scripts.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/scripts#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\js\\scripts.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\site.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-theme.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "prototipo2",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\",
       "BasePath": "_content/prototipo2",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -1721,7 +1721,7 @@
   "Endpoints": [
     {
       "Route": "css/Estilo.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\Estilo.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Estilo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1742,7 +1742,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1758,7 +1758,7 @@
     },
     {
       "Route": "css/Estilo.xmmtcbucbs.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\Estilo.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Estilo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1779,7 +1779,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1803,7 +1803,7 @@
     },
     {
       "Route": "css/site.c2tiyv64ts.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1824,7 +1824,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1848,7 +1848,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1869,7 +1869,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1885,7 +1885,7 @@
     },
     {
       "Route": "css/Styles.39vy450h41.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1906,7 +1906,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1930,7 +1930,7 @@
     },
     {
       "Route": "css/Styles.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\css\\Styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1951,7 +1951,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1967,7 +1967,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1988,7 +1988,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2012,7 +2012,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2033,7 +2033,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2049,7 +2049,7 @@
     },
     {
       "Route": "images/2.20vl9nt75d.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2070,7 +2070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2094,7 +2094,7 @@
     },
     {
       "Route": "images/2.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2115,7 +2115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2131,7 +2131,7 @@
     },
     {
       "Route": "images/4.62xkv89g9z.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2152,7 +2152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2176,7 +2176,7 @@
     },
     {
       "Route": "images/4.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2197,7 +2197,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2213,7 +2213,7 @@
     },
     {
       "Route": "images/5 (1).d9xtzkvnuh.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2234,7 +2234,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2258,7 +2258,7 @@
     },
     {
       "Route": "images/5 (1).jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5 (1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2279,7 +2279,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2295,7 +2295,7 @@
     },
     {
       "Route": "images/5.d9xtzkvnuh.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2316,7 +2316,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2340,7 +2340,7 @@
     },
     {
       "Route": "images/5.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2361,7 +2361,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2377,7 +2377,7 @@
     },
     {
       "Route": "images/6 (1).jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2398,7 +2398,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2414,7 +2414,7 @@
     },
     {
       "Route": "images/6 (1).ml8q63yc4t.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6 (1).jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2435,7 +2435,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2459,7 +2459,7 @@
     },
     {
       "Route": "images/6.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2480,7 +2480,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2496,7 +2496,7 @@
     },
     {
       "Route": "images/6.ml8q63yc4t.jpg",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2517,7 +2517,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2541,7 +2541,7 @@
     },
     {
       "Route": "images/logo_light.png",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2562,7 +2562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2578,7 +2578,7 @@
     },
     {
       "Route": "images/logo_light.ubnxkqy37d.png",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\images\\logo_light.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2599,7 +2599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2623,7 +2623,7 @@
     },
     {
       "Route": "js/Categoria.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2644,7 +2644,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2660,7 +2660,7 @@
     },
     {
       "Route": "js/Categoria.njjy0807ox.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Categoria.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2681,7 +2681,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2705,7 +2705,7 @@
     },
     {
       "Route": "js/datatables-simple-demo.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2726,7 +2726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2742,7 +2742,7 @@
     },
     {
       "Route": "js/datatables-simple-demo.mrcm95qwwq.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\datatables-simple-demo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2763,7 +2763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2787,7 +2787,7 @@
     },
     {
       "Route": "js/Empleado.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2808,7 +2808,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2824,7 +2824,7 @@
     },
     {
       "Route": "js/Empleado.nguv1jabpq.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Empleado.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2845,7 +2845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2869,7 +2869,7 @@
     },
     {
       "Route": "js/Producto.f7i7yi5cna.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2890,7 +2890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2914,7 +2914,7 @@
     },
     {
       "Route": "js/Producto.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Producto.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2935,7 +2935,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2951,7 +2951,7 @@
     },
     {
       "Route": "js/Reparacion.1ksl9uu249.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2972,7 +2972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2996,7 +2996,7 @@
     },
     {
       "Route": "js/Reparacion.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3017,7 +3017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3033,7 +3033,7 @@
     },
     {
       "Route": "js/scripts.1og25pym0p.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\scripts.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\scripts.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3054,7 +3054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3078,7 +3078,7 @@
     },
     {
       "Route": "js/scripts.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\scripts.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\scripts.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3099,7 +3099,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3115,7 +3115,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3136,7 +3136,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3152,7 +3152,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3173,7 +3173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3197,7 +3197,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3218,7 +3218,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3234,7 +3234,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.73kdqttayv.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3255,7 +3255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3279,7 +3279,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3300,7 +3300,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3316,7 +3316,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.6gzpyzhau4.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3337,7 +3337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3361,7 +3361,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3382,7 +3382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3398,7 +3398,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.8inm30yfxf.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3419,7 +3419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3443,7 +3443,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3464,7 +3464,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3480,7 +3480,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.ozu22stjof.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3501,7 +3501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3525,7 +3525,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3546,7 +3546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3562,7 +3562,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.4gxs3k148c.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3583,7 +3583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3607,7 +3607,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3628,7 +3628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3644,7 +3644,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.gjcw7pocpk.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3665,7 +3665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3689,7 +3689,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.6l4ir0ityv.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3710,7 +3710,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3734,7 +3734,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3755,7 +3755,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3771,7 +3771,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.fctod5rc9n.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3792,7 +3792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3816,7 +3816,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3837,7 +3837,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3853,7 +3853,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3874,7 +3874,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3890,7 +3890,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3911,7 +3911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3927,7 +3927,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.st1cbwfwo5.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3948,7 +3948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3972,7 +3972,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.5p029spbuu.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3993,7 +3993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4017,7 +4017,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4038,7 +4038,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4054,7 +4054,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.5vj65cig9w.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4075,7 +4075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4099,7 +4099,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4120,7 +4120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4136,7 +4136,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.nakmwdwsxp.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4157,7 +4157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4181,7 +4181,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4202,7 +4202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4218,7 +4218,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.2q4vfeazbq.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4239,7 +4239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4263,7 +4263,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4284,7 +4284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4300,7 +4300,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.e6q6xbwqzk.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4321,7 +4321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4345,7 +4345,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4366,7 +4366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4382,7 +4382,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4403,7 +4403,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4419,7 +4419,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.o371a8zbv2.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4440,7 +4440,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4464,7 +4464,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.dy6jgresuo.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4485,7 +4485,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4509,7 +4509,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4530,7 +4530,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4546,7 +4546,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.jeal3x0ldm.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4567,7 +4567,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4591,7 +4591,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4612,7 +4612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4628,7 +4628,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4649,7 +4649,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4665,7 +4665,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4686,7 +4686,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4702,7 +4702,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.okkk44j0xs.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4723,7 +4723,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4747,7 +4747,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.z7kmom2977.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4768,7 +4768,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4792,7 +4792,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.mk8rdyw69w.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4813,7 +4813,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4837,7 +4837,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.97yrjpyf9r.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4858,7 +4858,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4882,7 +4882,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4903,7 +4903,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4919,7 +4919,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.cwzlr5n8x4.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4940,7 +4940,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4964,7 +4964,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4985,7 +4985,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5001,7 +5001,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5022,7 +5022,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5038,7 +5038,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5059,7 +5059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5075,7 +5075,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.wmug9u23qg.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5096,7 +5096,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5120,7 +5120,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.y53cy5s2zj.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5141,7 +5141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5165,7 +5165,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.67y8t5u559.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5186,7 +5186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5210,7 +5210,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5231,7 +5231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5247,7 +5247,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.css.5wl60yermk.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5268,7 +5268,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5292,7 +5292,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5313,7 +5313,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5329,7 +5329,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5350,7 +5350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5366,7 +5366,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.css.kfyfhdxh97.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5387,7 +5387,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5411,7 +5411,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5432,7 +5432,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5448,7 +5448,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-theme.min.vna0sak10w.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5469,7 +5469,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5493,7 +5493,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5514,7 +5514,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5530,7 +5530,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.j75batdsum.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5551,7 +5551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5575,7 +5575,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5596,7 +5596,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5612,7 +5612,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.2yn17lgxub.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5633,7 +5633,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5657,7 +5657,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5678,7 +5678,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5694,7 +5694,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5715,7 +5715,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5731,7 +5731,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.vy0bq9ydhf.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5752,7 +5752,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5776,7 +5776,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5797,7 +5797,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5813,7 +5813,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.ab1c3rmv7g.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5834,7 +5834,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5858,7 +5858,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5879,7 +5879,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5895,7 +5895,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5916,7 +5916,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5932,7 +5932,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.56d2bn4wt9.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5953,7 +5953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5977,7 +5977,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5998,7 +5998,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6014,7 +6014,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.ik6i2hrs65.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6035,7 +6035,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6059,7 +6059,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.ophe14yye5.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6080,7 +6080,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6104,7 +6104,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.z9shlbduue.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6125,7 +6125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6149,7 +6149,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.1piudyfv7h.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6170,7 +6170,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6194,7 +6194,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.f6zq8v6eb3.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6215,7 +6215,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6239,7 +6239,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6260,7 +6260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6276,7 +6276,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.kbynt5jhd9.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6297,7 +6297,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6321,7 +6321,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6342,7 +6342,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6358,7 +6358,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.89qbw8ngem.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6379,7 +6379,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6403,7 +6403,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6424,7 +6424,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6440,7 +6440,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.c2nslu3uf3.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6461,7 +6461,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6485,7 +6485,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6506,7 +6506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6522,7 +6522,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6543,7 +6543,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6559,7 +6559,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.2lgwfvgpvi.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6580,7 +6580,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6604,7 +6604,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6625,7 +6625,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6641,7 +6641,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jqwzsa9uv6.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6662,7 +6662,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6686,7 +6686,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6707,7 +6707,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6723,7 +6723,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6744,7 +6744,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6760,7 +6760,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.wsezl0heh6.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6781,7 +6781,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6805,7 +6805,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.n5w6o92d9r.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6826,7 +6826,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6850,7 +6850,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6871,7 +6871,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6887,7 +6887,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.6ukhryfubh.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6908,7 +6908,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6932,7 +6932,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6953,7 +6953,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6969,7 +6969,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.4908xmbfjr.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6990,7 +6990,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7014,7 +7014,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7035,7 +7035,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7051,7 +7051,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7072,7 +7072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7088,7 +7088,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.u33ctipx7g.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7109,7 +7109,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7133,7 +7133,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7154,7 +7154,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7170,7 +7170,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7191,7 +7191,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7215,7 +7215,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.7s2n0ol71w.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7236,7 +7236,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7260,7 +7260,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7281,7 +7281,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7297,7 +7297,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.5pze98is44.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7318,7 +7318,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7342,7 +7342,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ehgnz7f14e.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7363,7 +7363,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7387,7 +7387,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7408,7 +7408,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7424,7 +7424,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7445,7 +7445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7461,7 +7461,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7482,7 +7482,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7506,7 +7506,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7527,7 +7527,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7543,7 +7543,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.ay5nd8zt9x.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7564,7 +7564,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7588,7 +7588,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7609,7 +7609,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7625,7 +7625,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.9oaff4kq20.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7646,7 +7646,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7670,7 +7670,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7691,7 +7691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7707,7 +7707,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.6d0lkjaslc.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7728,7 +7728,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7752,7 +7752,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7773,7 +7773,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7789,7 +7789,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7810,7 +7810,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7826,7 +7826,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.l1zq2mitth.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7847,7 +7847,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7871,7 +7871,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7892,7 +7892,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7908,7 +7908,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7929,7 +7929,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7953,7 +7953,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.03hjc8e09r.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7974,7 +7974,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7998,7 +7998,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8019,7 +8019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8035,7 +8035,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.48y08845bh.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8056,7 +8056,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8080,7 +8080,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8101,7 +8101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8117,7 +8117,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8138,7 +8138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8162,7 +8162,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8183,7 +8183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:31 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8199,7 +8199,7 @@
     },
     {
       "Route": "prototipo2.b06m6xsnk7.bundle.scp.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8220,7 +8220,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8244,7 +8244,7 @@
     },
     {
       "Route": "prototipo2.b06m6xsnk7.styles.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8265,7 +8265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8289,7 +8289,7 @@
     },
     {
       "Route": "prototipo2.bundle.scp.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\prototipo2.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8310,7 +8310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8326,7 +8326,7 @@
     },
     {
       "Route": "prototipo2.styles.css",
-      "AssetFile": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css",
+      "AssetFile": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\obj\\Debug\\net8.0\\scopedcss\\bundle\\prototipo2.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8347,7 +8347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 30 Jul 2025 00:27:30 GMT"
+          "Value": "Wed, 30 Jul 2025 01:26:30 GMT"
         },
         {
           "Name": "Cache-Control",

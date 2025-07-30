@@ -22,5 +22,6 @@ namespace prototipo2.Models
         [Required(ErrorMessage = "El estado del pedido es obligatorio")]
         [StringLength(50, ErrorMessage = "Máximo 50 caracteres")]
         public required string Estado { get; set; }
+        public string? CorreoCliente { get; set; }
     }
 }

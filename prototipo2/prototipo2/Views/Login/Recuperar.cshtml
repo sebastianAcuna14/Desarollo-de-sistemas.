@@ -1,29 +1,118 @@
 ﻿@{
     ViewData["Title"] = "Recuperar contraseña";
+    Layout = "_LayoutLogin";
 }
 
-<main class="container mt-5 mb-5">
-    <h2>Recuperar Contraseña</h2>
-
-    <form method="post" asp-action="Recuperar">
-        <div class="mb-3">
-            <label for="email">Correo electrónico</label>
-            <input type="email" class="form-control" name="email" required />
-        </div>
-        <button type="submit" class="btn btn-warning">Buscar</button>
-    </form>
-
-    @if (ViewBag.UsuarioEncontrado != null && ViewBag.UsuarioEncontrado == true)
-    {
-        <hr />
-
-        <form method="post" asp-action="CambiarContrasena">
-            <input type="hidden" name="email" value="@ViewBag.Email" />
-            <div class="mb-3">
-                <label for="nuevaContrasena">Nueva contraseña</label>
-                <input type="password" class="form-control" name="nuevaContrasena" required />
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña - ElectroMecánica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <i class="fas fa-cogs me-2"></i>
+                <span class="fw-bold">ElectroMecánica</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="envios.html">Envíos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
             </div>
-            <button type="submit" class="btn btn-success">Actualizar contraseña</button>
-        </form>
-    }
-</main>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-4 p-md-5">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-key text-warning fa-3x mb-3"></i>
+                                <h2 class="fw-bold">Recuperar Contraseña</h2>
+                                <p class="text-muted">Ingresa tu correo electrónico para recibir instrucciones</p>
+                            </div>
+
+                            <form id="recover-form">
+                                <div class="mb-4">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light">
+                                            <i class="fas fa-envelope text-muted"></i>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2 mb-4">
+                                    <button type="submit" class="btn btn-warning btn-lg">Enviar Instrucciones</button>
+                                </div>
+
+                                <div class="text-center">
+                                    <p class="mb-0">¿Recordaste tu contraseña? <a href="login.html" class="text-decoration-none text-warning">Iniciar Sesión</a></p>
+                                </div>
+                            </form>
+
+                            <!-- Mensaje de éxito (inicialmente oculto) -->
+                            <div id="success-message" class="alert alert-success d-flex align-items-center mt-4" role="alert" style="display: none !important;">
+                                <i class="fas fa-check-circle me-2"></i>
+                                <div>
+                                    Se han enviado las instrucciones a tu correo electrónico. Por favor, revisa tu bandeja de entrada.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Form submission
+        document.getElementById('recover-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Ocultar el formulario
+            this.style.display = 'none';
+
+            // Mostrar mensaje de éxito
+            document.getElementById('success-message').style.display = 'flex !important';
+            document.getElementById('success-message').style.removeProperty('display');
+
+            // Aquí iría la lógica para enviar el correo de recuperación
+        });
+    </script>
+</body>
+</html>

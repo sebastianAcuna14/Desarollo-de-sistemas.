@@ -1041,6 +1041,24 @@ C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\proto
 C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.csproj.AssemblyReference.cache
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.AssemblyInfoInputs.cache
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.AssemblyInfo.cs
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.csproj.CoreCompileInputs.cache
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.RazorAssemblyInfo.cache
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.RazorAssemblyInfo.cs
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.sourcelink.json
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\appsettings.json
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\prototipo2.staticwebassets.runtime.json
@@ -1051,7 +1069,12 @@ C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\pro
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\prototipo2.pdb
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.Parser.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Dapper.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\ExcelNumberFormat.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Humanizer.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -1113,6 +1136,8 @@ C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\NuG
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\RBush.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.ClientModel.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.Composition.AttributedModel.dll
@@ -1125,6 +1150,7 @@ C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\Sys
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.IO.Packaging.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
@@ -1292,15 +1318,6 @@ C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\run
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.csproj.AssemblyReference.cache
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.AssemblyInfoInputs.cache
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.AssemblyInfo.cs
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.csproj.CoreCompileInputs.cache
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.RazorAssemblyInfo.cache
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.RazorAssemblyInfo.cs
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.sourcelink.json
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\staticwebassets\msbuild.prototipo2.Microsoft.AspNetCore.StaticWebAssets.props
@@ -1319,20 +1336,3 @@ C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\ref
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.pdb
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\prototipo2.genruntimeconfig.cache
 C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\obj\Debug\net8.0\ref\prototipo2.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
-C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.Parser.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\ExcelNumberFormat.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\RBush.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\SixLabors.Fonts.dll
-C:\Users\JOSHUA\Desktop\Nueva carpeta\prototipo2\prototipo2\bin\Debug\net8.0\System.IO.Packaging.dll

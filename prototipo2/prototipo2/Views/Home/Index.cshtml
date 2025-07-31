@@ -180,11 +180,19 @@
                             <p class="card-text small text-muted">Potencia: 2HP, Voltaje: 220V</p>
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="fw-bold text-warning">$1,199.99</span>
-                                <button class="btn btn-sm btn-warning">Agregar</button>
+
+                                <form method="post" asp-controller="Carrito" asp-action="Agregar" class="m-0">
+                                    <input type="hidden" name="ProductoId" value="1" />
+                                    <input type="hidden" name="Nombre_Producto" value="Motor Eléctrico 1" />
+                                    <input type="hidden" name="Precio" value="1199.99" />
+                                    <input type="hidden" name="Cantidad" value="1" />
+                                    <button type="submit" class="btn btn-sm btn-warning">Agregar</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Producto 2 -->
                 <div class="col-sm-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm">
@@ -194,11 +202,19 @@
                             <p class="card-text small text-muted">Potencia: 2HP, Voltaje: 220V</p>
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="fw-bold text-warning">$1,299.99</span>
-                                <button class="btn btn-sm btn-warning">Agregar</button>
+
+                                <form method="post" asp-controller="Carrito" asp-action="Agregar" class="m-0">
+                                    <input type="hidden" name="ProductoId" value="2" />
+                                    <input type="hidden" name="Nombre_Producto" value="Motor Eléctrico 2" />
+                                    <input type="hidden" name="Precio" value="1299.99" />
+                                    <input type="hidden" name="Cantidad" value="1" />
+                                    <button type="submit" class="btn btn-sm btn-warning">Agregar</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Producto 3 -->
                 <div class="col-sm-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm">
@@ -208,11 +224,19 @@
                             <p class="card-text small text-muted">Potencia: 2HP, Voltaje: 220V</p>
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="fw-bold text-warning">$1,399.99</span>
-                                <button class="btn btn-sm btn-warning">Agregar</button>
+
+                                <form method="post" asp-controller="Carrito" asp-action="Agregar" class="m-0">
+                                    <input type="hidden" name="ProductoId" value="3" />
+                                    <input type="hidden" name="Nombre_Producto" value="Motor Eléctrico 3" />
+                                    <input type="hidden" name="Precio" value="1399.99" />
+                                    <input type="hidden" name="Cantidad" value="1" />
+                                    <button type="submit" class="btn btn-sm btn-warning">Agregar</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- Producto 4 -->
                 <div class="col-sm-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm">
@@ -222,11 +246,19 @@
                             <p class="card-text small text-muted">Potencia: 2HP, Voltaje: 220V</p>
                             <div class="d-flex justify-content-between align-items-center mt-3">
                                 <span class="fw-bold text-warning">$1,499.99</span>
-                                <button class="btn btn-sm btn-warning">Agregar</button>
+
+                                <form method="post" asp-controller="Carrito" asp-action="Agregar" class="m-0">
+                                    <input type="hidden" name="ProductoId" value="4" />
+                                    <input type="hidden" name="Nombre_Producto" value="Motor Eléctrico 4" />
+                                    <input type="hidden" name="Precio" value="1499.99" />
+                                    <input type="hidden" name="Cantidad" value="1" />
+                                    <button type="submit" class="btn btn-sm btn-warning">Agregar</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
 

@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Compra Confirmada";
+}
+
+<div class="page-wrapper d-flex justify-content-center align-items-center py-5">
+    <div class="confirm-card text-center p-5 shadow rounded-4 bg-white">
+        <i class="bi bi-check-circle-fill confirm-icon text-success display-1 mb-4"></i>
+        <h1 class="fw-bold text-success mb-3">¡Pago Confirmado!</h1>
+        <p class="lead text-secondary mb-4">
+            Gracias por tu compra. Tu pedido ha sido procesado correctamente.
+        </p>
+        <p class="text-muted mb-4">
+            Recibirás un correo electrónico con los detalles y el seguimiento de tu pedido.
+        </p>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary btn-lg px-4 fw-semibold">
+            <i class="bi bi-house-door-fill me-2"></i> Volver al Inicio
+        </a>
+    </div>
+</div>
+
+<footer class="text-center text-muted py-3">
+    &copy; @DateTime.Now.Year Tu Empresa. Todos los derechos reservados.
+</footer>

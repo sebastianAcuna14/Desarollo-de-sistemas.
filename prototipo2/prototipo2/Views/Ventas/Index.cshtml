@@ -44,10 +44,13 @@
                             </td>
                             <td>
                                 @{
-                                    var tiposPago = venta.Pagos.Select(p => p.Tipo.ToString()).Distinct();
+                                    var tiposPago = venta.Pagos
+                                    .Select(p => p.Tipo.Equals("PayPal", StringComparison.OrdinalIgnoreCase) ? "TARJETA" : p.Tipo)
+                                    .Distinct();
                                 }
                                 @string.Join(", ", tiposPago)
                             </td>
+
                             <td>
                                 @if (venta.Devoluciones != null && venta.Devoluciones.Any())
                                 {

@@ -1,0 +1,78 @@
+﻿@model List<prototipo2.Models.CarritoDTO>
+
+@{
+    ViewData["Title"] = "Pago con PayPal";
+    var total = Model.Sum(x => x.Subtotal);
+}
+
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card shadow border-0 rounded-3">
+        <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center">
+            <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal" style="height: 40px;" />
+            <span class="fw-bold text-primary fs-5">Confirmación de Pago</span>
+        </div>
+        <div class="card-body p-4">
+            @if (Model != null && Model.Count > 0)
+            {
+                <h5 class="mb-4 fw-semibold">Resumen de Compra</h5>
+
+                <table class="table table-borderless">
+                    <thead>
+                        <tr class="text-muted small">
+                            <th>Producto</th>
+                            <th class="text-end">Precio</th>
+                            <th class="text-center">Cantidad</th>
+                            <th class="text-end">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="align-middle">@item.Nombre_Producto</td>
+                                <td class="align-middle text-end">₡@item.Precio.ToString("N2")</td>
+                                <td class="align-middle text-center">@item.Cantidad</td>
+                                <td class="align-middle text-end">₡@item.Subtotal.ToString("N2")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <hr />
+
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <strong class="fs-5">Total a Pagar:</strong>
+                    <span class="fs-4 text-primary fw-bold">₡@total.ToString("N2")</span>
+                </div>
+
+                <form method="post" asp-controller="Carrito" asp-action="ProcesarPago">
+                    <button type="submit" class="btn btn-primary w-100 py-3 fs-5 fw-bold" style="background-color: #0070ba; border-color: #0070ba;">
+                        <i class="bi bi-paypal fs-4 me-2"></i> Pagar con PayPal
+                    </button>
+                </form>
+
+
+                <a asp-controller="Carrito" asp-action="Index" class="btn btn-link mt-3 d-block text-center text-decoration-none text-muted">
+                    <i class="bi bi-arrow-left"></i> Volver al Carrito
+                </a>
+            }
+            else
+            {
+                <div class="alert alert-warning text-center my-5">
+                    <i class="bi bi-exclamation-triangle fs-1 mb-3"></i>
+                    <h5>No hay productos para pagar.</h5>
+                </div>
+            }
+        </div>
+        <div class="card-footer text-center text-muted small bg-white">
+            &copy; @DateTime.Now.Year PayPal, Inc. Todos los derechos reservados.
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f6f9fc;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+</style>

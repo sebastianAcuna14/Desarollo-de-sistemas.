@@ -298,3 +298,74 @@ GO
 
 USE master;
 GO
+
+CREATE TABLE Producto (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Nombre_Producto NVARCHAR(100) NOT NULL,
+    Categoria NVARCHAR(100) NOT NULL,
+    Cantidad INT NOT NULL CHECK (Cantidad >= 0),
+    Proveedor NVARCHAR(100) NOT NULL,
+    Precio DECIMAL(10, 2) NOT NULL CHECK (Precio > 0)
+);
+
+
+-- Tabla Carrito
+CREATE TABLE Carrito (
+    Id INT IDENTITY PRIMARY KEY,
+    ProductoId INT NOT NULL,
+    Cantidad INT NOT NULL,
+    Nombre_Producto NVARCHAR(100) NOT NULL,
+    Precio DECIMAL(18,2) NOT NULL
+);
+
+-- Procedimiento para agregar al carrito
+CREATE OR ALTER PROCEDURE AgregarAlCarrito
+    @ProductoId INT,
+    @Cantidad INT,
+    @Nombre_Producto NVARCHAR(100),  -- corregí el nombre del parámetro para que coincida
+    @Precio DECIMAL(18, 2)
+AS
+BEGIN
+    INSERT INTO Carrito (ProductoId, Cantidad, Nombre_Producto, Precio)
+    VALUES (@ProductoId, @Cantidad, @Nombre_Producto, @Precio)
+END
+
+-- Procedimiento para obtener carrito
+CREATE OR ALTER PROCEDURE ObtenerCarrito
+AS
+BEGIN
+    SELECT 
+        Id,
+        ProductoId,
+        Nombre_Producto,
+        Precio,
+        Cantidad,
+        (Precio * Cantidad) AS Subtotal
+    FROM Carrito
+END
+
+-- Procedimiento para eliminar un producto del carrito
+CREATE OR ALTER PROCEDURE EliminarDelCarrito
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Carrito WHERE Id = @Id
+END
+
+-- Procedimiento para vaciar el carrito
+CREATE OR ALTER PROCEDURE LimpiarCarrito
+AS
+BEGIN
+    DELETE FROM Carrito
+END
+
+-- Procedimiento para actualizar la cantidad
+CREATE OR ALTER PROCEDURE ActualizarCantidadCarrito
+    @Id INT,
+    @Cantidad INT
+AS
+BEGIN
+    UPDATE Carrito
+    SET Cantidad = @Cantidad
+    WHERE Id = @Id
+END

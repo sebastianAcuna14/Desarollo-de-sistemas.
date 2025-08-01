@@ -1,118 +1,149 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using prototipo2.Models;
+using System.Data;
 
 namespace prototipo2.Controllers
 {
     public class InventarioController : Controller
     {
-        // esta lista simula una base de datos en memoria para los productos
-        private static List<Producto> Productos = new List<Producto>
-        {
-            new() { Id = 1, Nombre_Producto = "Producto A", Categoria = "Categoria 1", Cantidad = 10, Proveedor = "Proveedor X", Precio = 100.00m },
-            new() { Id = 2, Nombre_Producto = "Producto B", Categoria = "Categoria 2", Cantidad = 20, Proveedor = "Proveedor Y", Precio = 200.00m },
-        };
+        private readonly IConfiguration _configuration;
 
-        public IActionResult Index()
+        public InventarioController(IConfiguration configuration)
         {
-
-            return View(Productos);
+            _configuration = configuration;
         }
 
+        private SqlConnection Conexion()
+        {
+            return new SqlConnection(_configuration.GetConnectionString("Connection"));
+        }
 
-        //esto es para crear un producto, pero no lo guarda en la base de datos, solo lo muestra en la vista
+        // GET: Index
+        public IActionResult Index()
+        {
+            using var con = Conexion();
+            var productos = con.Query<Producto>("ObtenerProductos").ToList();
+            return View(productos);
+        }
+
+        // GET: Crear
+        [HttpGet]
         public IActionResult Crear()
         {
+            CargarCategoriasYProveedores();
             return View();
         }
 
-
-        //esto crea un producto temporalmente
+        // POST: Crear
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public IActionResult Crear(Producto producto)
         {
-            /*if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                
-            }*/
-            producto.Id = Productos.Count + 1; // Asignar un nuevo ID
-            Productos.Add(producto);//esto es para trabajar en memoria, en una base de datos se haría diferente
-            return RedirectToAction("Index");
+                CargarCategoriasYProveedores();
+                return View(producto);
+            }
 
+            using var con = Conexion();
+            con.Execute("CrearProducto", new
+            {
+                producto.Nombre,
+                producto.Descripcion,
+                producto.Cantidad,
+                producto.Precio,
+                producto.IdProveedor,
+                producto.IdCategoria
+            });
+
+
+            return RedirectToAction("Index");
         }
 
-
-        //Estas llaves hasta abajo son para editar un producto,
-        //se usa el id del producto para buscarlo en la lista de productos y luego se muestra en la vista
+        // GET: Editar
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            var Producto = Productos.FirstOrDefault(p => p.Id == id);
-            if (Producto == null)
-            {
-                return NotFound();
-            }
+            using var con = Conexion();
+            var producto = con.QueryFirstOrDefault<Producto>("ObtenerProductoPorId", new { IdProducto = id });
 
-            return View(Producto);
+            if (producto == null)
+                return NotFound();
+
+            CargarCategoriasYProveedores();
+            return View(producto);
         }
 
+        // POST: Editar
         [HttpPost]
         public IActionResult Editar(Producto producto)
         {
-            /*if (!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
+                CargarCategoriasYProveedores();
                 return View(producto);
-            }*/
-
-            var productoExistente = Productos.FirstOrDefault(p => p.Id == producto.Id);
-            if (productoExistente == null)
-            {
-                return NotFound();
             }
 
-            // Se actualizan los campos del producto existente
-            productoExistente.Nombre_Producto = producto.Nombre_Producto;
-            productoExistente.Categoria = producto.Categoria;
-            productoExistente.Proveedor = producto.Proveedor;
-            productoExistente.Precio = producto.Precio;
-            productoExistente.Cantidad = producto.Cantidad;
+            using var con = Conexion();
+            con.Execute("ActualizarProducto", new
+            {
+                producto.IdProducto,
+                producto.Nombre,
+                producto.Descripcion,
+                producto.Cantidad,
+                producto.Categoria,
+                producto.Precio,
+                producto.IdProveedor,
+                producto.IdCategoria
+            });
 
             return RedirectToAction("Index");
         }
 
-
+        // GET: Eliminar
         [HttpGet]
         public IActionResult Eliminar(int id)
         {
-            var producto = Productos.FirstOrDefault(p => p.Id == id);
+            using var con = Conexion();
+            var producto = con.QueryFirstOrDefault<Producto>("ObtenerProductoPorId", new { IdProducto = id });
+
             if (producto == null)
                 return NotFound();
 
             return View(producto);
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public IActionResult EliminarProducto(int id)
+        // POST: Eliminar
+        [HttpPost, ActionName("Eliminar")]
+        public IActionResult EliminarConfirmado(int id)
         {
-            var producto = Productos.FirstOrDefault(p => p.Id == id);
-            if (producto != null)
-            {
-                Productos.Remove(producto);
-            }
-
+            using var con = Conexion();
+            con.Execute("EliminarProducto", new { IdProducto = id });
             return RedirectToAction("Index");
         }
 
-
-        [HttpGet]
-        public IActionResult Consultar(int id)
+        // para dropdowns de categoria y proveedores
+        private void CargarCategoriasYProveedores()
         {
-            var producto = Productos.FirstOrDefault(p => p.Id == id);
-            if (producto == null)
-                return NotFound();
+            using var con = Conexion();
 
-            return View(producto);
+            var listaProveedores = con.Query<Proveedor>("ObtenerProveedores")
+                .Select(p => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = p.IDProveedor.ToString(),
+                    Text = p.NombreEmpresa
+                }).ToList();
+
+            var listaCategorias = con.Query<Categoria>("ObtenerCategorias")
+                .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+                {
+                    Value = c.IdCategoria.ToString(),
+                    Text = c.Nombre
+                }).ToList();
+
+            ViewBag.ListaProveedores = listaProveedores;
+            ViewBag.ListaCategorias = listaCategorias;
         }
     }
 }

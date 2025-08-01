@@ -1,68 +1,68 @@
 ﻿@model prototipo2.Models.Producto
 
 @{
-    ViewData["Title"] = "Editar producto";
+    ViewData["Title"] = "Editar Producto";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="container mt-5">
-    <div class="card shadow rounded-4">
-        <div class="card-header bg-primary text-white">
-            <h3 class="mb-0">
-                <i class="fas fa-edit me-2"></i>Editar Producto
-            </h3>
-        </div>
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card mt-5 shadow rounded-4">
+            <div class="card-header bg-primary text-white rounded-top-4">
+                <h4 class="mb-0"><i class="fas fa-edit me-2"></i>@ViewData["Title"]</h4>
+            </div>
+            <div class="card-body">
+                <form asp-action="Editar" method="post">
+                    <input type="hidden" asp-for="IdProducto" />
 
-        <div class="card-body">
-            <p class="mb-4 text-muted">Complete los campos para editar el producto.</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Nombre" class="form-label">Nombre del Producto</label>
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
 
-            <form asp-action="Editar" method="post">
-                <input type="hidden" asp-for="Id" />
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Descripcion" class="form-label">Descripción</label>
+                            <input asp-for="Descripcion" class="form-control" />
+                            <span asp-validation-for="Descripcion" class="text-danger"></span>
+                        </div>
 
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="Nombre_Producto" class="form-label">Nombre del Producto</label>
-                        <input asp-for="Nombre_Producto" class="form-control" />
-                        <span asp-validation-for="Nombre_Producto" class="text-danger"></span>
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Precio" class="form-label">Precio</label>
+                            <input asp-for="Precio" class="form-control" />
+                            <span asp-validation-for="Precio" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Cantidad" class="form-label">Cantidad</label>
+                            <input asp-for="Cantidad" class="form-control" />
+                            <span asp-validation-for="Cantidad" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="IdCategoria" class="form-label">Categoría</label>
+                            <select asp-for="IdCategoria" asp-items="ViewBag.ListaCategorias" class="form-select">
+                                <option value="">Seleccione una categoría</option>
+                            </select>
+                            <span asp-validation-for="IdCategoria" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="IdProveedor" class="form-label">Proveedor</label>
+                            <select asp-for="IdProveedor" asp-items="ViewBag.ListaProveedores" class="form-select">
+                                <option value="">Seleccione un proveedor</option>
+                            </select>
+                            <span asp-validation-for="IdProveedor" class="text-danger"></span>
+                        </div>
                     </div>
 
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="Categoria" class="form-label">Categoría</label>
-                        <input asp-for="Categoria" class="form-control" />
-                        <span asp-validation-for="Categoria" class="text-danger"></span>
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                        <button type="submit" class="btn btn-success">Guardar Cambios</button>
                     </div>
-
-                    <div class="col-md-6 mb-3">
-                        <label asp-for="Proveedor" class="form-label">Proveedor</label>
-                        <input asp-for="Proveedor" class="form-control" />
-                        <span asp-validation-for="Proveedor" class="text-danger"></span>
-                    </div>
-
-                    <div class="col-md-3 mb-3">
-                        <label asp-for="Precio" class="form-label">Precio</label>
-                        <input asp-for="Precio" class="form-control" />
-                        <span asp-validation-for="Precio" class="text-danger"></span>
-                    </div>
-
-                    <div class="col-md-3 mb-3">
-                        <label asp-for="Cantidad" class="form-label">Cantidad</label>
-                        <input asp-for="Cantidad" class="form-control" />
-                        <span asp-validation-for="Cantidad" class="text-danger"></span>
-                    </div>
-                </div>
-
-                <div class="text-end">
-                    <div class="text-end mt-4">
-                        <a asp-controller="Inventario" asp-action="Index" class="btn btn-secondary me-2">
-                            <i class="fas fa-arrow-left me-1"></i>Cancelar
-                        </a>
-
-                        <button type="submit" class="btn btn-success px-4">
-                            <i class="fas fa-save me-1"></i>Guardar Cambios
-                        </button>
-                    </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -70,4 +70,3 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
-

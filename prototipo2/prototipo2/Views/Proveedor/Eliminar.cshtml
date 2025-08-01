@@ -1,0 +1,43 @@
+﻿@model prototipo2.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Eliminar Proveedor";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card mt-5 shadow rounded-4">
+            <div class="card-header bg-danger text-white rounded-top-4">
+                <h4 class="mb-0">
+                    <i class="fas fa-trash-alt me-2"></i>@ViewData["Title"]
+                </h4>
+            </div>
+            <div class="card-body">
+                <h5 class="text-center text-danger mb-4">¿Estás seguro que deseas eliminar este proveedor?</h5>
+
+                <dl class="row">
+                    <dt class="col-sm-4">Nombre Empresa</dt>
+                    <dd class="col-sm-8">@Model.NombreEmpresa</dd>
+
+                    <dt class="col-sm-4">Correo</dt>
+                    <dd class="col-sm-8">@Model.Correo</dd>
+
+                    <dt class="col-sm-4">Teléfono</dt>
+                    <dd class="col-sm-8">@Model.Telefono</dd>
+
+                    <dt class="col-sm-4">Estado</dt>
+                    <dd class="col-sm-8">@Model.Estado</dd>
+                </dl>
+
+                <form asp-action="Eliminar" method="post">
+                    <input type="hidden" asp-for="IDProveedor" />
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

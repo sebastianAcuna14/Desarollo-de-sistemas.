@@ -1,44 +1,42 @@
 ﻿@model prototipo2.Models.Producto
 
 @{
-    ViewData["Title"] = "Eliminar producto";
+    ViewData["Title"] = "Eliminar Producto";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<div class="container mt-4">
-    <div class="card shadow-sm rounded-4 border-danger">
-        <div class="card-header bg-danger text-white">
-            <h4 class="mb-0"><i class="fas fa-trash-alt me-2"></i>Eliminar producto</h4>
-        </div>
-        <div class="card-body">
-            <p class="fs-5 mb-4 text-danger">¿Está seguro que desea eliminar el siguiente producto?</p>
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card mt-5 shadow rounded-4">
+            <div class="card-header bg-danger text-white rounded-top-4">
+                <h4 class="mb-0"><i class="fas fa-trash-alt me-2"></i>@ViewData["Title"]</h4>
+            </div>
+            <div class="card-body">
+                <p class="text-muted">¿Está seguro de que desea eliminar el siguiente producto?</p>
 
-            <dl class="row">
-                <dt class="col-sm-4">Nombre del Producto:</dt>
-                <dd class="col-sm-8">@Model.Nombre_Producto</dd>
+                <dl class="row">
+                    <dt class="col-sm-4">Nombre:</dt>
+                    <dd class="col-sm-8">@Model.Nombre</dd>
 
-                <dt class="col-sm-4">Categoría:</dt>
-                <dd class="col-sm-8">@Model.Categoria</dd>
+                    <dt class="col-sm-4">Descripción:</dt>
+                    <dd class="col-sm-8">@Model.Descripcion</dd>
 
-                <dt class="col-sm-4">Proveedor:</dt>
-                <dd class="col-sm-8">@Model.Proveedor</dd>
+                    <dt class="col-sm-4">Cantidad:</dt>
+                    <dd class="col-sm-8">@Model.Cantidad</dd>
 
-                <dt class="col-sm-4">Precio:</dt>
-                <dd class="col-sm-8">@Model.Precio.ToString("C")</dd>
+                    <dt class="col-sm-4">Precio:</dt>
+                    <dd class="col-sm-8">@Model.Precio.ToString("C")</dd>
+                </dl>
 
-                <dt class="col-sm-4">Cantidad Disponible:</dt>
-                <dd class="col-sm-8">@Model.Cantidad</dd>
-            </dl>
+                <form asp-action="Eliminar" method="post">
+                    <input type="hidden" asp-for="IdProducto" />
 
-            <form asp-action="EliminarProducto" method="post" class="d-flex justify-content-end">
-                <input type="hidden" asp-for="Id" />
-                <button type="submit" class="btn btn-danger me-2">
-                    <i class="fas fa-trash-alt me-1"></i>Eliminar
-                </button>
-                <a asp-action="Index" asp-controller="Inventario" class="btn btn-secondary">
-                    <i class="fas fa-times me-1"></i>Cancelar
-                </a>
-            </form>
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </div>

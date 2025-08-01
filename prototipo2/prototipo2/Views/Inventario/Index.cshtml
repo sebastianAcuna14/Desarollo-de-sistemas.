@@ -1,66 +1,56 @@
 ﻿@model IEnumerable<prototipo2.Models.Producto>
-@using prototipo2.Models
 
 @{
-    ViewData["Title"] = "Inventario de Productos";
+    ViewData["Title"] = "Lista de Productos";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <div class="row justify-content-center">
     <div class="container-sm py-3 col-11">
 
-        <h1>@ViewData["Title"]</h1>
+        <h1 class="mb-4">@ViewData["Title"]</h1>
 
-        <!-- Botón normal para redirigir -->
-        <a asp-controller="Inventario" asp-action="Crear" class="btn btn-primary mt-3">Crear Producto</a>
+        <a asp-controller="Inventario" asp-action="Crear" class="btn btn-primary mb-3">Agregar Producto</a>
 
-
-
-
-
-        <!-- Tabla de productos -->
-        <div class="card mt-4">
+        <div class="card mt-4 shadow rounded-4">
             <div class="card-body">
-                <table class="table table-striped mt-4" id="datatablesSimple" style="width:100%">
+                <table class="table table-striped" id="datatablesSimple" style="width:100%">
                     <thead class="table-secondary">
                         <tr>
-                            <th>Nombre del Producto</th>
-                            <th>Categoría</th>
-                            <th>Proveedor</th>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
                             <th>Precio</th>
                             <th>Cantidad</th>
-                            <th>Acciones</th> <!-- este es el header para los botones de editar, detalles y eliminar -->
+                            <th>Categoría</th>
+                            <th>Proveedor</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach (var producto in Model)
                         {
                             <tr>
-                                <td>@producto.Nombre_Producto</td>
-                                <td>@producto.Categoria</td>
-                                <td>@producto.Proveedor</td>
-                                <td>@producto.Precio.ToString("C")</td>
+                                <td>@producto.IdProducto</td>
+                                <td>@producto.Nombre</td>
+                                <td>@producto.Descripcion</td>
+                                <td>₡@producto.Precio.ToString("N2")</td>
                                 <td>@producto.Cantidad</td>
+                                <td>@producto.Categoria</td>
+                                <td>@producto.NombreProveedor</td>
                                 <td>
-                                    <!-- muestra las acciones de la tabla   -->
                                     <a asp-controller="Inventario"
                                        asp-action="Editar"
-                                       asp-route-id="@producto.Id"
-                                       class="btn btn-warning">Editar</a>
-
-                                    <a asp-controller="Inventario"
-                                       asp-action="Consultar"
-                                       asp-route-id="@producto.Id"
-                                       class="btn btn-info">Ver detalles</a>
+                                       asp-route-id="@producto.IdProducto"
+                                       class="btn btn-warning btn-sm">Editar</a>
 
                                     <a asp-controller="Inventario"
                                        asp-action="Eliminar"
-                                       asp-route-id="@producto.Id"
-                                       class="btn btn-danger">Eliminar</a>
+                                       asp-route-id="@producto.IdProducto"
+                                       class="btn btn-danger btn-sm">Eliminar</a>
                                 </td>
                             </tr>
                         }
-
                     </tbody>
                 </table>
             </div>
@@ -68,79 +58,7 @@
     </div>
 </div>
 
-
 @section Scripts {
-    <!-- Simple DataTables JS -->
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"></script>
     <script src="~/js/Producto.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            @foreach (var producto in Model.Where(p => p.Cantidad <= 2))
-            {
-                        <text>
-                            Swal.fire({
-                                icon: 'warning',
-                                title: '¡Stock bajo!',
-                                text: 'El producto "@producto.Nombre_Producto" tiene solo @producto.Cantidad unidades en inventario.',
-                                confirmButtonText: 'Entendido'
-                            });
-                        </text>
-            }
-        });
-    </script>
 }
-}
-
-
-
-
-@* <div class="container mt-4">
-    <h1>@ViewData["Title"]</h1>
-
-    <p>Este es el inventario de productos.</p>
-
-    <a asp-controller="Inventario" asp-action="Crear" class="btn btn-primary mt-3">Agregar producto</a>
-
-    <table class="table table-striped mt-4">
-        <thead class="table-secondary">
-            <tr>
-                <th>Nombre del Producto</th>
-                <th>Categoría</th>
-                <th>Proveedor</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
-                <th>Acciones</th> <!-- este es el header para los botones de editar, detalles y eliminar -->
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var producto in Model)
-            {
-                <tr>
-                    <td>@producto.Nombre_Producto</td>
-                    <td>@producto.Categoria</td>
-                    <td>@producto.Proveedor</td>
-                    <td>@producto.Precio.ToString("C")</td>
-                    <td>@producto.Cantidad</td>
-                    <td>
-                        <!-- muestra las acciones de la tabla   -->
-                        <a asp-controller="Inventario"
-                           asp-action="Editar"
-                           asp-route-id="@producto.Id"
-                           class="btn btn-warning">Editar</a>
-
-                        <a asp-controller="Inventario"
-                           asp-action="Consultar"
-                           asp-route-id="@producto.Id"
-                           class="btn btn-info">Ver detalles</a>
-
-                        <a asp-controller="Inventario"
-                           asp-action="Eliminar"
-                           asp-route-id="@producto.Id"
-                           class="btn btn-danger">Eliminar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div> *@

@@ -22,7 +22,7 @@ namespace prototipo2.Models
         public string? Correo { get; set; }
 
         [StringLength(20)]
-        public string? Telefono { get; set; }
+        public string? Telefonos { get; set; }
 
         [StringLength(100)]
         public string? Contrasena { get; set; }

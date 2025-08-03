@@ -39,8 +39,9 @@ namespace prototipo2.Controllers
                       {
                           cliente.Nombre,
                           cliente.Apellido,
+                          cliente.Cedula,
                           cliente.Correo,
-                          cliente.Telefono,
+                          cliente.Telefonos,
                           cliente.Contrasena
                       }
 

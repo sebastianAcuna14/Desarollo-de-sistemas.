@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\js\\Producto.js"
     },
     {
+      "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Proveedor.js",
+      "PackagePath": "staticwebassets\\js\\Proveedor.js"
+    },
+    {
       "Id": "C:\\Users\\Luis\\Documents\\Desarrollo\\MiProyectoAnalisis\\prototipo2\\prototipo2\\wwwroot\\js\\Reparacion.js",
       "PackagePath": "staticwebassets\\js\\Reparacion.js"
     },

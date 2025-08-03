@@ -1,4 +1,4 @@
-﻿@model prototipo2.Models.Login
+﻿@model prototipo2.Models.Cliente
 @{
     ViewData["Title"] = "Registro";
     Layout = "_LayoutLogin";
@@ -32,59 +32,88 @@
                                 <p class="text-muted">Regístrate para acceder a ofertas exclusivas</p>
                             </div>
 
-                            <form id="register-form">
+                            <form asp-action="RegistroCliente" asp-controller="Cliente" method="post" id="register-form">
+                                <input id="Mensaje" type="hidden" value="@ViewBag.Mensaje">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label for="firstName" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="firstName" placeholder="Tu nombre" required>
+                                        <label asp-for="Nombre" class="form-label"></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                            <input asp-for="Nombre" class="form-control" placeholder="Tu nombre">
+                                        </div>
+                                        <span asp-validation-for="Nombre" class="text-danger"></span>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="lastName" class="form-label">Apellido</label>
-                                        <input type="text" class="form-control" id="lastName" placeholder="Tu apellido" required>
+                                        <label asp-for="Apellido" class="form-label"></label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">
+                                                <i class="fas fa-user"></i>
+                                            </span>
+                                            <input asp-for="Apellido" class="form-control" placeholder="Tu apellido">
+                                        </div>
+                                        <span asp-validation-for="Apellido" class="text-danger"></span>
                                     </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label asp-for="Cedula" class="form-label"></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input asp-for="Cedula" class="form-control" placeholder="Tu apellido">
+                                    </div>
+                                    <span asp-validation-for="Cedula" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <label asp-for="Correo" class="form-label"></label>
                                     <div class="input-group">
-                                        <span class="input-group-text bg-light">
-                                            <i class="fas fa-envelope text-muted"></i>
+                                        <span class="input-group-text">
+                                            <i class="fas fa-envelope"></i>
                                         </span>
-                                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                        <input asp-for="Correo" class="form-control" placeholder="ejemplo@correo.com">
                                     </div>
+                                    <span asp-validation-for="Correo" class="text-danger"></span>
+                                </div>
+
+
+                                <div class="mb-3">
+                                    <label asp-for="Telefonos" class="form-label"></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+                                        <input asp-for="Telefonos" class="form-control" placeholder="(123) 456-7890">
+                                    </div>
+                                    <span asp-validation-for="Telefonos" class="text-danger"></span>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label">Teléfono</label>
+                                    <label asp-for="Contrasena" class="form-label"></label>
                                     <div class="input-group">
-                                        <span class="input-group-text bg-light">
-                                            <i class="fas fa-phone text-muted"></i>
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
                                         </span>
-                                        <input type="tel" class="form-control" id="phone" placeholder="(123) 456-7890">
-                                    </div>
-                                </div>
-
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text bg-light">
-                                            <i class="fas fa-lock text-muted"></i>
-                                        </span>
-                                        <input type="password" class="form-control" id="password" placeholder="Crea una contraseña" required>
+                                        <input asp-for="Contrasena" type="password" class="form-control" placeholder="Crea una contraseña">
                                         <button class="btn btn-outline-secondary" type="button" id="togglePassword">
                                             <i class="fas fa-eye"></i>
                                         </button>
                                     </div>
+                                    <span asp-validation-for="Contrasena" class="text-danger"></span>
                                     <div class="form-text">La contraseña debe tener al menos 8 caracteres.</div>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
                                     <div class="input-group">
-                                        <span class="input-group-text bg-light">
-                                            <i class="fas fa-lock text-muted"></i>
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
                                         </span>
-                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirma tu contraseña" required>
+                                        <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Confirma tu contraseña" required>
                                     </div>
                                 </div>
 
@@ -100,7 +129,7 @@
                                 </div>
 
                                 <div class="text-center mt-3">
-                                    ¿Ya tienes una cuenta? <p class="mb-0">¿No tienes una cuenta? <a link px-4" asp-area="" asp-controller="Login" asp-action="Login" class="text-decoration-none text-warning">Iniciar Sesion</a></p>
+                                    <p class="mb-0">¿Ya tienes una cuenta? <a asp-controller="Home" asp-action="Index" class="text-decoration-none text-warning">Iniciar Sesión</a></p>
                                 </div>
                             </form>
                         </div>
@@ -110,16 +139,18 @@
         </div>
     </section>
 
-
-
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery Validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+
     <!-- Custom JS -->
-    <script src="script.js"></script>
     <script>
         // Toggle password visibility
         document.getElementById('togglePassword').addEventListener('click', function() {
-            const passwordInput = document.getElementById('password');
+            const passwordInput = document.getElementById('Contrasena');
             const icon = this.querySelector('i');
 
             if (passwordInput.type === 'password') {
@@ -133,27 +164,27 @@
             }
         });
 
-        // Form submission
-        document.getElementById('register-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Mostrar mensaje de error si existe
+        $(document).ready(function() {
+            var mensaje = $('#Mensaje').val();
+            if (mensaje && mensaje.length > 0) {
+                alert(mensaje);
+            }
+        });
 
-            const password = document.getElementById('password').value;
+        // Custom client-side validation
+        document.getElementById('register-form').addEventListener('submit', function(e) {
+            const password = document.getElementById('Contrasena').value;
             const confirmPassword = document.getElementById('confirmPassword').value;
 
             if (password !== confirmPassword) {
+                e.preventDefault();
                 alert('Las contraseñas no coinciden');
-                return;
+                return false;
             }
 
-            if (password.length < 8) {
-                alert('La contraseña debe tener al menos 8 caracteres');
-                return;
-            }
-
-            // Aquí iría la lógica para registrar al usuario
-            alert('Registro exitoso');
+            return true;
         });
     </script>
 </body>
 </html>
-

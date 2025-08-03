@@ -7,7 +7,7 @@ namespace prototipo2.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID_CLIENTE { get; set; }
+        public int idCliente { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -22,7 +22,7 @@ namespace prototipo2.Models
         public string? Correo { get; set; }
 
         [StringLength(20)]
-        public string? Telefono { get; set; }
+        public string? Telefonos { get; set; }
 
         [StringLength(100)]
         public string? Contrasena { get; set; }
@@ -41,5 +41,7 @@ namespace prototipo2.Models
 
         [DataType(DataType.DateTime)]
         public DateTime? FechaModificacion { get; set; }
+
+        public string? Token { get; set; }
     }
 }

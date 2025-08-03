@@ -13,6 +13,7 @@ wwwroot\js\Categoria.js
 wwwroot\js\datatables-simple-demo.js
 wwwroot\js\Empleado.js
 wwwroot\js\Producto.js
+wwwroot\js\Proveedor.js
 wwwroot\js\Reparacion.js
 wwwroot\js\scripts.js
 wwwroot\js\site.js

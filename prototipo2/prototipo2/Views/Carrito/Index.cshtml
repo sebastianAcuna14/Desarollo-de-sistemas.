@@ -1,104 +1,141 @@
 ﻿@model List<prototipo2.Models.CarritoDTO>
 
 @{
-    ViewData["Title"] = "Carrito de Compras";
+    ViewData["Title"] = "Carrito de Compras - ElectroMecánica";
 }
 
-<div class="container my-5" style="max-width: 900px;">
-    <h2 class="text-center mb-4 fw-bold text-primary">
-        <i class="bi bi-cart4 me-2"></i> Carrito de Compras
-    </h2>
-
-    @if (Model != null && Model.Count > 0)
-    {
-        <div class="card shadow-lg rounded-4 border-0">
-            <div class="card-body p-4">
-                <table class="table align-middle mb-0 table-hover">
-                    <thead class="table-primary text-center rounded-top">
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio Unitario</th>
-                            <th>Cantidad</th>
-                            <th>Subtotal</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var item in Model)
-                        {
-                            <tr class="text-center">
-                                <td class="text-start">
-                                    <strong>@item.Nombre_Producto</strong>
-                                </td>
-                                <td>₡@item.Precio.ToString("N2")</td>
-                                <td>
-                                    <span class="badge bg-info text-dark fs-6 px-3 py-2 rounded-pill">
-                                        @item.Cantidad
-                                    </span>
-                                </td>
-                                <td class="fw-semibold text-success">₡@item.Subtotal.ToString("N2")</td>
-                                <td>
-                                    <form asp-controller="Carrito" asp-action="Eliminar" method="post" class="d-inline">
-                                        <input type="hidden" name="id" value="@item.Id" />
-                                        <button type="submit" class="btn btn-outline-danger btn-sm d-flex align-items-center gap-1 px-3 py-1 rounded-pill shadow-sm">
-                                            <i class="bi bi-trash-fill fs-5"></i> Quitar
-                                        </button>
-                                    </form>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-
-                <hr class="my-4" />
-
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <h5 class="fw-bold text-secondary">Total:</h5>
-                    </div>
-                    <div>
-                        <h4 class="text-success fw-bold">
-                            ₡@Model.Sum(x => x.Subtotal).ToString("N2")
-                        </h4>
-                    </div>
-                </div>
-
-                <a asp-controller="Carrito" asp-action="Paypal" class="btn btn-success btn-lg w-100 mt-4 fw-bold shadow-sm" style="font-size:1.25rem;">
-                    <i class="bi bi-credit-card me-2 fs-4"></i> Proceder al Pago
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-warning text-dark py-3 mb-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0">
+                <i class="fas fa-cogs me-2"></i>ElectroMecánica
+            </h1>
+            <div>
+                <a asp-controller="Account" asp-action="Login" class="btn btn-outline-dark me-2">
+                    <i class="fas fa-sign-in-alt me-1"></i>Iniciar Sesión
                 </a>
-
-                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-primary btn-lg w-100 mt-3 fw-bold shadow-sm" style="font-size:1.1rem;">
-                    <i class="bi bi-arrow-left me-2 fs-5"></i> Seguir comprando
+                <a asp-controller="Account" asp-action="Register" class="btn btn-dark">
+                    <i class="fas fa-user-plus me-1"></i>Registrarse
                 </a>
             </div>
         </div>
-    }
-    else
-    {
-        <div class="text-center my-5 p-5 border rounded shadow-sm bg-light">
-            <i class="bi bi-cart-x" style="font-size: 5rem; color: #dc3545;"></i>
-            <h3 class="mt-3 mb-2 text-danger">¡Tu carrito está vacío!</h3>
-            <p class="mb-4 text-muted fs-5">Parece que aún no has agregado ningún producto.</p>
-            <a asp-controller="Home" asp-action="Index" class="btn btn-primary btn-lg">
-                <i class="bi bi-arrow-left-circle me-2"></i> Volver al catálogo
-            </a>
-        </div>
-    }
-</div>
+    </header>
 
-<style>
-    button.btn-outline-danger:hover {
-        background-color: #dc3545;
-        color: white;
-        transition: background-color 0.3s ease;
-    }
+    <div class="container">
+        <h2 class="mb-4 text-primary">
+            <i class="fas fa-shopping-cart me-2"></i>Carrito de Compras
+        </h2>
 
-    table tbody tr:hover {
-        background-color: #f0f8ff;
-        transition: background-color 0.3s ease;
-    }
+        @if (Model != null && Model.Count > 0)
+        {
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            @foreach (var item in Model)
+                            {
+                                <div class="border-bottom pb-3 mb-3 cart-item">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6">
+                                            <strong>@item.Nombre_Producto</strong><br />
+                                            <small>Código: @item.Id</small>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <form asp-controller="Carrito" asp-action="ActualizarCantidad" method="post" class="d-flex align-items-center gap-1">
+                                                <input type="hidden" name="id" value="@item.Id" />
+                                                <button type="submit" name="action" value="decrease" class="btn btn-outline-secondary btn-sm">
+                                                    <i class="fas fa-minus"></i>
+                                                </button>
+                                                <input type="text" readonly class="form-control form-control-sm text-center" style="width: 40px;" value="@item.Cantidad" />
+                                                <button type="submit" name="action" value="increase" class="btn btn-outline-secondary btn-sm">
+                                                    <i class="fas fa-plus"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                        <div class="col-md-2 text-center fw-bold">
+                                            ₡@item.Precio.ToString("N2")
+                                        </div>
+                                        <div class="col-md-1 text-center fw-bold text-success">
+                                            ₡@item.Subtotal.ToString("N2")
+                                        </div>
+                                        <div class="col-md-1 text-center">
+                                            <form asp-controller="Carrito" asp-action="Eliminar" method="post">
+                                                <input type="hidden" name="id" value="@item.Id" />
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Eliminar producto">
+                                                    <i class="fas fa-trash"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            <div class="d-flex justify-content-between mt-3">
+                                <a asp-controller="Home" asp-action="Index" class="btn btn-outline-warning">
+                                    <i class="fas fa-arrow-left me-2"></i> Seguir Comprando
+                                </a>
+                                <form asp-controller="Carrito" asp-action="Vaciar" method="post" onsubmit="return confirm('¿Seguro que quieres vaciar el carrito?');">
+                                    <button type="submit" class="btn btn-outline-danger">
+                                        <i class="fas fa-trash me-2"></i> Vaciar Carrito
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    .badge {
-        font-weight: 600;
-    }
-</style>
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-header bg-warning">
+                            <h5 class="mb-0">
+                                <i class="fas fa-receipt me-2"></i>Resumen del Pedido
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Subtotal (@Model.Sum(x => x.Cantidad) productos):</span>
+                                <span>₡@Model.Sum(x => x.Subtotal).ToString("N2")</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Envío:</span>
+                                <span>₡0.00</span>
+                            </div>
+                            <hr />
+                            <div class="d-flex justify-content-between fw-bold h5">
+                                <span>Total:</span>
+                                <span class="text-warning">₡@Model.Sum(x => x.Subtotal).ToString("N2")</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a asp-controller="Carrito" asp-action="Paypal" class="btn btn-warning btn-lg w-100 mb-3">
+                        <i class="fas fa-credit-card me-2"></i>Proceder al Pago
+                    </a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="text-center py-5">
+                <i class="fas fa-cart-arrow-down" style="font-size: 6rem; color:#ffc107;"></i>
+                <h3 class="mt-3 text-warning">¡Tu carrito está vacío!</h3>
+                <p class="text-muted">Agrega productos para poder realizar una compra.</p>
+                <a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+                    <i class="fas fa-arrow-left me-2"></i> Volver al Catálogo
+                </a>
+            </div>
+        }
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

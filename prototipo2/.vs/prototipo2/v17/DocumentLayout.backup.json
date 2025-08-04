@@ -292,7 +292,7 @@
               "RelativeDocumentMoniker": "prototipo2\\Views\\Carrito\\Index.cshtml",
               "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Index.cshtml",
               "RelativeToolTip": "prototipo2\\Views\\Carrito\\Index.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowGgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAkwI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-03T20:36:25.53Z",
               "EditorCaption": ""
@@ -307,8 +307,7 @@
               "RelativeToolTip": "prototipo2\\Views\\Cliente\\RegistroCliente.cshtml",
               "ViewState": "AgIAAKMAAAAAAAAAAAAowL0AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T20:34:53.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T20:34:53.863Z"
             },
             {
               "$type": "Document",
@@ -320,8 +319,7 @@
               "RelativeToolTip": "prototipo2\\Controllers\\ClienteController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwCkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T20:27:07.938Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T20:27:07.938Z"
             },
             {
               "$type": "Document",
@@ -333,8 +331,7 @@
               "RelativeToolTip": "prototipo2\\Models\\Cliente.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAowC4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T20:26:35.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T20:26:35.349Z"
             }
           ]
         },

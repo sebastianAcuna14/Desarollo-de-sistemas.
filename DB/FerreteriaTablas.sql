@@ -322,7 +322,7 @@ CREATE TABLE Carrito (
 CREATE OR ALTER PROCEDURE AgregarAlCarrito
     @ProductoId INT,
     @Cantidad INT,
-    @Nombre_Producto NVARCHAR(100),  -- corregí el nombre del parámetro para que coincida
+    @Nombre_Producto NVARCHAR(100),  
     @Precio DECIMAL(18, 2)
 AS
 BEGIN

@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\carrito\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\cliente\\registrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\cliente\\registrocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\carrito.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\controllers\\carritocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\carritocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\joshua\\desktop\\nueva carpeta\\prototipo2\\prototipo2\\views\\carrito\\paypal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\carrito\\paypal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 2606,
-          "SelectedChildIndex": 64,
+          "SelectedChildIndex": 66,
           "Children": [
             {
               "$type": "Bookmark",
@@ -281,8 +281,43 @@
               "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarritoController .cs",
+              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\CarritoController .cs",
+              "RelativeDocumentMoniker": "prototipo2\\Controllers\\CarritoController .cs",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\CarritoController .cs",
+              "RelativeToolTip": "prototipo2\\Controllers\\CarritoController .cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowFAAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T06:08:41.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Carrito.cs",
+              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Models\\Carrito.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Models\\Carrito.cs",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Models\\Carrito.cs",
+              "RelativeToolTip": "prototipo2\\Models\\Carrito.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-04T06:07:35.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Paypal.cshtml",
+              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Paypal.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Carrito\\Paypal.cshtml",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Paypal.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Carrito\\Paypal.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-03T22:20:08.37Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -290,48 +325,12 @@
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Index.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Carrito\\Index.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Index.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Carrito\\Index.cshtml",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAkwI0AAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Index.cshtml*",
+              "RelativeToolTip": "prototipo2\\Views\\Carrito\\Index.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-03T20:36:25.53Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RegistroCliente.cshtml",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Cliente\\RegistroCliente.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Cliente\\RegistroCliente.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Cliente\\RegistroCliente.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Cliente\\RegistroCliente.cshtml",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAowL0AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-03T20:34:53.863Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "prototipo2\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCkAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T20:27:07.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Models\\Cliente.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Models\\Cliente.cs",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Models\\Cliente.cs",
-              "RelativeToolTip": "prototipo2\\Models\\Cliente.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAowC4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T20:26:35.349Z"
             }
           ]
         },

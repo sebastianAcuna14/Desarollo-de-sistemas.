@@ -67,18 +67,47 @@ namespace prototipo2.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ActualizarCantidad(int id, int cantidad)
+        public async Task<IActionResult> ActualizarCantidad(int id, string action)
         {
             using var db = Connection;
 
-            await db.ExecuteAsync(
-                "ActualizarCantidadCarrito",
-                new { Id = id, Cantidad = cantidad },
-                commandType: CommandType.StoredProcedure
+            // Primero obtenemos la cantidad actual del ítem
+            var item = await db.QueryFirstOrDefaultAsync<CarritoDTO>(
+                "SELECT * FROM Carrito WHERE Id = @Id",
+                new { Id = id }
             );
+
+            if (item == null)
+                return RedirectToAction(nameof(Index)); 
+
+            int nuevaCantidad = item.Cantidad;
+
+            if (action == "increase")
+                nuevaCantidad++;
+            else if (action == "decrease")
+                nuevaCantidad--;
+
+            if (nuevaCantidad <= 0)
+            {
+
+                await db.ExecuteAsync("DELETE FROM Carrito WHERE Id = @Id", new { Id = id });
+            }
+            else
+            {
+
+                await db.ExecuteAsync(
+                    "ActualizarCantidadCarrito",
+                    new { Id = id, Cantidad = nuevaCantidad },
+                    commandType: CommandType.StoredProcedure
+                );
+            }
 
             return RedirectToAction(nameof(Index));
         }
+
+
+
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]

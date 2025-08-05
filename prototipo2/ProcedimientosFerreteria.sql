@@ -381,7 +381,7 @@ END
 SELECT * FROM 
 
 --Listar productos
-CREATE PROCEDURE ObtenerProductos
+CREATE OR ALTER PROCEDURE ObtenerProductos
 AS
 BEGIN
     SELECT 
@@ -389,35 +389,19 @@ BEGIN
         I.Nombre,
         I.Descripcion,
         I.Cantidad,
-        I.Categoria,
         I.Precio,
         I.IdProveedor,
-        P.NombreEmpresa AS NombreProveedor
+        P.NombreEmpresa   AS NombreProveedor,
+        I.IdCategoria,
+        C.Nombre          AS NombreCategoria
     FROM 
         INVENTARIO I
     INNER JOIN 
-        PROVEEDOR P ON I.IdProveedor = P.IDProveedor
+        PROVEEDOR P   ON I.IdProveedor  = P.IDProveedor
+    INNER JOIN 
+        Categoria C   ON I.IdCategoria  = C.IdCategoria;
 END;
-
-CREATE PROCEDURE ConsultarEjercicios
-AS
-BEGIN
-    SELECT 
-        e.Consecutivo,
-        e.Nombre,
-        e.Fecha,
-        e.Monto,
-        e.TipoEjercicio,
-        t.DescripcionTipoEjercicio
-    FROM Ejercicios e
-    INNER JOIN TiposEjercicio t ON e.TipoEjercicio = t.TipoEjercicio;
-END;
-CREATE OR ALTER PROCEDURE ObtenerCategorias
-AS
-BEGIN
-    SELECT IdCategoria, Nombre, Descripcion
-    FROM CATEGORIA;
-END
+GO
 
 
 --Actualizar/editar prdcto
@@ -432,14 +416,17 @@ CREATE OR ALTER PROCEDURE ActualizarProducto
 AS
 BEGIN
     UPDATE INVENTARIO
-    SET Nombre      = @Nombre,
+    SET 
+        Nombre      = @Nombre,
         Descripcion = @Descripcion,
         Cantidad    = @Cantidad,
         Precio      = @Precio,
         IdProveedor = @IdProveedor,
         IdCategoria = @IdCategoria
     WHERE IdProducto = @IdProducto;
-END
+END;
+GO
+
 
 
 --Eliminar el producto del inventario
@@ -450,31 +437,7 @@ BEGIN
     DELETE FROM INVENTARIO
     WHERE IdProducto = @IdProducto
 END;
---Para mostrar el producto x ID
-CREATE PROCEDURE ObtenerProductoPorId
-    @IdProducto INT
-AS
-BEGIN
-    SELECT * FROM INVENTARIO WHERE IdProducto = @IdProducto
-END;
 
-CREATE OR ALTER PROCEDURE ObtenerProductos
-AS
-BEGIN
-    SELECT 
-        I.IdProducto,
-        I.Nombre,
-        I.Descripcion,
-        I.Cantidad,
-        I.Precio,
-        I.IdProveedor,
-        P.NombreEmpresa   AS NombreProveedor,
-        I.IdCategoria,
-        C.Nombre          AS CategoriaNombre
-    FROM INVENTARIO I
-    INNER JOIN PROVEEDOR P ON I.IdProveedor = P.IDProveedor
-    INNER JOIN CATEGORIA C ON I.IdCategoria = C.IdCategoria;
-END
 
 --  Categoria
 

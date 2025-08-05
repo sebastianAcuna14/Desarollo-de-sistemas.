@@ -1,8 +1,11 @@
-﻿using Dapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
-using prototipo2.Models;
 using System.Data;
+using Dapper;
+using prototipo2.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Linq;
+using Microsoft.Extensions.Configuration;
 
 namespace prototipo2.Controllers
 {
@@ -15,16 +18,16 @@ namespace prototipo2.Controllers
             _configuration = configuration;
         }
 
-        private SqlConnection Conexion()
-        {
-            return new SqlConnection(_configuration.GetConnectionString("Connection"));
-        }
+        private SqlConnection Conexion() => new SqlConnection(_configuration.GetConnectionString("Connection"));
 
         // GET: Index
         public IActionResult Index()
         {
             using var con = Conexion();
-            var productos = con.Query<Producto>("ObtenerProductos").ToList();
+            var productos = con.Query<Producto>(
+                "ObtenerProductos",
+                commandType: CommandType.StoredProcedure
+            ).ToList();
             return View(productos);
         }
 
@@ -32,33 +35,61 @@ namespace prototipo2.Controllers
         [HttpGet]
         public IActionResult Crear()
         {
-            CargarCategoriasYProveedores();
+            using var con = Conexion();
+            var proveedores = con.Query<Proveedor>(
+                "ObtenerProveedores",
+                commandType: CommandType.StoredProcedure
+            ).ToList();
+            ViewBag.ListaProveedores = new SelectList(proveedores, "IDProveedor", "NombreEmpresa");
+
+            var categorias = con.Query<Categoria>(
+                "ObtenerCategorias",
+                commandType: CommandType.StoredProcedure
+            ).ToList();
+            ViewBag.ListaCategorias = new SelectList(categorias, "IdCategoria", "Nombre");
+
             return View();
         }
 
         // POST: Crear
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Crear(Producto producto)
         {
+            using var con = Conexion();
+
             if (!ModelState.IsValid)
             {
-                CargarCategoriasYProveedores();
+                var proveedores = con.Query<Proveedor>(
+                    "ObtenerProveedores",
+                    commandType: CommandType.StoredProcedure
+                ).ToList();
+                ViewBag.ListaProveedores = new SelectList(proveedores, "IDProveedor", "NombreEmpresa");
+
+                var categorias = con.Query<Categoria>(
+                    "ObtenerCategorias",
+                    commandType: CommandType.StoredProcedure
+                ).ToList();
+                ViewBag.ListaCategorias = new SelectList(categorias, "IdCategoria", "Nombre");
+
                 return View(producto);
             }
 
-            using var con = Conexion();
-            con.Execute("CrearProducto", new
-            {
-                producto.Nombre,
-                producto.Descripcion,
-                producto.Cantidad,
-                producto.Precio,
-                producto.IdProveedor,
-                producto.IdCategoria
-            });
+            con.Execute(
+                "CrearProducto",
+                new
+                {
+                    producto.Nombre,
+                    producto.Descripcion,
+                    producto.Cantidad,
+                    producto.Precio,
+                    producto.IdProveedor,
+                    producto.IdCategoria
+                },
+                commandType: CommandType.StoredProcedure
+            );
 
-
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Editar
@@ -66,39 +97,70 @@ namespace prototipo2.Controllers
         public IActionResult Editar(int id)
         {
             using var con = Conexion();
-            var producto = con.QueryFirstOrDefault<Producto>("ObtenerProductoPorId", new { IdProducto = id });
+            var producto = con.QueryFirstOrDefault<Producto>(
+                "ObtenerProductoPorId",
+                new { IdProducto = id },
+                commandType: CommandType.StoredProcedure
+            );
 
             if (producto == null)
                 return NotFound();
 
-            CargarCategoriasYProveedores();
+            var proveedores = con.Query<Proveedor>(
+                "ObtenerProveedores",
+                commandType: CommandType.StoredProcedure
+            ).ToList();
+            ViewBag.ListaProveedores = new SelectList(proveedores, "IDProveedor", "NombreEmpresa");
+
+            var categorias = con.Query<Categoria>(
+                "ObtenerCategorias",
+                commandType: CommandType.StoredProcedure
+            ).ToList();
+            ViewBag.ListaCategorias = new SelectList(categorias, "IdCategoria", "Nombre");
+
             return View(producto);
         }
 
         // POST: Editar
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Editar(Producto producto)
         {
+            using var con = Conexion();
+
             if (!ModelState.IsValid)
             {
-                CargarCategoriasYProveedores();
+                var proveedores = con.Query<Proveedor>(
+                    "ObtenerProveedores",
+                    commandType: CommandType.StoredProcedure
+                ).ToList();
+                ViewBag.ListaProveedores = new SelectList(proveedores, "IDProveedor", "NombreEmpresa");
+
+                var categorias = con.Query<Categoria>(
+                    "ObtenerCategorias",
+                    commandType: CommandType.StoredProcedure
+                ).ToList();
+                ViewBag.ListaCategorias = new SelectList(categorias, "IdCategoria", "Nombre");
+
                 return View(producto);
             }
 
-            using var con = Conexion();
-            con.Execute("ActualizarProducto", new
-            {
-                producto.IdProducto,
-                producto.Nombre,
-                producto.Descripcion,
-                producto.Cantidad,
-                producto.Categoria,
-                producto.Precio,
-                producto.IdProveedor,
-                producto.IdCategoria
-            });
+            con.Execute(
+                "ActualizarProducto",
+                new
+                {
+                    producto.IdProducto,
+                    producto.Nombre,
+                    producto.Descripcion,
+                    producto.Cantidad,
+                    producto.Precio,
+                    producto.IdProveedor,
+                    producto.IdCategoria
+                },
+                commandType: CommandType.StoredProcedure
+            );
 
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Eliminar
@@ -106,7 +168,11 @@ namespace prototipo2.Controllers
         public IActionResult Eliminar(int id)
         {
             using var con = Conexion();
-            var producto = con.QueryFirstOrDefault<Producto>("ObtenerProductoPorId", new { IdProducto = id });
+            var producto = con.QueryFirstOrDefault<Producto>(
+                "ObtenerProductoPorId",
+                new { IdProducto = id },
+                commandType: CommandType.StoredProcedure
+            );
 
             if (producto == null)
                 return NotFound();
@@ -116,34 +182,16 @@ namespace prototipo2.Controllers
 
         // POST: Eliminar
         [HttpPost, ActionName("Eliminar")]
+        [ValidateAntiForgeryToken]
         public IActionResult EliminarConfirmado(int id)
         {
             using var con = Conexion();
-            con.Execute("EliminarProducto", new { IdProducto = id });
-            return RedirectToAction("Index");
-        }
-
-        // para dropdowns de categoria y proveedores
-        private void CargarCategoriasYProveedores()
-        {
-            using var con = Conexion();
-
-            var listaProveedores = con.Query<Proveedor>("ObtenerProveedores")
-                .Select(p => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
-                {
-                    Value = p.IDProveedor.ToString(),
-                    Text = p.NombreEmpresa
-                }).ToList();
-
-            var listaCategorias = con.Query<Categoria>("ObtenerCategorias")
-                .Select(c => new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
-                {
-                    Value = c.IdCategoria.ToString(),
-                    Text = c.Nombre
-                }).ToList();
-
-            ViewBag.ListaProveedores = listaProveedores;
-            ViewBag.ListaCategorias = listaCategorias;
+            con.Execute(
+                "EliminarProducto",
+                new { IdProducto = id },
+                commandType: CommandType.StoredProcedure
+            );
+            return RedirectToAction(nameof(Index));
         }
     }
 }

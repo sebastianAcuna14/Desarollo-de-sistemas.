@@ -16,9 +16,6 @@ namespace prototipo2.Models
         public int Cantidad { get; set; }
 
         [Required]
-        public string? Categoria { get; set; }
-
-        [Required]
         public decimal Precio { get; set; }
 
         [Required]
@@ -28,5 +25,6 @@ namespace prototipo2.Models
 
         [Required]
         public int IdCategoria { get; set; }
+        public string? NombreCategoria { get; set; }
     }
 }

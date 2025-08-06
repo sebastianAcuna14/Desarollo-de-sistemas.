@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<prototipo2.Models.Empleado>
-@using prototipo2.Models
+
 @{
     ViewData["Title"] = "ListaEmpleado";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
@@ -21,11 +21,11 @@
 <table class="table table-striped mt-4" id="datatablesSimple" style="width:100%">
             <thead class="table-secondary">
                 <tr>
-                    <th>ID</th>
-                    <th>Nombre Completo</th>
-                    <th>Cédula</th>
-                    <th>Rol</th>
-                    <th>Salario</th>
+                   <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+            
+                    <th>Contraseña</th>
                     <th>Fecha de Contratación</th>
                     <th>Acciones</th>
                 </tr>
@@ -34,15 +34,17 @@
                 @foreach (var empleado in Model)
                 {
                     <tr>
-                        <td>@empleado.Id</td>
-                        <td>@empleado.NombreCompleto</td>
-                        <td>@empleado.Cedula</td>
-                        <td>@empleado.Rol</td>
-                        <td>@empleado.Salario.ToString("C")</td>
+                                
+
+                                <td>@empleado.Nombre</td>
+                        <td>@empleado.Apellido</td>
+                        <td>@empleado.Contrasena</td>
+                      
                         <td>@empleado.FechaContratacion.ToShortDateString()</td>
+                        
                         <td>
-                            <a asp-controller="Empleado" asp-action="EditarEmpleado" asp-route-id="@empleado.Id" class="btn btn-warning">Editar</a>
-                            <a asp-controller="Empleado" asp-action="EliminarEmpleado" asp-route-id="@empleado.Id" class="btn btn-danger">Eliminar</a>
+                            <a asp-controller="Empleado" asp-action="EditarEmpleado" asp-route-id="@empleado.IdEmpleado" class="btn btn-warning">Editar</a>
+                            <a asp-controller="Empleado" asp-action="EliminarEmpleado" asp-route-id="@empleado.IdEmpleado" class="btn btn-danger">Eliminar</a>
                         </td>
                     </tr>
                 }

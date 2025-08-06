@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xmmtcbucbs</Fingerprint>
-      <Integrity>2Y8HG0M4iF0TUVw5NWtrtzckfN6mbO/OC+jUaltpwc4=</Integrity>
+      <Fingerprint>df8jxk7rrz</Fingerprint>
+      <Integrity>aXKBEos1yz99qDzCHlCZvhKRyZki4LMIHT2jeLC2hwc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Estilo.css'))</OriginalItemSpec>

@@ -1,5 +1,6 @@
 /***********************************      Procedimientos almacenados del sistema       *******************/
-
+USE FerreteriaBD;
+GO
 
 -- Login
 
@@ -19,7 +20,7 @@ GO
 
 
 
-Create PROCEDURE ValidarInicioSesion
+Create PROCEDURE ValidarInicioSesionCliente
 	@Correo varchar(100),
 	@Contrasena varchar(50)
 AS
@@ -42,6 +43,53 @@ BEGIN
 		
 END
 GO
+
+-----EMPLEADO
+Create PROCEDURE ValidarInicioSesionEmpleado
+	@Correo varchar(100),
+	@Contrasena varchar(50)
+AS
+BEGIN
+
+	SELECT	
+			IdEmpleado,
+			Nombre,
+			Apellido,
+			Correo,
+			Telefono
+			
+
+
+
+
+	  FROM	EMPLEADO
+	WHERE	Correo = @Correo
+		AND contrasena = @Contrasena
+		
+END
+GO
+
+alter PROCEDURE RegistrarEmpleado
+    @Nombre VARCHAR(100),
+    @Apellido VARCHAR(100),
+    @Correo VARCHAR(100),
+    @Telefono VARCHAR(20),
+    @Contrasena VARCHAR(50)
+	
+AS
+BEGIN
+    INSERT INTO Empleado( Nombre, Apellido, Correo, Telefono, Contrasena)
+    VALUES (@Nombre,@Apellido, @Telefono, @Correo, @Contrasena);
+END;
+GO
+
+CREATE PROCEDURE ObtenerEmpleado
+AS
+BEGIN
+    SELECT * FROM Empleado
+END
+------------   
+
 
 CREATE PROCEDURE ValidarCorreo
 	@Correo varchar(100)

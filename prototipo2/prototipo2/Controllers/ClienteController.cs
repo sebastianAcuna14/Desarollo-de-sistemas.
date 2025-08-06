@@ -26,7 +26,12 @@ namespace prototipo2.Controllers
         {
             return View();
         }
-    
+        [HttpGet]
+        public IActionResult CerrarSesion()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("InicioSesion", "Cliente");
+        }
         [HttpGet]
         public IActionResult RecuperarAcceso()
         {
@@ -72,7 +77,7 @@ namespace prototipo2.Controllers
 
 
         [HttpPost]
-        public IActionResult InicioSesion(Cliente cliente)
+        public IActionResult InicioSesion(Cliente cliente, Empleado empleado)
         {
             using (var context = new SqlConnection(_configuration.GetSection("ConnectionStrings:connection").Value))
             {
@@ -81,6 +86,7 @@ namespace prototipo2.Controllers
                     new
                     {
                         cliente.Correo,
+                       
                         Contrasena = contrasenaEncriptada
                     });
                 if (resultado != null)
@@ -89,6 +95,20 @@ namespace prototipo2.Controllers
                     return RedirectToAction("Index", "Home");
 
                 }
+                var contrasenaEncriptadaEmpleado = _utilitarios.Encrypt(empleado.Contrasena);
+                var resultadoEmpleado = context.QueryFirstOrDefault<Empleado>("ValidarInicioSesionEmpleado",
+                    new
+                    {
+                        empleado.Correo,
+                        Contrasena = contrasenaEncriptadaEmpleado
+                    });
+                if (resultadoEmpleado != null)
+                {
+                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado);
+                    return RedirectToAction("Admi", "AdminController1");
+
+                }
+
                 ViewBag.Mesaje = "No se pudo autenticar";
                 return View();
             }

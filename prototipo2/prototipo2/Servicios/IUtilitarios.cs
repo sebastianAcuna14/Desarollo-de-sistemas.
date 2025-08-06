@@ -6,8 +6,9 @@ namespace prototipo2.Servicios
     {
     
         string GenerarContrasenna(int longitud);
-        string GenerarToken(long IdUsuario);
+        string GenerarToken(long IdEmpleado, long idCliente);
         string Encrypt(string texto);
         void EnviarCorreo(string destinatario, string asunto, string cuerpo);
+        
     }
 }

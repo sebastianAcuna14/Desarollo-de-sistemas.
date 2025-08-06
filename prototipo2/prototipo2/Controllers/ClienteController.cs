@@ -26,7 +26,10 @@ namespace prototipo2.Controllers
         {
             return View();
         }
-
+        public IActionResult nada()
+        {
+            return View();
+        }
         [HttpGet]
         public IActionResult RecuperarAcceso()
         {

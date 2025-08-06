@@ -43,6 +43,62 @@ BEGIN
 END
 GO
 
+CREATE PROCEDURE ValidarCorreo
+	@Correo varchar(100)
+AS
+BEGIN
+
+	SELECT	idCliente,
+		    Cedula,
+			Nombre,
+			Correo
+	  FROM	CLIENTE
+	WHERE	Correo = @Correo
+		
+	
+END
+GO
+
+
+CREATE PROCEDURE ActualizarUsuario
+	@Cedula varchar(20),
+	@Nombre varchar(15),
+	@Correo varchar(100),
+	@idCliente int
+AS
+BEGIN
+	
+	IF NOT EXISTS(SELECT 1 FROM CLIENTE
+				  WHERE Cedula = @Cedula
+					AND Correo = @Correo
+					AND idCliente != @idCliente)
+	BEGIN
+
+		UPDATE	CLIENTE
+		SET		Cedula = @Cedula,
+				Nombre = @Nombre,
+				Correo =  @Correo
+		WHERE	idCliente = @idCliente
+
+	END
+
+END
+GO
+
+
+CREATE PROCEDURE ActualizarContrasenna
+	@idCliente int,
+	@contrasena varchar(255)
+AS
+BEGIN
+	
+	UPDATE	CLIENTE
+	SET		contrasena = @contrasena
+	WHERE	idCliente = @idCliente
+
+END
+GO
+
 --  Pedido
 
 CREATE PROCEDURE Crear_Pedido
@@ -538,3 +594,5 @@ BEGIN
     DELETE FROM Proveedor
     WHERE IDProveedor = @IDProveedor;
 END;
+
+select * from cliente

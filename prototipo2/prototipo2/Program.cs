@@ -1,31 +1,17 @@
 using prototipo2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using prototipo2.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/Login/Login"; // Ruta cuando no estás autenticado
-        options.LogoutPath = "/Usuario/CerrarSesion";
-        options.AccessDeniedPath = "/Login/AccessDenied"; // Opcional
-    });
-
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<FerreteriaContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddSession();
+builder.Services.AddScoped<IUtilitarios, Utilitarios>();
 
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(15);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
+
 
 
 var app = builder.Build();

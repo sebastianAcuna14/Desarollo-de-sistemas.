@@ -26,10 +26,7 @@ namespace prototipo2.Controllers
         {
             return View();
         }
-        public IActionResult nada()
-        {
-            return View();
-        }
+    
         [HttpGet]
         public IActionResult RecuperarAcceso()
         {
@@ -79,11 +76,12 @@ namespace prototipo2.Controllers
         {
             using (var context = new SqlConnection(_configuration.GetSection("ConnectionStrings:connection").Value))
             {
+                var contrasenaEncriptada = _utilitarios.Encrypt(cliente.Contrasena);
                 var resultado = context.QueryFirstOrDefault<Cliente>("ValidarInicioSesion",
                     new
                     {
                         cliente.Correo,
-                        cliente.Contrasena
+                        Contrasena = contrasenaEncriptada
                     });
                 if (resultado != null)
                 {
@@ -108,7 +106,7 @@ namespace prototipo2.Controllers
 
                 if (resultado != null)
                 {
-                    var ContrasennaNotificar = _utilitarios.GenerarContrasenna(15);
+                    var ContrasennaNotificar = _utilitarios.GenerarContrasenna(50);
                     var contrasena = _utilitarios.Encrypt(ContrasennaNotificar);
 
                     var resultadoActualizacion = context.Execute("ActualizarContrasenna",

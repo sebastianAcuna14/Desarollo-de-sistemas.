@@ -45,31 +45,28 @@ END
 GO
 
 -----EMPLEADO
-Create PROCEDURE ValidarInicioSesionEmpleado
-	@Correo varchar(100),
-	@Contrasena varchar(50)
+CREATE OR ALTER PROCEDURE ValidarInicioSesionEmpleado
+    @Correo VARCHAR(100),
+    @Contrasena VARCHAR(50)
 AS
 BEGIN
-
-	SELECT	
-			IdEmpleado,
-			Nombre,
-			Apellido,
-			Correo,
-			Telefono
-			
-
-
-
-
-	  FROM	EMPLEADO
-	WHERE	Correo = @Correo
-		AND contrasena = @Contrasena
-		
+    SELECT 
+        E.IdEmpleado,
+        E.Nombre,
+        E.Apellido,
+        E.Correo,
+        E.Telefono,
+        E.IdRol,
+        R.NombreRol
+    FROM Empleado E
+    JOIN Rol R ON E.IdRol = R.IdRol
+    WHERE E.Correo = @Correo
+      AND E.Contrasena = @Contrasena
 END
 GO
 
-alter PROCEDURE RegistrarEmpleado
+
+Create or alter PROCEDURE RegistrarEmpleado
     @Nombre VARCHAR(100),
     @Apellido VARCHAR(100),
     @Correo VARCHAR(100),

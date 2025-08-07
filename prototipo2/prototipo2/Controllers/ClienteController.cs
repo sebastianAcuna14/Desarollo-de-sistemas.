@@ -86,7 +86,7 @@ namespace prototipo2.Controllers
                     new
                     {
                         cliente.Correo,
-                       
+
                         Contrasena = contrasenaEncriptada
                     });
                 if (resultado != null)
@@ -108,6 +108,14 @@ namespace prototipo2.Controllers
                     return RedirectToAction("Admi", "AdminController1");
 
                 }
+                if (resultadoEmpleado != null)
+                {
+                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado);
+                    HttpContext.Session.SetString("Rol", resultadoEmpleado.NombreRol); // "Administrador" o "Empleado"
+                    HttpContext.Session.SetString("NombreUsuario", resultadoEmpleado.Nombre ?? "Empleado");
+                    return RedirectToAction("Admi", "AdminController1");
+                }
+
 
                 ViewBag.Mesaje = "No se pudo autenticar";
                 return View();

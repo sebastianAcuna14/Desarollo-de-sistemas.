@@ -7,3 +7,6 @@ DROP TABLE Notificacion;
 DROP TABLE Proveedor;
 DROP TABLE Reparacion;
 DROP TABLE ROL;
+DROP TABLE Empleado;
+DROP TABLE Reporte;
+DROP TABLE USUARIO;

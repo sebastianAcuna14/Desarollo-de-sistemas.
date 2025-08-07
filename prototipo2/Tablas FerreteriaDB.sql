@@ -31,7 +31,6 @@ GO
 
 ----- INSERTS DE ROLES -----
 INSERT INTO ROL (NombreRol) VALUES ('Administrador');
-INSERT INTO ROL (NombreRol) VALUES ('Cliente');
 INSERT INTO ROL (NombreRol) VALUES ('Empleado');
 
 
@@ -47,7 +46,7 @@ CREATE TABLE Empleado (
     FOREIGN KEY (IdRol) REFERENCES Rol(IdRol)
 );
 GO
-
+Alter table empleado add contrasena varchar(50)
 
 --Tabla PROVEEDOR
 CREATE TABLE Proveedor (

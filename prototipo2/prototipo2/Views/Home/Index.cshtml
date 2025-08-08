@@ -27,9 +27,10 @@
                     <li class="nav-item">
                         <a class="nav-link active px-4" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-4" href="catalogo.html">Catálogo</a>
-                    </li>
+                    <a asp-controller="Catalogo" asp-action="Index" class="nav-link text-dark">
+                        Ver Catálogo
+                    </a>
+
                     <li class="nav-item">
                         <a class="nav-link px-4" href="envios.html">Envíos</a>
                     </li>
@@ -60,9 +61,12 @@
                     <h1 class="display-4 fw-bold mb-3 text-dark">Soluciones Electromecánicas <span class="text-warning">de Calidad</span></h1>
                     <p class="lead mb-4">Ofrecemos los mejores productos y servicios para todas sus necesidades electromecánicas.</p>
                     <div class="d-flex flex-wrap gap-2">
-                        <a  class="btn btn-dark btn-lg">Ver Catálogo</a>
-                        <a href="contacto.html" class="btn btn-outline-dark btn-lg">Contáctenos</a>
-
+                        <a asp-controller="Catalogo" asp-action="Index" class="btn btn-outline-dark">
+                            Ver Catálogo
+                        </a>
+                        <a asp-controller="Home" asp-action="Contact" class="btn btn-outline-dark">
+                            Contáctenos
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -166,7 +170,7 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="fw-bold mb-0">Productos Destacados</h2>
-                <a href="catalogo.html" class="text-decoration-none text-warning d-flex align-items-center">
+                <a asp-controller="Catalogo" asp-action="Index" class="text-decoration-none text-warning d-flex align-items-center">
                     Ver todos <i class="fas fa-chevron-right ms-1 small"></i>
                 </a>
             </div>

@@ -1,0 +1,199 @@
+﻿@{
+    ViewData["Title"] = "Catálogo";
+    Layout = "_Layout";
+}
+
+<!-- Encabezado del Catálogo -->
+<section class="py-4 hero">
+    <div class="container">
+        <h1 class="mb-4">Catálogo de Productos</h1>
+        <div class="row g-3">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <span class="input-group-text bg-white">
+                        <i class="fas fa-search text-muted"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Buscar productos...">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <select class="form-select">
+                    <option selected>Ordenar por</option>
+                    <option value="price-asc">Precio: Menor a Mayor</option>
+                    <option value="price-desc">Precio: Mayor a Menor</option>
+                    <option value="name-asc">Nombre: A-Z</option>
+                    <option value="name-desc">Nombre: Z-A</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contenido Principal -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Sidebar de Filtros -->
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm mb-4">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="card-title mb-0">Filtros</h5>
+                            <button class="btn btn-sm btn-link text-decoration-none p-0">Limpiar</button>
+                        </div>
+
+                        <!-- Categorías -->
+                        <div class="mb-4">
+                            <h6 class="fw-bold mb-2">Categorías</h6>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-motores">
+                                <label class="form-check-label" for="cat-motores">Motores</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-bombas">
+                                <label class="form-check-label" for="cat-bombas">Bombas</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-compresores">
+                                <label class="form-check-label" for="cat-compresores">Compresores</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-generadores">
+                                <label class="form-check-label" for="cat-generadores">Generadores</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-soldadoras">
+                                <label class="form-check-label" for="cat-soldadoras">Soldadoras</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-herramientas">
+                                <label class="form-check-label" for="cat-herramientas">Herramientas</label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="cat-electronica">
+                                <label class="form-check-label" for="cat-electronica">Electrónica</label>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-warning w-100">Aplicar Filtros</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Productos -->
+            <div class="col-lg-9">
+                <div class="row g-4">
+                    <!-- Producto 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://via.placeholder.com/300x200?text=Motor+Industrial" class="card-img-top" alt="Motor Eléctrico Industrial">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Motores</span>
+                                <h5 class="card-title">Motor Eléctrico Industrial</h5>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-warning">$1,299.99</span>
+                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://via.placeholder.com/300x200?text=Bomba+Hidraulica" class="card-img-top" alt="Bomba Hidráulica 2HP">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Bombas</span>
+                                <h5 class="card-title">Bomba Hidráulica 2HP</h5>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-warning">$899.99</span>
+                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://via.placeholder.com/300x200?text=Compresor+Aire" class="card-img-top" alt="Compresor de Aire 50L">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Compresores</span>
+                                <h5 class="card-title">Compresor de Aire 50L</h5>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-warning">$1,599.99</span>
+                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://via.placeholder.com/300x200?text=Generador" class="card-img-top" alt="Generador Eléctrico 5000W">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Generadores</span>
+                                <h5 class="card-title">Generador Eléctrico 5000W</h5>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-warning">$2,499.99</span>
+                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://via.placeholder.com/300x200?text=Soldadora" class="card-img-top" alt="Soldadora Inverter 200A">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Soldadoras</span>
+                                <h5 class="card-title">Soldadora Inverter 200A</h5>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-warning">$799.99</span>
+                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Producto 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="https://via.placeholder.com/300x200?text=Taladro" class="card-img-top" alt="Taladro Industrial 1200W">
+                            <div class="card-body">
+                                <span class="badge bg-warning text-dark mb-2">Herramientas</span>
+                                <h5 class="card-title">Taladro Industrial 1200W</h5>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold text-warning">$349.99</span>
+                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paginación -->
+                <nav class="mt-5">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Siguiente</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <!-- Scripts específicos del catálogo -->
+    <script src="~/js/catalogo.js"></script>
+}

@@ -84,6 +84,8 @@
         </main>
     </div> *@
 
+    @RenderSection("Scripts", required: false)
+
     <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row g-4">
@@ -93,7 +95,7 @@
                     <h5 class="mb-3">Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="index.html" class="text-decoration-none text-white-50">Inicio</a></li>
-                        <li class="mb-2"><a href="catalogo.html" class="text-decoration-none text-white-50">Catálogo</a></li>
+                        <li class="mb-2"><a asp-controller="Catalogo" asp-action="Index" class="text-decoration-none text-white-50">Catálogo</a></li>
                         <li class="mb-2"><a href="envios.html" class="text-decoration-none text-white-50">Envíos</a></li>
                         <li class="mb-2"><a href="contacto.html" class="text-decoration-none text-white-50">Contacto</a></li>
                     </ul>

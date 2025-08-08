@@ -43,7 +43,7 @@ namespace prototipo2.Controllers
             ViewBag.ListaProveedores = new SelectList(proveedores, "IDProveedor", "NombreEmpresa");
 
             var categorias = con.Query<Categoria>(
-                "ObtenerCategorias",
+                "ObtenerInventario",
                 commandType: CommandType.StoredProcedure
             ).ToList();
             ViewBag.ListaCategorias = new SelectList(categorias, "IdCategoria", "Nombre");

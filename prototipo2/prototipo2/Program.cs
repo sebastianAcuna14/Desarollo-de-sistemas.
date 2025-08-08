@@ -35,6 +35,11 @@ app.MapControllerRoute(
      name: "default",
     pattern: "{controller=Cliente}/{action=InicioSesion}/{id?}");
 
+app.MapControllerRoute(
+    name: "catalogo",
+    pattern: "Catalogo/{action=Index}/{id?}",
+    defaults: new { controller = "Catalogo" });
+
 app.Run();
 
 app.MapControllerRoute(

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<prototipo2.Models.Producto>
+@{
     ViewData["Title"] = "Catálogo";
     Layout = "_Layout";
 }
@@ -83,22 +84,28 @@
             <!-- Productos -->
             <div class="col-lg-9">
                 <div class="row g-4">
-                    <!-- Producto 1 -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <img src="https://via.placeholder.com/300x200?text=Motor+Industrial" class="card-img-top" alt="Motor Eléctrico Industrial">
-                            <div class="card-body">
-                                <span class="badge bg-warning text-dark mb-2">Motores</span>
-                                <h5 class="card-title">Motor Eléctrico Industrial</h5>
-                                <div class="d-flex justify-content-between align-items-center mt-3">
-                                    <span class="fw-bold text-warning">$1,299.99</span>
-                                    <button class="btn btn-sm btn-warning">Agregar</button>
+                    @foreach (var producto in Model)
+                    {
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=@producto.Nombre" class="card-img-top" alt="@producto.Nombre">
+                                <div class="card-body">
+                                    <span class="badge bg-warning text-dark mb-2">@producto.NombreCategoria</span>
+                                    <h5 class="card-title">@producto.Nombre</h5>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <span class="fw-bold text-warning">@producto.Precio.ToString("C")</span>
+                                        <a asp-action="Detalles" asp-route-id="@producto.IdProducto" class="btn btn-sm btn-warning">
+                                            Ver Detalles
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    }
+                </div>
+            </div>
 
-                    <!-- Producto 2 -->
+            @* <!-- Producto 2 -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card h-100 border-0 shadow-sm">
                             <img src="https://via.placeholder.com/300x200?text=Bomba+Hidraulica" class="card-img-top" alt="Bomba Hidráulica 2HP">
@@ -172,24 +179,24 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> *@
 
-                <!-- Paginación -->
-                <nav class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Anterior</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Siguiente</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <!-- Paginación -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">Anterior</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </div>
     </div>
 </section>
 

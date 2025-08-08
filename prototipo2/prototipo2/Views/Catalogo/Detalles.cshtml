@@ -1,0 +1,14 @@
+﻿@model prototipo2.Models.Producto
+
+@{
+    ViewData["Title"] = "Detalles del Producto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container py-4">
+    <h2>@Model.Nombre</h2>
+    <p><strong>Categoría:</strong> @Model.NombreCategoria</p>
+    <p><strong>Precio:</strong> ₡@Model.Precio.ToString("N2")</p>
+
+    <a asp-controller="Catalogo" asp-action="Index" class="btn btn-secondary">Volver al Catálogo</a>
+</div>

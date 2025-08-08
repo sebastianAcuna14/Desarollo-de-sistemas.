@@ -3,6 +3,7 @@ using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using prototipo2.Models;
+using prototipo2.Services;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,15 +15,16 @@ namespace prototipo2.Controllers
     public class CarritoController : Controller
     {
         private readonly string _connectionString;
+        private readonly PayPalService _payPalService;
 
-        public CarritoController(IConfiguration config)
+        public CarritoController(IConfiguration config, PayPalService payPalService)
         {
             _connectionString = config.GetConnectionString("Connection");
+            _payPalService = payPalService;
         }
 
         private IDbConnection Connection => new SqlConnection(_connectionString);
 
- 
         public async Task<IActionResult> Index()
         {
             using var db = Connection;
@@ -36,17 +38,21 @@ namespace prototipo2.Controllers
 
         public async Task<IActionResult> Paypal()
         {
-            var carrito = await Connection.QueryAsync<CarritoDTO>("ObtenerCarrito", commandType: CommandType.StoredProcedure);
-            return View(carrito.ToList());
+            var carrito = (await Connection.QueryAsync<CarritoDTO>(
+                "ObtenerCarrito",
+                commandType: CommandType.StoredProcedure
+            )).ToList();
+
+            ViewBag.TotalPagar = carrito.Sum(x => x.Subtotal);
+            return View(carrito);
         }
 
-
-[HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Agregar(CarritoDTO carrito)
         {
             if (!ModelState.IsValid)
-                return RedirectToAction(nameof(Index)); 
+                return RedirectToAction(nameof(Index));
 
             using var db = Connection;
             var parameters = new DynamicParameters();
@@ -64,21 +70,19 @@ namespace prototipo2.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ActualizarCantidad(int id, string action)
         {
             using var db = Connection;
 
-            // Primero obtenemos la cantidad actual del ítem
             var item = await db.QueryFirstOrDefaultAsync<CarritoDTO>(
                 "SELECT * FROM Carrito WHERE Id = @Id",
                 new { Id = id }
             );
 
             if (item == null)
-                return RedirectToAction(nameof(Index)); 
+                return RedirectToAction(nameof(Index));
 
             int nuevaCantidad = item.Cantidad;
 
@@ -89,12 +93,10 @@ namespace prototipo2.Controllers
 
             if (nuevaCantidad <= 0)
             {
-
                 await db.ExecuteAsync("DELETE FROM Carrito WHERE Id = @Id", new { Id = id });
             }
             else
             {
-
                 await db.ExecuteAsync(
                     "ActualizarCantidadCarrito",
                     new { Id = id, Cantidad = nuevaCantidad },
@@ -104,10 +106,6 @@ namespace prototipo2.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
-
-
-
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -138,9 +136,9 @@ namespace prototipo2.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // Método para confirmar pago usando PayPalService para validar orden
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ProcesarPago(string correoCliente = "cliente@email.com")
+        public async Task<IActionResult> ConfirmarPago([FromBody] ConfirmarPagoDTO model)
         {
             using var db = Connection;
             db.Open();
@@ -148,32 +146,47 @@ namespace prototipo2.Controllers
 
             try
             {
-                // 1. Obtener productos del carrito
-                var carrito = (await db.QueryAsync<CarritoDTO>(
-                    "ObtenerCarrito", transaction: transaction, commandType: CommandType.StoredProcedure)).ToList();
-
-                if (!carrito.Any())
+                // Validar orden PayPal
+                bool isPagoValido = await _payPalService.ValidarOrdenAsync(model.orderId);
+                if (!isPagoValido)
                 {
-                    ModelState.AddModelError("", "El carrito está vacío.");
-                    return RedirectToAction(nameof(Index));
+                    return Json(new { success = false, error = "Pago no confirmado por PayPal." });
                 }
 
-                // 2. Insertar venta
+                // Obtener carrito para registrar la venta
+                var carrito = (await db.QueryAsync<CarritoDTO>("ObtenerCarrito", transaction: transaction, commandType: CommandType.StoredProcedure)).ToList();
+                if (!carrito.Any())
+                {
+                    return Json(new { success = false, error = "El carrito está vacío." });
+                }
+
+                // Insertar venta con datos del pago y contacto
                 var fechaVenta = DateTime.Now;
                 var ventaId = await db.ExecuteScalarAsync<int>(
-                    @"INSERT INTO Venta (Fecha, NotaCreditoId) 
-              VALUES (@Fecha, NULL);
-              SELECT CAST(SCOPE_IDENTITY() as int);",
-                    new { Fecha = fechaVenta },
+                    @"INSERT INTO Venta (Fecha, NotaCreditoId, MetodoPago, MontoTotal, Contacto, Telefono, Direccion, ProvinciaId, DepartamentoId, DistritoId, PaypalOrderId)
+                      VALUES (@Fecha, NULL, 'Paypal', @MontoTotal, @Contacto, @Telefono, @Direccion, @Provincia, @Departamento, @Distrito, @OrderId);
+                      SELECT CAST(SCOPE_IDENTITY() as int);",
+                    new
+                    {
+                        Fecha = fechaVenta,
+                        MontoTotal = model.total,
+                        Contacto = model.contacto,
+                        Telefono = model.telefono,
+                        Direccion = model.direccion,
+                        Provincia = model.IdProvincia,
+                        Departamento = model.IdDepartamento,
+                        Distrito = model.IdDistrito,
+                        OrderId = model.orderId
+                    },
                     transaction
                 );
 
-                // 3. Insertar productos vendidos
+                // Insertar cada producto vendido
                 foreach (var item in carrito)
                 {
                     await db.ExecuteAsync(
                         @"INSERT INTO ItemsVendidos (VentaId, Producto, Cantidad, PrecioUnitario)
-                  VALUES (@VentaId, @Producto, @Cantidad, @PrecioUnitario)",
+                          VALUES (@VentaId, @Producto, @Cantidad, @PrecioUnitario)",
                         new
                         {
                             VentaId = ventaId,
@@ -185,36 +198,24 @@ namespace prototipo2.Controllers
                     );
                 }
 
-                // 4. Insertar método de pago
-                decimal totalVenta = carrito.Sum(p => p.Precio * p.Cantidad);
-                await db.ExecuteAsync(
-                    @"INSERT INTO MetodosPago (VentaId, Monto, Tipo)
-              VALUES (@VentaId, @Monto, @Tipo)",
-                    new { VentaId = ventaId, Monto = totalVenta, Tipo = "Paypal" },
-                    transaction
-                );
-
-                // 5. Limpiar el carrito
+                // Limpiar carrito después de la venta
                 await db.ExecuteAsync("LimpiarCarrito", transaction: transaction, commandType: CommandType.StoredProcedure);
 
                 transaction.Commit();
 
-                return RedirectToAction("Confirmacion");
+                return Json(new { success = true });
             }
             catch (Exception ex)
             {
                 transaction.Rollback();
-                ModelState.AddModelError("", "Error al procesar el pago: " + ex.Message);
-                return RedirectToAction(nameof(Index));
+                return Json(new { success = false, error = ex.Message });
             }
         }
 
-
-
-        public IActionResult Confirmacion()
+        // Vista de agradecimiento tras pago exitoso
+        public IActionResult Gracias()
         {
-            return View("ProcesarPago");
+            return View("ProcesarPago"); 
         }
-
     }
 }

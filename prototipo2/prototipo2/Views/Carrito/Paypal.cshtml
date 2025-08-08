@@ -135,9 +135,17 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var total = "@total.ToString("F2", CultureInfo.InvariantCulture)";
+        var total = "@total.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)";
 
         paypal.Buttons({
+            onClick: function (data, actions) {
+                const form = document.getElementById('datosVentaForm');
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return actions.reject();
+                }
+                return actions.resolve();
+            },
             createOrder: function (data, actions) {
                 return actions.order.create({
                     purchase_units: [{ amount: { value: total } }]
@@ -160,7 +168,6 @@
                         IdDistrito: formData.get('IdDistrito')
                     };
 
-
                     return fetch('@Url.Action("ConfirmarPago", "Carrito")', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
@@ -176,11 +183,18 @@
                         })
                         .catch(error => alert("Error de red: " + error.message));
                 });
-
+            },
+            onCancel: function (data) {
+                alert("Pago cancelado.");
+            },
+            onError: function (err) {
+                alert("Error en el pago. Intente nuevamente.");
+                console.error(err);
             }
         }).render('#paypal-button-container');
     });
 </script>
+
 
 
 <style>

@@ -2,6 +2,7 @@ using prototipo2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using prototipo2.Servicios;
+using prototipo2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
 builder.Services.AddScoped<IUtilitarios, Utilitarios>();
-
-
-
+builder.Services.AddHttpClient<PayPalService>();
 
 var app = builder.Build();
 

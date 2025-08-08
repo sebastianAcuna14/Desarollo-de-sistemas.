@@ -36,6 +36,9 @@ namespace prototipo2.Controllers
             return View(carrito);
         }
 
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Paypal()
         {
             var carrito = (await Connection.QueryAsync<CarritoDTO>(
@@ -137,7 +140,9 @@ namespace prototipo2.Controllers
         }
 
         // Método para confirmar pago usando PayPalService para validar orden
+
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> ConfirmarPago([FromBody] ConfirmarPagoDTO model)
         {
             using var db = Connection;

@@ -34,9 +34,9 @@
               "Title": "Paypal.cshtml",
               "DocumentMoniker": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Paypal.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Carrito\\Paypal.cshtml",
-              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Paypal.cshtml*",
-              "RelativeToolTip": "prototipo2\\Views\\Carrito\\Paypal.cshtml*",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAswLYAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\JOSHUA\\Desktop\\Nueva carpeta\\prototipo2\\prototipo2\\Views\\Carrito\\Paypal.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Carrito\\Paypal.cshtml",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAswLIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-03T22:20:08.37Z",
               "IsPinned": true,
@@ -304,8 +304,7 @@
               "RelativeToolTip": "prototipo2\\Views\\Carrito\\ProcesarPago.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-07T18:15:19.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T18:15:19.414Z"
             },
             {
               "$type": "Document",
@@ -317,8 +316,7 @@
               "RelativeToolTip": "prototipo2\\Models\\ConfirmarPagoDTO .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-07T18:14:20.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T18:14:20.051Z"
             },
             {
               "$type": "Document",
@@ -330,8 +328,7 @@
               "RelativeToolTip": "prototipo2\\Controllers\\CarritoController .cs",
               "ViewState": "AgIAAMkAAAAAAAAAAAAswNkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T06:08:41.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-04T06:08:41.002Z"
             }
           ]
         },

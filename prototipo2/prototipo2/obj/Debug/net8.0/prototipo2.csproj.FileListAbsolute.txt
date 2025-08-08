@@ -1409,3 +1409,11 @@ C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-s
 C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.IO.Packaging.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\RBush.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\sebas\OneDrive\Documentos\GitHub\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.IO.Packaging.dll

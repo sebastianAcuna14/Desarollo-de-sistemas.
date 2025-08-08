@@ -9,10 +9,14 @@
     <div class="col-md-8">
         <div class="card mt-5 shadow rounded-4">
             <div class="card-header bg-danger text-white rounded-top-4">
-                <h4 class="mb-0"><i class="fas fa-trash-alt me-2"></i>@ViewData["Title"]</h4>
+                <h4 class="mb-0">
+                    <i class="fas fa-trash-alt me-2"></i>@ViewData["Title"]
+                </h4>
             </div>
             <div class="card-body">
-                <p class="text-muted">¿Está seguro de que desea eliminar el siguiente producto?</p>
+                <p class="text-muted">
+                    ¿Está seguro de que desea eliminar el siguiente producto?
+                </p>
 
                 <dl class="row">
                     <dt class="col-sm-4">Nombre:</dt>
@@ -25,10 +29,17 @@
                     <dd class="col-sm-8">@Model.Cantidad</dd>
 
                     <dt class="col-sm-4">Precio:</dt>
-                    <dd class="col-sm-8">@Model.Precio.ToString("C")</dd>
+                    <dd class="col-sm-8">₡@Model.Precio.ToString("N2")</dd>
+
+                    <dt class="col-sm-4">Categoría:</dt>
+                    <dd class="col-sm-8">@Model.NombreCategoria</dd>
+
+                    <dt class="col-sm-4">Proveedor:</dt>
+                    <dd class="col-sm-8">@Model.NombreProveedor</dd>
                 </dl>
 
                 <form asp-action="Eliminar" method="post">
+                    @Html.AntiForgeryToken()
                     <input type="hidden" asp-for="IdProducto" />
 
                     <div class="d-flex justify-content-between">

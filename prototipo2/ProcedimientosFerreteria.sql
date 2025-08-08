@@ -1,5 +1,6 @@
 /***********************************      Procedimientos almacenados del sistema       *******************/
-
+USE FerreteriaBD;
+GO
 
 -- Login
 
@@ -19,7 +20,7 @@ GO
 
 
 
-Create PROCEDURE ValidarInicioSesion
+Create PROCEDURE ValidarInicioSesionCliente
 	@Correo varchar(100),
 	@Contrasena varchar(50)
 AS
@@ -40,6 +41,106 @@ BEGIN
 	WHERE	Correo = @Correo
 		AND Contrasena = @Contrasena
 		
+END
+GO
+
+-----EMPLEADO
+CREATE OR ALTER PROCEDURE ValidarInicioSesionEmpleado
+    @Correo VARCHAR(100),
+    @Contrasena VARCHAR(50)
+AS
+BEGIN
+    SELECT 
+        E.IdEmpleado,
+        E.Nombre,
+        E.Apellido,
+        E.Correo,
+        E.Telefono,
+        E.IdRol,
+        R.NombreRol
+    FROM Empleado E
+    JOIN Rol R ON E.IdRol = R.IdRol
+    WHERE E.Correo = @Correo
+      AND E.Contrasena = @Contrasena
+END
+GO
+
+
+Create or alter PROCEDURE RegistrarEmpleado
+    @Nombre VARCHAR(100),
+    @Apellido VARCHAR(100),
+    @Correo VARCHAR(100),
+    @Telefono VARCHAR(20),
+    @Contrasena VARCHAR(50)
+	
+AS
+BEGIN
+    INSERT INTO Empleado( Nombre, Apellido, Correo, Telefono, Contrasena)
+    VALUES (@Nombre,@Apellido, @Telefono, @Correo, @Contrasena);
+END;
+GO
+
+CREATE PROCEDURE ObtenerEmpleado
+AS
+BEGIN
+    SELECT * FROM Empleado
+END
+------------   
+
+
+CREATE PROCEDURE ValidarCorreo
+	@Correo varchar(100)
+AS
+BEGIN
+
+	SELECT	idCliente,
+		    Cedula,
+			Nombre,
+			Correo
+	  FROM	CLIENTE
+	WHERE	Correo = @Correo
+		
+	
+END
+GO
+
+
+CREATE PROCEDURE ActualizarUsuario
+	@Cedula varchar(20),
+	@Nombre varchar(15),
+	@Correo varchar(100),
+	@idCliente int
+AS
+BEGIN
+	
+	IF NOT EXISTS(SELECT 1 FROM CLIENTE
+				  WHERE Cedula = @Cedula
+					AND Correo = @Correo
+					AND idCliente != @idCliente)
+	BEGIN
+
+		UPDATE	CLIENTE
+		SET		Cedula = @Cedula,
+				Nombre = @Nombre,
+				Correo =  @Correo
+		WHERE	idCliente = @idCliente
+
+	END
+
+END
+GO
+
+
+CREATE PROCEDURE ActualizarContrasenna
+	@idCliente int,
+	@contrasena varchar(255)
+AS
+BEGIN
+	
+	UPDATE	CLIENTE
+	SET		contrasena = @contrasena
+	WHERE	idCliente = @idCliente
+
 END
 GO
 
@@ -381,7 +482,7 @@ END
 SELECT * FROM 
 
 --Listar productos
-CREATE PROCEDURE ObtenerProductos
+CREATE OR ALTER PROCEDURE ObtenerProductos
 AS
 BEGIN
     SELECT 
@@ -389,35 +490,19 @@ BEGIN
         I.Nombre,
         I.Descripcion,
         I.Cantidad,
-        I.Categoria,
         I.Precio,
         I.IdProveedor,
-        P.NombreEmpresa AS NombreProveedor
+        P.NombreEmpresa   AS NombreProveedor,
+        I.IdCategoria,
+        C.Nombre          AS NombreCategoria
     FROM 
         INVENTARIO I
     INNER JOIN 
-        PROVEEDOR P ON I.IdProveedor = P.IDProveedor
+        PROVEEDOR P   ON I.IdProveedor  = P.IDProveedor
+    INNER JOIN 
+        Categoria C   ON I.IdCategoria  = C.IdCategoria;
 END;
-
-CREATE PROCEDURE ConsultarEjercicios
-AS
-BEGIN
-    SELECT 
-        e.Consecutivo,
-        e.Nombre,
-        e.Fecha,
-        e.Monto,
-        e.TipoEjercicio,
-        t.DescripcionTipoEjercicio
-    FROM Ejercicios e
-    INNER JOIN TiposEjercicio t ON e.TipoEjercicio = t.TipoEjercicio;
-END;
-CREATE OR ALTER PROCEDURE ObtenerCategorias
-AS
-BEGIN
-    SELECT IdCategoria, Nombre, Descripcion
-    FROM CATEGORIA;
-END
+GO
 
 
 --Actualizar/editar prdcto
@@ -432,14 +517,17 @@ CREATE OR ALTER PROCEDURE ActualizarProducto
 AS
 BEGIN
     UPDATE INVENTARIO
-    SET Nombre      = @Nombre,
+    SET 
+        Nombre      = @Nombre,
         Descripcion = @Descripcion,
         Cantidad    = @Cantidad,
         Precio      = @Precio,
         IdProveedor = @IdProveedor,
         IdCategoria = @IdCategoria
     WHERE IdProducto = @IdProducto;
-END
+END;
+GO
+
 
 
 --Eliminar el producto del inventario
@@ -450,31 +538,7 @@ BEGIN
     DELETE FROM INVENTARIO
     WHERE IdProducto = @IdProducto
 END;
---Para mostrar el producto x ID
-CREATE PROCEDURE ObtenerProductoPorId
-    @IdProducto INT
-AS
-BEGIN
-    SELECT * FROM INVENTARIO WHERE IdProducto = @IdProducto
-END;
 
-CREATE OR ALTER PROCEDURE ObtenerProductos
-AS
-BEGIN
-    SELECT 
-        I.IdProducto,
-        I.Nombre,
-        I.Descripcion,
-        I.Cantidad,
-        I.Precio,
-        I.IdProveedor,
-        P.NombreEmpresa   AS NombreProveedor,
-        I.IdCategoria,
-        C.Nombre          AS CategoriaNombre
-    FROM INVENTARIO I
-    INNER JOIN PROVEEDOR P ON I.IdProveedor = P.IDProveedor
-    INNER JOIN CATEGORIA C ON I.IdCategoria = C.IdCategoria;
-END
 
 --  Categoria
 
@@ -575,3 +639,5 @@ BEGIN
     DELETE FROM Proveedor
     WHERE IDProveedor = @IDProveedor;
 END;
+
+select * from cliente

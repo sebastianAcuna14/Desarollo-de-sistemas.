@@ -1,8 +1,8 @@
-﻿@{
+﻿@model Cliente
+@{
     ViewData["Title"] = "Recuperar contraseña";
     Layout = "_LayoutLogin";
 }
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -46,7 +46,6 @@
         </div>
     </nav>
 
-    <!-- Contenido Principal -->
     <section class="py-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -59,15 +58,18 @@
                                 <p class="text-muted">Ingresa tu correo electrónico para recibir instrucciones</p>
                             </div>
 
-                            <form id="recover-form">
+                            <form class="form-horizontal m-t-20" asp-controller="Cliente" asp-action="RecuperarAcceso" method="post">
+                                <input id="Mensaje" type="hidden" value="@ViewBag.Mensaje" />
+
                                 <div class="mb-4">
-                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <label asp-for="Correo" class="form-label">Correo Electrónico</label>
                                     <div class="input-group">
                                         <span class="input-group-text bg-light">
                                             <i class="fas fa-envelope text-muted"></i>
                                         </span>
-                                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                        <input asp-for="Correo" class="form-control" placeholder="ejemplo@correo.com" />
                                     </div>
+                                    <span asp-validation-for="Correo" class="text-danger"></span>
                                 </div>
 
                                 <div class="d-grid gap-2 mb-4">
@@ -75,17 +77,26 @@
                                 </div>
 
                                 <div class="text-center">
-                                    <p class="mb-0">¿Recordaste tu contraseña? <a href="login.html" class="text-decoration-none text-warning">Iniciar Sesión</a></p>
+                                    <p class="mb-0">
+                                        ¿Recordaste tu contraseña?
+                                        <a href="@Url.Action("InicioSesion","Cliente")" class="text-decoration-none text-warning">Iniciar Sesión</a>
+                                    </p>
+                                    <p class="mb-0">
+                                        ¿No tienes cuenta?
+                                        <a href="@Url.Action("RegistroCliente","Cliente")" class="text-decoration-none text-warning">Regístrate</a>
+                                    </p>
                                 </div>
                             </form>
 
-                            <!-- Mensaje de éxito (inicialmente oculto) -->
-                            <div id="success-message" class="alert alert-success d-flex align-items-center mt-4" role="alert" style="display: none !important;">
-                                <i class="fas fa-check-circle me-2"></i>
-                                <div>
-                                    Se han enviado las instrucciones a tu correo electrónico. Por favor, revisa tu bandeja de entrada.
+                            @if (ViewBag.Mensaje != null)
+                            {
+                                <div class="alert alert-success d-flex align-items-center mt-4" role="alert">
+                                    <i class="fas fa-check-circle me-2"></i>
+                                    <div>
+                                        @ViewBag.Mensaje
+                                    </div>
                                 </div>
-                            </div>
+                            }
                         </div>
                     </div>
                 </div>
@@ -93,7 +104,10 @@
         </div>
     </section>
 
-   
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

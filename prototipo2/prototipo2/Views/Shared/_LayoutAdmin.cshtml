@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var rol = Context.Session.GetString("Rol");
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -23,32 +27,16 @@
         </a>
 
         <!-- Sidebar Toggle-->
-        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-flex d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Buscar productos...">
+        <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0 d-lg-none" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
 
-                <button class="btn btn-warning" type="submit">
-                    <i class="fas fa-search"></i>
-                </button>
-            </div>
-        </form>
-        @*  <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-            </div>
-        </form> *@
         <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <ul class="d-flex d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <a class="nav-link dropdown-toggle text-white" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" asp-controller="Login" asp-action="Recuperar">Cambiar Contraseña</a></li>
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" asp-controller="Usuario" asp-action="CerrarSesion">Cerrar Sesion</a></li>
-
+                    <li><a class="dropdown-item" asp-controller="Cliente" asp-action="CerrarSesion">Cerrar Sesión</a></li>
                 </ul>
             </li>
         </ul>
@@ -58,49 +46,52 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-
-                        <a class="nav-link" asp-area="" asp-controller="Inventario" asp-action="Index">
-                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
-                            Inventario
-                        </a>
-
-                        <a class="nav-link" asp-area="" asp-controller="Categoria" asp-action="Index">
-                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
-                            Categoria
-                        </a>
-
-                        <a class="nav-link" asp-area="" asp-controller="Proveedor" asp-action="Index">
-                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
-                            Proveedor
-                        </a>
-
+                        <!-- Módulos visibles para ambos roles (Administrador y Empleado) -->
                         <a class="nav-link" asp-area="" asp-controller="Reparacion" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
                             Reparaciones
                         </a>
-
                         <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="fas fa-box me-2"></i></div>
                             Pedido
                         </a>
-
-
-                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
-                            <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
-                            Productos
-                        </a>
-
-                        <a class="nav-link" asp-area="" asp-controller="Finanzas" asp-action="Index">
-                            <div class="sb-nav-link-icon"><i class="fas fa-coins me-2"></i></div>
-                            Finanzas
-                        </a>
-
                         <a class="nav-link" asp-area="" asp-controller="Ventas" asp-action="Index">
                             <div class="sb-nav-link-icon"><i class="fas fa-shopping-cart me-2"></i></div>
                             Ventas
                         </a>
 
-
+                        @if (rol == "Administrador")
+                        {
+                            <!-- Solo para administradores -->
+                            <a class="nav-link" asp-area="" asp-controller="Inventario" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                Inventario
+                            </a>
+                            <a class="nav-link" asp-area="" asp-controller="Categoria" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                Categoria
+                            </a>
+                            <a class="nav-link" asp-area="" asp-controller="Proveedor" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                Proveedor
+                            </a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                Productos
+                            </a>
+                            <a class="nav-link" asp-area="" asp-controller="Finanzas" asp-action="Index">
+                                <div class="sb-nav-link-icon"><i class="fas fa-coins me-2"></i></div>
+                                Finanzas
+                            </a>
+                            <a class="nav-link" asp-area="" asp-controller="Empleado" asp-action="ListaEmpleado">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-warehouse"></i></div>
+                                Empleados
+                            </a>
+                            <a class="nav-link" href="tables.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Clientes
+                            </a>
+                        }
 
                         <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
@@ -143,7 +134,7 @@
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
-                    <div class="small">Logged in as:</div>
+                    <div class="small">Logged in as: @Context.Session.GetString("NombreUsuario")</div>
                     Start Bootstrap
                 </div>
 

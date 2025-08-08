@@ -1,30 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using prototipo2.Models; // Asegúrate de que el namespace del modelo sea correcto
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using prototipo2.Models; 
 using System.Linq;
 namespace prototipo2.Controllers
 {
     public class EmpleadoController : Controller
     {
-        // Lista estática de empleados simulada
-        private static List<Empleado> Empleados = new List<Empleado>
+        private readonly IConfiguration _configuration;
+        public EmpleadoController(IConfiguration configuration)
         {
-            new() {
-                Id = 1,
-                NombreCompleto = "Carlos Pérez",
-                Cedula = "101230456",
-                Rol = "Gerente",
-                Salario = 2500.00m,
-                FechaContratacion = new DateTime(2020, 5, 10)
-            },
-            new() {
-                Id = 2,
-                NombreCompleto = "Laura Gómez",
-                Cedula = "102349872",
-                Rol = "Vendedor",
-                Salario = 1200.00m,
-                FechaContratacion = new DateTime(2022, 3, 15)
-            }
-        };
+            _configuration = configuration;
+
+        }
 
         // Acción Index que envía la lista a la vista
 
@@ -35,105 +23,99 @@ namespace prototipo2.Controllers
         }
         public IActionResult ListaEmpleado()
         {
-            return View(Empleados);
+            using (var context = new SqlConnection(_configuration.GetSection("ConnectionStrings:connection").Value))
+            {
+                var resultado = context.Query<Empleado>("ObtenerEmpleado").ToList();
+                return View(resultado);
+            }
         }
-        [HttpGet]
-        public IActionResult EditarEmpleado(int id)
-        {
-            var empleado = Empleados.FirstOrDefault(e => e.Id == id);
-            if (empleado == null) return NotFound();
-            return View(empleado);
+        
+        //[HttpGet]
+        //public IActionResult EditarEmpleado(int id)
+        //{
+        //    var empleado = Empleados.FirstOrDefault(e => e.Id == id);
+        //    if (empleado == null) return NotFound();
+        //    return View(empleado);
 
 
-        }
+        //}
         [HttpPost]
         public IActionResult CrearEmpleado(Empleado empleado)
         {
-            try
+            using (var context = new SqlConnection(_configuration.GetSection("ConnectionStrings:connection").Value))
             {
-                if (ModelState.IsValid)
-                {
-                    empleado.Id = Empleados.Any() ? Empleados.Max(e => e.Id) + 1 : 1;
-                    empleado.FechaContratacion = DateTime.Parse(empleado.FechaContratacion.ToString());
-                    Empleados.Add(empleado);
+                var resultado = context.Execute("RegistrarEmpleado",
+                      new
+                      {
+                          empleado.Nombre,
+                          empleado.Apellido,
+                          empleado.Correo,
+                          empleado.Telefono,
+                          empleado.Contrasena,
+                         
+                      }
 
-                    return Json(new
-                    {
-                        success = true,
-                        empleado = empleado
-                    });
+                      );
+                if (resultado > 0)
+                {
+                    return RedirectToAction("Index", "Home");
                 }
 
-                return Json(new
-                {
-                    success = false,
-                    errors = ModelState.Values
-                        .SelectMany(v => v.Errors)
-                        .Select(e => e.ErrorMessage)
-                });
+                return View(empleado);
             }
-            catch (Exception ex)
-            {
-                return Json(new
-                {
-                    success = false,
-                    error = ex.Message
-                });
-            }
-            //return View(empleado);
         }
 
 
-        public IActionResult EliminarEmpleado(int id)
-        {
-            var empleado = Empleados.FirstOrDefault(e => e.Id == id);
-            if (empleado == null) return NotFound();
-            return View(empleado);
-        }
+        //public IActionResult EliminarEmpleado(int id)
+        //{
+        //    var empleado = Empleados.FirstOrDefault(e => e.Id == id);
+        //    if (empleado == null) return NotFound();
+        //    return View(empleado);
+        //}
 
-        [HttpPost]
-        public JsonResult AgregarDesdeModal([FromBody] Empleado nuevoEmpleado)
-        {
-            int nuevoId = Empleados.Any() ? Empleados.Max(e => e.Id) + 1 : 1;
-            nuevoEmpleado.Id = nuevoId;
-            Empleados.Add(nuevoEmpleado);
+        //[HttpPost]
+        //public JsonResult AgregarDesdeModal([FromBody] Empleado nuevoEmpleado)
+        //{
+        //    int nuevoId = Empleados.Any() ? Empleados.Max(e => e.Id) + 1 : 1;
+        //    nuevoEmpleado.Id = nuevoId;
+        //    Empleados.Add(nuevoEmpleado);
 
-            return Json(new { success = true });
-        }
-
-
+        //    return Json(new { success = true });
+        //}
 
 
-        [HttpPost]
-        public IActionResult EditarEmpleado(int id, Empleado empleado)
-        {
-            if (id != empleado.Id) return NotFound();
 
-            if (ModelState.IsValid)
-            {
-                var existente = Empleados.FirstOrDefault(e => e.Id == id);
-                if (existente == null) return NotFound();
 
-                existente.NombreCompleto = empleado.NombreCompleto;
-                existente.Cedula = empleado.Cedula;
-                existente.Rol = empleado.Rol;
-                existente.Salario = empleado.Salario;
-                existente.FechaContratacion = empleado.FechaContratacion;
+        //[HttpPost]
+        //public IActionResult EditarEmpleado(int id, Empleado empleado)
+        //{
+        //    if (id != empleado.Id) return NotFound();
 
-                return RedirectToAction(nameof(ListaEmpleado));
-            }
-            return View(empleado);
-        }
+        //    if (ModelState.IsValid)
+        //    {
+        //        var existente = Empleados.FirstOrDefault(e => e.Id == id);
+        //        if (existente == null) return NotFound();
+
+        //        existente.NombreCompleto = empleado.NombreCompleto;
+        //        existente.Cedula = empleado.Cedula;
+        //        existente.Rol = empleado.Rol;
+        //        existente.Salario = empleado.Salario;
+        //        existente.FechaContratacion = empleado.FechaContratacion;
+
+        //        return RedirectToAction(nameof(ListaEmpleado));
+        //    }
+        //    return View(empleado);
+        //}
         
 
-        public IActionResult Eliminar(int id)
-        {
-            var empleado = Empleados.FirstOrDefault(e => e.Id == id);
-            if (empleado !=null)
-            {
-                Empleados.Remove(empleado);
-            }
-            return RedirectToAction(nameof(ListaEmpleado));
-        }
+        //public IActionResult Eliminar(int id)
+        //{
+        //    var empleado = Empleados.FirstOrDefault(e => e.Id == id);
+        //    if (empleado !=null)
+        //    {
+        //        Empleados.Remove(empleado);
+        //    }
+        //    return RedirectToAction(nameof(ListaEmpleado));
+        //}
     }
 }

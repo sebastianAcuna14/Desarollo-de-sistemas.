@@ -81,7 +81,7 @@ namespace prototipo2.Controllers
         {
             using (var context = new SqlConnection(_configuration.GetSection("ConnectionStrings:connection").Value))
             {
-                var contrasenaEncriptada = _utilitarios.Encrypt(cliente.Contrasena);
+                var contrasenaEncriptada = _utilitarios.Encrypt(cliente.Contrasena!);
                 var resultado = context.QueryFirstOrDefault<Cliente>("ValidarInicioSesion",
                     new
                     {
@@ -91,11 +91,11 @@ namespace prototipo2.Controllers
                     });
                 if (resultado != null)
                 {
-                    resultado.Token = _utilitarios.GenerarToken(resultado.idCliente);
+                    resultado.Token = _utilitarios.GenerarToken(resultado.idCliente, "Cliente");
                     return RedirectToAction("Index", "Home");
 
                 }
-                var contrasenaEncriptadaEmpleado = _utilitarios.Encrypt(empleado.Contrasena);
+                var contrasenaEncriptadaEmpleado = _utilitarios.Encrypt(empleado.Contrasena!);
                 var resultadoEmpleado = context.QueryFirstOrDefault<Empleado>("ValidarInicioSesionEmpleado",
                     new
                     {
@@ -104,13 +104,13 @@ namespace prototipo2.Controllers
                     });
                 if (resultadoEmpleado != null)
                 {
-                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado);
+                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado, "Empleado");
                     return RedirectToAction("Admi", "AdminController1");
 
                 }
                 if (resultadoEmpleado != null)
                 {
-                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado);
+                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado, "Empleado");
                     HttpContext.Session.SetString("Rol", resultadoEmpleado.NombreRol); // "Administrador" o "Empleado"
                     HttpContext.Session.SetString("NombreUsuario", resultadoEmpleado.Nombre ?? "Empleado");
                     return RedirectToAction("Admi", "AdminController1");

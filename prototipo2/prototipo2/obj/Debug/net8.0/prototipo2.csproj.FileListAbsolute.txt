@@ -1392,3 +1392,20 @@ C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipo2\bin\
 C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Luis\Documents\Desarrollo\MiProyectoAnalisis\prototipo2\prototipo2\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\RBush.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\SixLabors.Fonts.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Kenneth\Desktop\Diseño y Desarrollo de Sistemas IIC2025\Desarollo-de-sistemas\prototipo2\prototipo2\bin\Debug\net8.0\System.IO.Packaging.dll

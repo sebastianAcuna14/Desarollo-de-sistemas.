@@ -26,5 +26,9 @@ namespace prototipo2.Models
         [Required]
         public int IdCategoria { get; set; }
         public string? NombreCategoria { get; set; }
+
+        public bool? EnCatalogo { get; set; } = true;
+
+        public bool EsDestacado { get; set; }
     }
 }

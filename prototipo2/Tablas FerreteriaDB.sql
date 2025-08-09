@@ -31,6 +31,7 @@ GO
 
 ----- INSERTS DE ROLES -----
 INSERT INTO ROL (NombreRol) VALUES ('Administrador');
+INSERT INTO ROL (NombreRol) VALUES ('Cliente');
 INSERT INTO ROL (NombreRol) VALUES ('Empleado');
 
 
@@ -46,7 +47,7 @@ CREATE TABLE Empleado (
     FOREIGN KEY (IdRol) REFERENCES Rol(IdRol)
 );
 GO
-Alter table empleado add contrasena varchar(50)
+
 
 --Tabla PROVEEDOR
 CREATE TABLE Proveedor (
@@ -79,7 +80,6 @@ CREATE TABLE INVENTARIO (
   FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria)
 );
 GO
-
 
 -- Tabla de Reparacion
 CREATE TABLE Reparacion (
@@ -129,4 +129,5 @@ CREATE TABLE Carrito (
     Nombre_Producto NVARCHAR(100) NOT NULL,
     Precio DECIMAL(18,2) NOT NULL
 );
+
 

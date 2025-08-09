@@ -43,7 +43,7 @@ namespace prototipo2.Controllers
             ViewBag.ListaProveedores = new SelectList(proveedores, "IDProveedor", "NombreEmpresa");
 
             var categorias = con.Query<Categoria>(
-                "ObtenerCategorias",
+                "ObtenerInventario",
                 commandType: CommandType.StoredProcedure
             ).ToList();
             ViewBag.ListaCategorias = new SelectList(categorias, "IdCategoria", "Nombre");
@@ -193,5 +193,27 @@ namespace prototipo2.Controllers
             );
             return RedirectToAction(nameof(Index));
         }
+        [HttpPost]
+        public IActionResult ActivarCatalogo(int id)
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                string sql = "UPDATE INVENTARIO SET EnCatalogo = 1 WHERE IdProducto = @Id";
+                connection.Execute(sql, new { Id = id });
+            }
+            return RedirectToAction("Index"); // O a la vista que quieras
+        }
+
+        [HttpPost]
+        public IActionResult DesactivarCatalogo(int id)
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                string sql = "UPDATE INVENTARIO SET EnCatalogo = 0 WHERE IdProducto = @Id";
+                connection.Execute(sql, new { Id = id });
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

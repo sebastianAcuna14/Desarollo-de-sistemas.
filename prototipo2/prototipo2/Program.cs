@@ -2,6 +2,7 @@ using prototipo2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using prototipo2.Servicios;
+using prototipo2.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,9 +11,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
 builder.Services.AddScoped<IUtilitarios, Utilitarios>();
-
-
-
+builder.Services.AddHttpClient<PayPalService>();
 
 var app = builder.Build();
 
@@ -36,4 +35,15 @@ app.MapControllerRoute(
      name: "default",
     pattern: "{controller=Cliente}/{action=InicioSesion}/{id?}");
 
+app.MapControllerRoute(
+    name: "catalogo",
+    pattern: "Catalogo/{action=Index}/{id?}",
+    defaults: new { controller = "Catalogo" });
+
 app.Run();
+
+app.MapControllerRoute(
+    name: "catalogo",
+    pattern: "catalogo",
+    defaults: new { controller = "Catalogo", action = "Index" }
+);

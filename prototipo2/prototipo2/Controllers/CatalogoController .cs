@@ -60,5 +60,20 @@ namespace prototipo2.Controllers
                 return View("Error");
             }
         }
+
+
+
+            public IActionResult Catalogo()
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                string sql = "SELECT * FROM INVENTARIO WHERE EnCatalogo = 1";
+                var productos = connection.Query<Producto>(sql).ToList();
+                return View(productos);
+            }
+        }
+
+
+
     }
 }

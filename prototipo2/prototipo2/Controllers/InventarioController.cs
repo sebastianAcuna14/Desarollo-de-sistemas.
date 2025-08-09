@@ -193,5 +193,27 @@ namespace prototipo2.Controllers
             );
             return RedirectToAction(nameof(Index));
         }
+        [HttpPost]
+        public IActionResult ActivarCatalogo(int id)
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                string sql = "UPDATE INVENTARIO SET EnCatalogo = 1 WHERE IdProducto = @Id";
+                connection.Execute(sql, new { Id = id });
+            }
+            return RedirectToAction("Index"); // O a la vista que quieras
+        }
+
+        [HttpPost]
+        public IActionResult DesactivarCatalogo(int id)
+        {
+            using (var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+            {
+                string sql = "UPDATE INVENTARIO SET EnCatalogo = 0 WHERE IdProducto = @Id";
+                connection.Execute(sql, new { Id = id });
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

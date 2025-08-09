@@ -3,6 +3,46 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\producto\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\producto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\producto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\producto\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\producto\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\inventariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\producto\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\producto\\eliminar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\catalogocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\catalogocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\carritocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\carritocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +51,8 @@
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\inventario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\views\\catalogo\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\catalogocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\catalogocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\models\\confirmarpagodto .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\models\\confirmarpagodto .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\controllers\\carritocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|solutionrelative:prototipo2\\controllers\\carritocontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4475C9AB-A7EB-4E8C-8B2A-35FFB97679B8}|prototipo2\\prototipo2.csproj|c:\\users\\sebas\\onedrive\\documentos\\github\\desarollo-de-sistemas\\prototipo2\\prototipo2\\views\\carrito\\paypal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -42,34 +70,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 2606,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 66,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Program.cs",
-              "RelativeDocumentMoniker": "prototipo2\\Program.cs",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Program.cs",
-              "RelativeToolTip": "prototipo2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T22:02:04.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Index.cshtml",
-              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Index.cshtml",
-              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Index.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-08T22:01:35.671Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
@@ -336,33 +338,145 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAAABwBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-09T01:51:35.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\Producto.cs",
+              "RelativeToolTip": "prototipo2\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T23:02:43.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Eliminar.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Eliminar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Producto\\Eliminar.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Eliminar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Producto\\Eliminar.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T23:06:02.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Editar.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Producto\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Editar.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Producto\\Editar.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T23:05:54.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Crear.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Producto\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Crear.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Producto\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T23:05:45.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Index.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Producto\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Producto\\Index.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Producto\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T23:02:02.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InventarioController.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\InventarioController.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Controllers\\InventarioController.cs",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\InventarioController.cs",
+              "RelativeToolTip": "prototipo2\\Controllers\\InventarioController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAQwNcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T22:16:31.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Program.cs",
+              "RelativeDocumentMoniker": "prototipo2\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Program.cs",
+              "RelativeToolTip": "prototipo2\\Program.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T22:02:04.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Index.cshtml",
+              "RelativeDocumentMoniker": "prototipo2\\Views\\Inventario\\Index.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Inventario\\Index.cshtml",
+              "RelativeToolTip": "prototipo2\\Views\\Inventario\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T22:01:35.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Catalogo\\Index.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Catalogo\\Index.cshtml",
               "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Catalogo\\Index.cshtml",
               "RelativeToolTip": "prototipo2\\Views\\Catalogo\\Index.cshtml",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAiwM0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAASwF8AAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-08T22:01:08.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "CatalogoController .cs",
               "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\CatalogoController .cs",
               "RelativeDocumentMoniker": "prototipo2\\Controllers\\CatalogoController .cs",
               "ToolTip": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\CatalogoController .cs",
               "RelativeToolTip": "prototipo2\\Controllers\\CatalogoController .cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwE4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T22:00:27.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T22:00:27.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "PayPalService.cs",
               "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\PayPalService.cs",
               "RelativeDocumentMoniker": "prototipo2\\Models\\PayPalService.cs",
@@ -374,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "ConfirmarPagoDTO .cs",
               "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Models\\ConfirmarPagoDTO .cs",
               "RelativeDocumentMoniker": "prototipo2\\Models\\ConfirmarPagoDTO .cs",
@@ -382,12 +496,11 @@
               "RelativeToolTip": "prototipo2\\Models\\ConfirmarPagoDTO .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T05:59:50.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T05:59:50.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CarritoController .cs",
               "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Controllers\\CarritoController .cs",
               "RelativeDocumentMoniker": "prototipo2\\Controllers\\CarritoController .cs",
@@ -399,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Paypal.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\OneDrive\\Documentos\\GitHub\\Desarollo-de-sistemas\\prototipo2\\prototipo2\\Views\\Carrito\\Paypal.cshtml",
               "RelativeDocumentMoniker": "prototipo2\\Views\\Carrito\\Paypal.cshtml",

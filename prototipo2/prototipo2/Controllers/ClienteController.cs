@@ -82,32 +82,28 @@ namespace prototipo2.Controllers
             using (var context = new SqlConnection(_configuration.GetSection("ConnectionStrings:connection").Value))
             {
                 var contrasenaEncriptada = _utilitarios.Encrypt(cliente.Contrasena!);
-                var resultado = context.QueryFirstOrDefault<Cliente>("ValidarInicioSesion",
+                var resultadoCliente = context.QueryFirstOrDefault<Cliente>("ValidarInicioSesion",
                     new
                     {
                         cliente.Correo,
-
                         Contrasena = contrasenaEncriptada
                     });
-                if (resultado != null)
+                if (resultadoCliente != null)
                 {
-                    resultado.Token = _utilitarios.GenerarToken(resultado.idCliente, "Cliente");
+                    var token = _utilitarios.GenerarToken(resultadoCliente.idCliente, "cliente");
+                    //HttpContext.Session.SetString("Token", token);
+                    HttpContext.Session.SetString("NombreUsuario", resultadoCliente.Nombre ?? "Cliente");
+                    HttpContext.Session.SetString("Rol", "Cliente");
                     return RedirectToAction("Index", "Home");
-
                 }
                 var contrasenaEncriptadaEmpleado = _utilitarios.Encrypt(empleado.Contrasena!);
                 var resultadoEmpleado = context.QueryFirstOrDefault<Empleado>("ValidarInicioSesionEmpleado",
                     new
                     {
                         empleado.Correo,
-                        Contrasena = contrasenaEncriptadaEmpleado
+                        empleado.Contrasena
                     });
-                if (resultadoEmpleado != null)
-                {
-                    resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado, "Empleado");
-                    return RedirectToAction("Admi", "AdminController1");
 
-                }
                 if (resultadoEmpleado != null)
                 {
                     resultadoEmpleado.Token = _utilitarios.GenerarToken(resultadoEmpleado.IdEmpleado, "Empleado");

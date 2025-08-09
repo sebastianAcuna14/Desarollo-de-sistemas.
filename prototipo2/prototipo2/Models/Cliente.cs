@@ -43,5 +43,7 @@ namespace prototipo2.Models
         public DateTime? FechaModificacion { get; set; }
 
         public string? Token { get; set; }
+        public int IdRol { get; set; }
+        public string NombreRol { get; set; } = "";
     }
 }

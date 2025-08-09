@@ -102,15 +102,19 @@ namespace prototipo2.Servicios
                 }
             }
         }
-        public string GenerarToken(long Id, string Tipo)
+        public string GenerarToken(int id, string tipo)
         {
             var key = Encoding.UTF8.GetBytes(_configuration.GetSection("Start:LlaveSegura").Value!);
 
-            var claims = new[]
-            {
-                new Claim("id",Id.ToString()),
-                new Claim("tipo",Tipo),
-            };
+            var claims = new List<Claim>
+    {
+        new Claim("tipo", tipo)
+    };
+
+            if (tipo == "Cliente")
+                claims.Add(new Claim("idCliente", id.ToString()));
+            else if (tipo == "empleado")
+                claims.Add(new Claim("idEmpleado", id.ToString()));
 
             var signingCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(key),

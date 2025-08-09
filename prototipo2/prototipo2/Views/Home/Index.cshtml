@@ -1,4 +1,6 @@
-﻿@{
+﻿@using System.Linq
+@model List<prototipo2.Models.Producto>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -174,8 +176,60 @@
                     Ver todos <i class="fas fa-chevron-right ms-1 small"></i>
                 </a>
             </div>
-            <div class="row g-4">
-                <!-- Producto 1 -->
+
+            @if (Model != null && Model.Count > 0)
+            {
+                <div class="row g-4">
+                    @foreach (var producto in Model)
+                    {
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200?text=@producto.Nombre"
+                                     class="card-img-top"
+                                     alt="@producto.Nombre"
+                                     style="height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <div>
+                                        @if (!string.IsNullOrEmpty(producto.NombreCategoria))
+                                        {
+                                            <span class="badge bg-warning text-dark mb-2">@producto.NombreCategoria</span>
+                                        }
+                                        <h5 class="card-title">@producto.Nombre</h5>
+                                        <p class="card-text small text-muted">
+                                            @(!string.IsNullOrEmpty(producto.Descripcion) && producto.Descripcion.Length > 50 ?
+                                                producto.Descripcion.Substring(0, 50) + "..." :
+                                                producto.Descripcion)
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <div class="d-flex justify-content-between align-items-center mt-3">
+                                            <span class="fw-bold text-warning">₡@producto.Precio.ToString("N2")</span>
+                                            <form method="post" asp-controller="Carrito" asp-action="Agregar" class="m-0">
+                                                <input type="hidden" name="productId" value="@producto.IdProducto" />
+                                                <input type="hidden" name="nombreProducto" value="@producto.Nombre" />
+                                                <input type="hidden" name="precio" value="@producto.Precio" />
+                                                <input type="hidden" name="cantidad" value="1" />
+                                                <button type="submit" class="btn btn-sm btn-warning">
+                                                    <i class="fas fa-cart-plus"></i> Agregar
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-info text-center">
+                    <i class="fas fa-info-circle me-2"></i> No hay productos destacados disponibles.
+                </div>
+            }
+        </div>
+    </section>
+ @*                <!-- Producto 1 -->
                 <div class="col-sm-6 col-lg-3">
                     <div class="card h-100 border-0 shadow-sm">
                         <img src="images/producto-1.jpg" class="card-img-top" alt="Producto 1">
@@ -265,7 +319,7 @@
 
             </div>
         </div>
-
+ *@
         
 
        

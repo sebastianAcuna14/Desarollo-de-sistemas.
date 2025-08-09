@@ -1,4 +1,4 @@
-/***********************************      Procedimientos almacenados del sistema       *******************/
+﻿/***********************************      Procedimientos almacenados del sistema       *******************/
 USE FerreteriaBD;
 GO
 
@@ -159,8 +159,13 @@ BEGIN
     INSERT INTO Pedido (Nombre_Producto, Numero_Pedido, Cantidad, FechaPedido, Precio, Estado, CorreoCliente)
     VALUES (@Nombre_Producto, @Numero_Pedido, @Cantidad, @FechaPedido, @Precio, @Estado, @CorreoCliente)
 END
-
-
+/////////
+CREATE PROCEDURE ObtenerPedido
+AS
+BEGIN
+    SELECT * FROM Empleado
+END
+////////
 CREATE PROCEDURE ActualizarPedido
     @Id INT, 
     @Nombre_Producto VARCHAR(50), 
@@ -400,7 +405,7 @@ BEGIN
 END
 GO
  
--- Eliminar movimiento financiero (eliminaci�n real)
+-- Eliminar movimiento financiero (eliminación real)
 CREATE OR ALTER PROCEDURE EliminarMovimientoFinanciero
     @Id INT
 AS
@@ -641,3 +646,173 @@ BEGIN
 END;
 
 select * from cliente
+
+
+-- ✅ Traer todos los productos
+CREATE OR ALTER PROCEDURE ObtenerProductos
+AS
+BEGIN
+    SELECT 
+        p.IdProducto,
+        p.Nombre,
+        p.Descripcion,
+        p.Cantidad,
+        p.Precio,
+        p.IdProveedor,
+        pr.NombreEmpresa AS NombreProveedor,
+        p.IdCategoria,
+        c.Nombre AS NombreCategoria
+    FROM INVENTARIO p
+    LEFT JOIN Proveedor pr ON p.IdProveedor = pr.IdProveedor
+    LEFT JOIN Categoria c ON p.IdCategoria = c.IdCategoria
+END
+GO
+
+-- ✅ Traer un producto por ID
+CREATE OR ALTER PROCEDURE ObtenerProductoPorId
+    @IdProducto INT
+AS
+BEGIN
+    SELECT 
+        p.IdProducto,
+        p.Nombre,
+        p.Descripcion,
+        p.Cantidad,
+        p.Precio,
+        p.IdProveedor,
+        pr.NombreEmpresa AS NombreProveedor,
+        p.IdCategoria,
+        c.Nombre AS NombreCategoria
+    FROM INVENTARIO p
+    LEFT JOIN Proveedor pr ON p.IdProveedor = pr.IdProveedor
+    LEFT JOIN Categoria c ON p.IdCategoria = c.IdCategoria
+    WHERE p.IdProducto = @IdProducto
+END
+GO
+/////
+ALTER TABLE INVENTARIO 
+ADD EnCatalogo BIT DEFAULT 0;
+////
+UPDATE INVENTARIO
+SET EnCatalogo = 0
+WHERE IdProducto = @id;
+/////
+
+///////////////////
+CREATE PROCEDURE ObtenerProductos
+AS
+BEGIN
+    SELECT 
+        I.IdProducto,
+        I.Nombre,
+        I.Descripcion,
+        I.Cantidad,
+        I.Categoria,
+        I.Precio,
+        I.IdProveedor,
+        P.NombreEmpresa AS NombreProveedor
+    FROM 
+        INVENTARIO I
+    INNER JOIN 
+        PROVEEDOR P ON I.IdProveedor = P.IDProveedor
+END;
+
+CREATE PROCEDURE ConsultarEjercicios
+AS
+BEGIN
+    SELECT 
+        e.Consecutivo,
+        e.Nombre,
+        e.Fecha,
+        e.Monto,
+        e.TipoEjercicio,
+        t.DescripcionTipoEjercicio
+    FROM Ejercicios e
+    INNER JOIN TiposEjercicio t ON e.TipoEjercicio = t.TipoEjercicio;
+END;
+CREATE OR ALTER PROCEDURE ObtenerCategorias
+AS
+BEGIN
+    SELECT IdCategoria, Nombre, Descripcion
+    FROM CATEGORIA;
+END
+
+
+--Actualizar/editar prdcto
+CREATE OR ALTER PROCEDURE ActualizarProducto
+    @IdProducto   INT,
+    @Nombre       VARCHAR(100),
+    @Descripcion  VARCHAR(255),
+    @Cantidad     INT,
+    @Precio       DECIMAL(10,2),
+    @IdProveedor  INT,
+    @IdCategoria  INT
+AS
+BEGIN
+    UPDATE INVENTARIO
+    SET Nombre      = @Nombre,
+        Descripcion = @Descripcion,
+        Cantidad    = @Cantidad,
+        Precio      = @Precio,
+        IdProveedor = @IdProveedor,
+        IdCategoria = @IdCategoria
+    WHERE IdProducto = @IdProducto;
+END
+
+
+--Eliminar el producto del inventario
+CREATE PROCEDURE EliminarProducto
+    @IdProducto INT
+AS
+BEGIN
+    DELETE FROM INVENTARIO
+    WHERE IdProducto = @IdProducto
+END;
+--Para mostrar el producto x ID
+CREATE PROCEDURE ObtenerProductoPorId
+    @IdProducto INT
+AS
+BEGIN
+    SELECT * FROM INVENTARIO WHERE IdProducto = @IdProducto
+END;
+
+CREATE OR ALTER PROCEDURE ObtenerProductos
+AS
+BEGIN
+    SELECT 
+        I.IdProducto,
+        I.Nombre,
+        I.Descripcion,
+        I.Cantidad,
+        I.Precio,
+        I.IdProveedor,
+        P.NombreEmpresa   AS NombreProveedor,
+        I.IdCategoria,
+        C.Nombre          AS CategoriaNombre
+    FROM INVENTARIO I
+    INNER JOIN PROVEEDOR P ON I.IdProveedor = P.IDProveedor
+    INNER JOIN CATEGORIA C ON I.IdCategoria = C.IdCategoria;
+END
+
+CREATE PROCEDURE ObtenerProductosDestacados
+AS
+BEGIN
+    SELECT TOP 4 
+        p.IdProducto,
+        p.Nombre,
+        p.Descripcion,
+        p.Precio,
+        p.ImagenUrl,
+        c.Nombre AS NombreCategoria,
+        pr.NombreEmpresa AS NombreProveedor
+    FROM 
+        Productos p
+    INNER JOIN 
+        Categorias c ON p.IdCategoria = c.IdCategoria
+    INNER JOIN
+        Proveedores pr ON p.IdProveedor = pr.IDProveedor
+    WHERE 
+        p.EnCatalogo = 1
+    ORDER BY 
+        p.FechaCreacion DESC
+END

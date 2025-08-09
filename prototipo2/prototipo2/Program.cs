@@ -13,6 +13,7 @@ builder.Services.AddSession();
 builder.Services.AddScoped<IUtilitarios, Utilitarios>();
 builder.Services.AddHttpClient<PayPalService>();
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,7 +34,7 @@ app.UseSession();
 
 app.MapControllerRoute(
      name: "default",
-    pattern: "{controller=Cliente}/{action=InicioSesion}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "catalogo",

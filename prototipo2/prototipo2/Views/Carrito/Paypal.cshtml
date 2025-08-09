@@ -131,24 +131,40 @@
 
 @using System.Globalization
 
-<script src="https://www.paypal.com/sdk/js?client-id=AWcNJsABQJYbYsa1Vd8uqeDvm_rdxPIN-X_-ESNxxMle19fG2FExth5pKt29vcVtEzSHJCag4hIav9RZ&currency=CRC"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AWcNJsABQJYbYsa1Vd8uqeDvm_rdxPIN-X_-ESNxxMle19fG2FExth5pKt29vcVtEzSHJCag4hIav9RZ&currency=USD"></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        var total = "@total.ToString("F2", System.Globalization.CultureInfo.InvariantCulture)";
+        var total = "@total.ToString("F2", CultureInfo.InvariantCulture)";
+
+        // Validar que el total sea mayor que 0
+        if (parseFloat(total) <= 0) {
+            alert("El total debe ser mayor que cero");
+            return;
+        }
 
         paypal.Buttons({
-            onClick: function (data, actions) {
-                const form = document.getElementById('datosVentaForm');
-                if (!form.checkValidity()) {
-                    form.reportValidity();
-                    return actions.reject();
-                }
-                return actions.resolve();
+            style: {
+                layout: 'vertical',
+                color: 'blue',
+                shape: 'rect',
+                label: 'paypal'
             },
             createOrder: function (data, actions) {
+                // Validar formulario antes de proceder
+                const form = document.getElementById('datosVentaForm');
+                if (!form.checkValidity()) {
+                    alert("Por favor complete todos los campos requeridos");
+                    return false;
+                }
+
                 return actions.order.create({
-                    purchase_units: [{ amount: { value: total } }]
+                    purchase_units: [{
+                        amount: {
+                            value: total,
+                            currency_code: 'USD' 
+                        }
+                    }]
                 });
             },
             onApprove: function (data, actions) {
@@ -170,10 +186,18 @@
 
                     return fetch('@Url.Action("ConfirmarPago", "Carrito")', {
                         method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                        },
                         body: JSON.stringify(info)
                     })
-                        .then(res => res.json())
+                        .then(res => {
+                            if (!res.ok) {
+                                throw new Error('Error en la red');
+                            }
+                            return res.json();
+                        })
                         .then(res => {
                             if (res.success) {
                                 window.location = '@Url.Action("Gracias", "Carrito")';
@@ -181,20 +205,28 @@
                                 alert("Error al procesar la venta: " + (res.error || "Error desconocido"));
                             }
                         })
-                        .catch(error => alert("Error de red: " + error.message));
+                        .catch(error => {
+                            console.error('Error:', error);
+                            alert("Error de red: " + error.message);
+                        });
                 });
             },
-            onCancel: function (data) {
-                alert("Pago cancelado.");
-            },
             onError: function (err) {
-                alert("Error en el pago. Intente nuevamente.");
-                console.error(err);
+                console.error('PayPal Error:', err);
+                alert("Ocurrió un error con PayPal: " + err.toString());
+            },
+            onClick: function () {
+                // Validar formulario al hacer clic
+                const form = document.getElementById('datosVentaForm');
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return false;
+                }
+                return true;
             }
         }).render('#paypal-button-container');
     });
 </script>
-
 
 
 <style>

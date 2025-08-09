@@ -80,7 +80,6 @@ CREATE TABLE INVENTARIO (
   FOREIGN KEY (IdCategoria) REFERENCES Categoria(IdCategoria)
 );
 GO
-
 -- Tabla de Reparacion
 CREATE TABLE Reparacion (
     IdReparacion INT IDENTITY(1,1) PRIMARY KEY,
@@ -130,4 +129,8 @@ CREATE TABLE Carrito (
     Precio DECIMAL(18,2) NOT NULL
 );
 
+INSERT INTO Carrito (ProductoId, Cantidad, Nombre_Producto, Precio)
+VALUES 
+(1, 2, 'Martillo de acero', 8.50),
+(2, 1, 'Taladro eléctrico', 59.99);
 
